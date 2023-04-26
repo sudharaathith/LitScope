@@ -4,33 +4,65 @@ import os
 import requests
 
 
-script_dir = os.path.dirname(__file__) 
+script_dir = os.path.dirname(__file__)
 
-def Scraper(scraper):
-    with open(os.path.join(script_dir,scraper),"r") as file:
-        config = json.loads(str(file.read()))
-        if config['mode'] == 'api':
-            return Scraper_api(config)
+# Scapers class help with getting scaper and finding the valid scaper in the directory.
+class Scrapers:
+    def __init__(self):
+        self.websides = []
+        self.update()
+
+    def update(self):
+        ls = [i for i in os.listdir(script_dir) if i.endswith('.json')]
+        ls = [i for i in ls if self.isValid(i)]
+        self.websides = ls
+
+    def Scraper(self, scraper: str):
+        with open(os.path.join(script_dir, scraper), "r") as file:
+            config = json.loads(str(file.read()))
+            if config['mode'] == 'api':
+                return Scraper_api(config)
+            else:
+                raise f"the mode '{config['mode']}' not found."
+
+    def isValid(self, scraper: str) -> bool:
+        try:
+            self.Scraper(scraper)
+            return True
+        except:
+            return False
+
+    def get(self, scraper: str):
+        if scraper in self.websides:
+            return self.Scraper(scraper)
         else:
-            raise f"the mode '{config['mode']}' not found."
+            raise f"scraper '{scraper}'  not found"
 
+    def __getitem__(self, scraper):
+        return self.get(scraper)
+
+    def __repr__(self):
+        return str(self.websides)
+
+# This is a api scrper the Scrapes using api.
 class Scraper_api:
     def __init__(self, config):
         self.config = config
-            
+
     def search(self, query):
-        req = requests.request(method=self.config['search']['method'], url=(self.config['search']['url'].replace('//<<Query>>//',query)))
+        req = requests.request(method=self.config['search']['method'], url=(
+            self.config['search']['url'].replace('//<<Query>>//', query)))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
         req = json.loads(req.text)
         infor = False
         index = -1
-        for n,i in enumerate(self.config['search']['route']):
+        for n, i in enumerate(self.config['search']['route']):
             if i == '//<<for>>//':
                 infor = True
                 index = n
-                break           
+                break
             else:
-                    req = req[i]
+                req = req[i]
         if infor:
             res = []
             for i in req:
@@ -38,9 +70,8 @@ class Scraper_api:
                     i = i[j]
                 res.append(i)
             return res
-                
-                    
+
 
 if __name__ == "__main__":
-    te = Scraper('typeset_io.json')
-    print(te.search('summa'))
+    t = Scrapers()
+    print(t['typeset_io.json'])
