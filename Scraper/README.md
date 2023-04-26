@@ -47,16 +47,11 @@ The json should follow this format:
 <td> url </td>
 <td> Url of Search api
 
-```json
-"//<<Query>>//" 
-```
-is placeholder for search query.
-```
-"https:/summa.com///<<Query>>//" 
-```
-will be
-```
-"https://summa.com/summa"
+```html
+"//<<Query>>//" is placeholder for search query.
+
+so "https:/summa.com///<<Query>>//" 
+will be "https://summa.com/summa"
 ```
  </td>
 </tr>
@@ -93,12 +88,12 @@ for example consider json
  to get all title the route would be
 ```
 ["results", "pages", "//<<for>>//", "title"]
-```
+
 
 "//<<for>>//" is use to initilize a for each loop.
 
 the title after for loop will apply to all the pages.
-
+```
 
 </td>
 </tr>
