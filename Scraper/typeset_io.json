@@ -1,0 +1,9 @@
+{
+    "domine_name": "typeset.io",
+    "mode":"api",
+    "search":{
+        "url":"https://typeset.io/_next/data/l-9Zik5eBkX7q9AMbAEvH/search.json?q=//<<Query>>//",
+        "route":["pageProps","data", "//<<for>>//", "title"],
+        "method":"GET"
+    }
+}

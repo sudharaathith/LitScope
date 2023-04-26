@@ -1,0 +1,844 @@
+{
+  "pageProps": {
+    "fss_config": {
+      "filter_details": {
+        "config": [
+          {
+            "key": "has_pdf",
+            "type": "checkbox",
+            "display_name": "PDF",
+            "default_value": null,
+            "has_search": false,
+            "description": "Show papers with PDF"
+          },
+          {
+            "key": "open_access",
+            "type": "checkbox",
+            "display_name": "Open Access",
+            "default_value": null,
+            "has_search": false,
+            "description": "Show open access papers as per their publisher's copyright policy"
+          },
+          {
+            "key": "year",
+            "type": "year_range",
+            "display_name": "Year",
+            "default_value": null,
+            "has_search": false,
+            "description": null
+          },
+          {
+            "key": "publication_type",
+            "type": "multi_select",
+            "display_name": "Type",
+            "default_value": [],
+            "has_search": false,
+            "description": null
+          },
+          {
+            "key": "author",
+            "type": "multi_select",
+            "display_name": "Authors",
+            "default_value": [],
+            "has_search": true,
+            "description": null
+          },
+          {
+            "key": "institution",
+            "type": "multi_select",
+            "display_name": "Institutions",
+            "default_value": [],
+            "has_search": true,
+            "description": null
+          },
+          {
+            "key": "topic",
+            "type": "multi_select",
+            "display_name": "Topics",
+            "default_value": [],
+            "has_search": true,
+            "description": null
+          },
+          {
+            "key": "published_in",
+            "type": "multi_select",
+            "display_name": "Journals & Conferences",
+            "default_value": [],
+            "has_search": true,
+            "description": null
+          }
+        ],
+        "order": [
+          "has_pdf",
+          "open_access",
+          "year",
+          "publication_type",
+          "author",
+          "institution",
+          "topic",
+          "published_in"
+        ]
+      },
+      "sort_details": {
+        "config": [
+          { "key": "relevance", "display_name": "Relevance", "default": true },
+          {
+            "key": "-citation_count",
+            "display_name": "Citation Count",
+            "default": null
+          },
+          {
+            "key": "newest_first",
+            "display_name": "Newest First",
+            "default": null
+          },
+          {
+            "key": "oldest_first",
+            "display_name": "Oldest First",
+            "default": null
+          },
+          { "key": "alpha", "display_name": "A - Z", "default": null },
+          { "key": "-alpha", "display_name": "Z - A", "default": null }
+        ],
+        "order": [
+          "relevance",
+          "-citation_count",
+          "newest_first",
+          "oldest_first",
+          "alpha",
+          "-alpha"
+        ]
+      }
+    },
+    "total": 464,
+    "offset": 0,
+    "next": 10,
+    "data": [
+      {
+        "id": 2587068046,
+        "unique_id": "4zosvlmp4e",
+        "doi": null,
+        "title": "Summa Contra Gentiles",
+        "issue": null,
+        "volume": null,
+        "publisher": "University of Notre Dame Press",
+        "date": "1975-01-01T00:00:00Z",
+        "online_date": null,
+        "journal": null,
+        "conference_series": null,
+        "first_page": null,
+        "last_page": null,
+        "is_retracted": false,
+        "full_slug": "summa-contra-gentiles-4zosvlmp4e",
+        "publication_type": "Book",
+        "is_oa": true,
+        "oa_status": null,
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": null,
+        "abstract": "The Summa Contra Gentiles is not merely the only complete summary of Christian doctrine that St. Thomas has written, but also a creative and even revolutionary work of Christian apologetics composed at the precise moment when Christian thought needed to be intellectually creative in order to master and assimilate the intelligence and wisdom of the Greeks and the Arabs. In the Summa Aquinas works to save and purify the thought of the Greeks and the Arabs in the higher light of Christian Revelation, confident that all that had been rational in the ancient philosophers and their followers would become more rational within Christianity. This exposition and defense of divine truth has two main parts: the consideration of that truth that faith professes and reason investigates, and the consideration of the truth that faith professes and reason is not competent to investigate. The exposition of truths accessible to natural reason occupies Aquinas in the first three books of the Summa. His method is to bring forward demonstrative and probable arguments, some of which are drawn from the philosophers, to convince the skeptic. In the fourth book of the Summa St. Thomas appeals to the authority of the Sacred Scripture for those divine truths that surpass the capacity of reason. The present volume is the second part of a treatise on the hierarchy of creation, the divine providence over all things, and man's relation to God. Book 1 of the Summa deals with God; Book 2, Creation; and Book 4, Salvation.",
+        "topics": {
+          "total": 5,
+          "data": [
+            {
+              "score": 0.57,
+              "display_name": "Divine providence",
+              "id": 2776563008,
+              "slug": "divine-providence",
+              "unique_id": "3f0f95s0",
+              "full_slug": "divine-providence-3f0f95s0"
+            },
+            {
+              "score": 0.54,
+              "display_name": "Christian apologetics",
+              "id": 559283250,
+              "slug": "christian-apologetics",
+              "unique_id": "1sjh7ad9",
+              "full_slug": "christian-apologetics-1sjh7ad9"
+            },
+            {
+              "score": 0.52,
+              "display_name": "Faith",
+              "id": 2778692574,
+              "slug": "faith",
+              "unique_id": "2x4jtzuz",
+              "full_slug": "faith-2x4jtzuz"
+            },
+            {
+              "score": 0.52,
+              "display_name": "Revelation",
+              "id": 2776405206,
+              "slug": "revelation",
+              "unique_id": "2hb9y0j1",
+              "full_slug": "revelation-2hb9y0j1"
+            },
+            {
+              "score": 0.51,
+              "display_name": "Christianity",
+              "id": 551968917,
+              "slug": "christianity",
+              "unique_id": "sfsx6hle",
+              "full_slug": "christianity-sfsx6hle"
+            }
+          ],
+          "is_show": true
+        },
+        "authors": {
+          "total": 2,
+          "data": [
+            {
+              "display_name": "Thomas Aquinas",
+              "id": 2627437428,
+              "slug": "thomas-aquinas",
+              "unique_id": "6m2r7wro7p",
+              "full_slug": "thomas-aquinas-6m2r7wro7p"
+            },
+            {
+              "display_name": "F.R.S.C. Anton C. Pegis",
+              "id": 2619810914,
+              "slug": "f-r-s-c-anton-c-pegis",
+              "unique_id": "2e8jnuz17i",
+              "full_slug": "f-r-s-c-anton-c-pegis-2e8jnuz17i"
+            }
+          ]
+        },
+        "affiliations": { "total": 0, "data": [] },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 406 } },
+        "tldr": "The Summa Contra Gentiles as mentioned in this paper is a complete summary of Christian doctrine that St. Thomas has written, but also a creative and even revolutionary work of Christian apologetics composed at the precise moment when Christian thought needed to be intellectually creative in order to master and assimilate the intelligence and wisdom of the Greeks and the Arabs."
+      },
+      {
+        "id": 3150242323,
+        "unique_id": "1r0t206j0g",
+        "doi": null,
+        "title": "Summa de arithmetica geometria proportioni et proportionalita",
+        "issue": null,
+        "volume": null,
+        "publisher": null,
+        "date": "2009-01-01T00:00:00Z",
+        "online_date": null,
+        "journal": null,
+        "conference_series": null,
+        "first_page": null,
+        "last_page": null,
+        "is_retracted": false,
+        "full_slug": "summa-de-arithmetica-geometria-proportioni-et-1r0t206j0g",
+        "publication_type": null,
+        "is_oa": true,
+        "oa_status": null,
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": null,
+        "abstract": "Here we present the relevant text of the Summa of Pacioli[1] associated with the division of stakes and a translation of it into English. A translation into German appears in the anthology of Ivo Schneider [2] which has been consulted. Footnotes have been placed at the end of each problem. Two images of the text are readily available. The better is part of the Archimedes Project at ECHO (the European Cultural Heritage Online) and the other through the University of Seville.",
+        "authors": {
+          "total": 2,
+          "data": [
+            {
+              "display_name": "Sepolcro (Pacioli)",
+              "id": 3140604456,
+              "slug": "sepolcro-pacioli",
+              "unique_id": "r112wy7z1j",
+              "full_slug": "sepolcro-pacioli-r112wy7z1j"
+            },
+            {
+              "display_name": "Ivo Schneider",
+              "id": 3149891880,
+              "slug": "ivo-schneider",
+              "unique_id": "2v9v19k40e",
+              "full_slug": "ivo-schneider-2v9v19k40e"
+            }
+          ]
+        },
+        "affiliations": { "total": 0, "data": [] },
+        "fulltext_url": "https://www.cs.xu.edu/math/Sources/Pacioli/summa.pdf",
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 68 } },
+        "tldr": "The relevant text of the Summa of Pacioli associated with the division of stakes and a translation of it into English can be found in this article, where a translation into German appears in the anthology of Ivo Schneider."
+      },
+      {
+        "id": 1977454957,
+        "unique_id": "2n2sfexto4",
+        "doi": "10.1097/00006123-199911000-00001",
+        "title": "Summa cum laude.",
+        "issue": "5",
+        "volume": "45",
+        "publisher": "Oxford Academic",
+        "date": "1999-11-01T00:00:00Z",
+        "online_date": null,
+        "journal": {
+          "display_name": "Neurosurgery",
+          "official_page": "http://www.neurosurgery-online.com/",
+          "issn": "0148-396X",
+          "alias": ["brain surgery"],
+          "id": 111727011,
+          "slug": "neurosurgery",
+          "unique_id": "jwj4oake",
+          "full_slug": "neurosurgery-jwj4oake"
+        },
+        "conference_series": null,
+        "first_page": "975",
+        "last_page": "976",
+        "is_retracted": false,
+        "full_slug": "summa-cum-laude-2n2sfexto4",
+        "publication_type": "Journal Article",
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": false,
+        "abstract": "* Degrees with distinction are conferred on candidates in West Campus programs for BA, BS and BE degrees who have achieved grade point averages of 3.85 (summa cum laude), 3.7 (magna cum laude) or 3.5 (cum laude). Degrees with distinction are conferred on candidates in the Health Sciences programs for the BS degree who have completed 60 credits (or 43 credits for Registered Nurse Baccalaureate program) and achieved grade point averages as follows: SHTM, 3.85 (summa), 3.75 (magna), 3.60 (cum laude); School of Nursing, 3.80 (summa), 3.70 (magna), 3.60 (cum laude); and School of Social Welfare, 3.90 (summa), 3.80 (magna), 3.70 (cum laude).",
+        "authors": {
+          "total": 1,
+          "data": [
+            {
+              "display_name": "Michael L.J. Apuzzo",
+              "id": 1507946715,
+              "slug": "michael-l-j-apuzzo",
+              "unique_id": "3rlirw1j6i",
+              "full_slug": "michael-l-j-apuzzo-3rlirw1j6i"
+            }
+          ]
+        },
+        "affiliations": { "total": 0, "data": [] },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 58 } },
+        "tldr": "* Degrees with distinction are conferred on candidates in West Campus programs for BA, BS and BE degrees who have achieved grade point averages of 3.85 (summa cum laude), 3.7 (magna Cum laude) or 3.5 (cum laude)."
+      },
+      {
+        "id": 1967891816,
+        "unique_id": "2j0p9ught2",
+        "doi": "10.1021/ES950240S",
+        "title": "Viability of Using SUMMA Polished Canisters for the Collection and Storage of Parts per Billion by Volume Level Volatile Organics",
+        "issue": "1",
+        "volume": "30",
+        "publisher": "American Chemical Society",
+        "date": "1996-12-01T00:00:00Z",
+        "online_date": "1995-12-27T00:00:00Z",
+        "journal": {
+          "display_name": "Environmental Science & Technology",
+          "official_page": "http://pubs.acs.org/journals/esthag/",
+          "issn": "0013-936X",
+          "alias": null,
+          "id": 13479253,
+          "slug": "environmental-science-technology",
+          "unique_id": "nufr6xdf",
+          "full_slug": "environmental-science-technology-nufr6xdf"
+        },
+        "conference_series": null,
+        "first_page": "188",
+        "last_page": "195",
+        "is_retracted": false,
+        "full_slug": "viability-of-using-summa-polished-canisters-for-the-2j0p9ught2",
+        "publication_type": "Journal Article",
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": false,
+        "abstract": "The collection of whole air samples using SUMMA polished canisters has been a commonly used technique for over a decade. This technique has been examined for sample storage, analyte stability, and recovery for up to 45 compounds routinely detected in ambient air. However, this technique is often used for a more extended set of target analytes for which little or no published validation data exist. This paper reports the accuracy, precision, and storage stability results for 194 volatile organic compounds generated in humidified ambient air and collected in SUMMA polished canisters. In addition, instrument and method detection limits for the gas chromatography/multidetector (GC/MD) analytical system were determined from the resulting data. A small percentage of the study compounds displayed high variability, low recovery, or poor storage stability for which qualitative only data can be generated with this technique. However, 168 of 194 (86%) compounds studied appear to be amenable to the canister technique...",
+        "authors": {
+          "total": 4,
+          "data": [
+            {
+              "display_name": "David A. Brymer",
+              "id": 2319600394,
+              "slug": "david-a-brymer",
+              "unique_id": "5fgj0rhat9",
+              "full_slug": "david-a-brymer-5fgj0rhat9"
+            },
+            {
+              "display_name": "Larry D. Ogle",
+              "id": 2665893010,
+              "slug": "larry-d-ogle",
+              "unique_id": "394xmyi63f",
+              "full_slug": "larry-d-ogle-394xmyi63f"
+            },
+            {
+              "display_name": "Chris J. Jones",
+              "id": 2333184960,
+              "slug": "chris-j-jones",
+              "unique_id": "2ygdw815dk",
+              "full_slug": "chris-j-jones-2ygdw815dk"
+            },
+            {
+              "display_name": "David L. Lewis",
+              "id": 2295857575,
+              "slug": "david-l-lewis",
+              "unique_id": "14n5lcsdaz",
+              "full_slug": "david-l-lewis-14n5lcsdaz"
+            }
+          ]
+        },
+        "affiliations": { "total": 0, "data": [] },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 51 } },
+        "tldr": "In this paper, the authors report the accuracy, precision, and storage stability results for 194 volatile organic compounds generated in humidified ambient air and collected in SUMMA polished canisters."
+      },
+      {
+        "id": 2007215792,
+        "unique_id": "1b0svvyeke",
+        "doi": "10.1016/0004-6981(86)90011-9",
+        "title": "Sample integrity of trace level volatile organic compounds in ambient air stored in SUMMA® polished canisters",
+        "issue": "7",
+        "volume": "20",
+        "publisher": "Elsevier",
+        "date": "1986-01-01T00:00:00Z",
+        "online_date": "2003-05-14T00:00:00Z",
+        "journal": {
+          "display_name": "Atmospheric Environment",
+          "official_page": null,
+          "issn": null,
+          "alias": null,
+          "id": 2400914,
+          "slug": "atmospheric-environment",
+          "unique_id": "4dil1g5l",
+          "full_slug": "atmospheric-environment-4dil1g5l"
+        },
+        "conference_series": null,
+        "first_page": "1403",
+        "last_page": "1411",
+        "is_retracted": false,
+        "full_slug": "sample-integrity-of-trace-level-volatile-organic-compounds-1b0svvyeke",
+        "publication_type": "Journal Article",
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": false,
+        "abstract": "Sets of new and used SUMMA® polished stainless steel canisters were tested for storage stability of volatile organic compounds (VOCs). Evacuated canisters were filled at a controlled rate with ambient air containing added concentrations of 15 VOCs (14 chlorinated, one brominated) at",
+        "authors": {
+          "total": 3,
+          "data": [
+            {
+              "display_name": "Karen D. Oliver",
+              "id": 2068938031,
+              "slug": "karen-d-oliver",
+              "unique_id": "161ndhwccv",
+              "full_slug": "karen-d-oliver-161ndhwccv",
+              "affiliation_full_slug": "research-triangle-park-2os7dvou"
+            },
+            {
+              "display_name": "Joachim D. Pleil",
+              "id": 520471017,
+              "slug": "joachim-d-pleil",
+              "unique_id": "1sqz13eato",
+              "full_slug": "joachim-d-pleil-1sqz13eato",
+              "affiliation_full_slug": "research-triangle-park-2os7dvou"
+            },
+            {
+              "display_name": "William A. McClenny",
+              "id": 2503199175,
+              "slug": "william-a-mcclenny",
+              "unique_id": "myoihgl03h",
+              "full_slug": "william-a-mcclenny-myoihgl03h",
+              "affiliation_full_slug": "united-states-environmental-protection-agency-2hjdhe4p"
+            }
+          ]
+        },
+        "affiliations": {
+          "total": 2,
+          "data": [
+            {
+              "display_name": "Research Triangle Park",
+              "city": "Durham",
+              "region": "North Carolina",
+              "country": "United States",
+              "id": 1309191912,
+              "slug": "research-triangle-park",
+              "unique_id": "2os7dvou",
+              "full_slug": "research-triangle-park-2os7dvou"
+            },
+            {
+              "display_name": "United States Environmental Protection Agency",
+              "city": "Washington D.C.",
+              "region": "District of Columbia",
+              "country": "United States",
+              "id": 1302368450,
+              "slug": "united-states-environmental-protection-agency",
+              "unique_id": "2hjdhe4p",
+              "full_slug": "united-states-environmental-protection-agency-2hjdhe4p"
+            }
+          ]
+        },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 60 } },
+        "tldr": "Sets of new and used SUMMA® polished stainless steel canisters were tested for storage stability of volatile organic compounds (VOCs) as mentioned in this paper, and the canisters filled at a controlled rate with ambient air containing added concentrations of 15 VOCs (14 chlorinated, one brominated) at"
+      },
+      {
+        "id": 563068896,
+        "unique_id": "4tfih84hr2",
+        "doi": null,
+        "title": "The Summa theologica.",
+        "issue": null,
+        "volume": null,
+        "publisher": null,
+        "date": "2013-01-01T00:00:00Z",
+        "online_date": null,
+        "journal": null,
+        "conference_series": null,
+        "first_page": null,
+        "last_page": null,
+        "is_retracted": false,
+        "full_slug": "the-summa-theologica-4tfih84hr2",
+        "publication_type": "Book",
+        "is_oa": true,
+        "oa_status": null,
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": null,
+        "abstract": "ed from the persons?. . . . . . . . . . . . . . . . . . . . . . . . . . p. 277 Article. 4 Whether the properties presuppose the notional acts?. . . . xi Saint Thomas Aquinas Summa Theologica",
+        "authors": {
+          "total": 4,
+          "data": [
+            {
+              "display_name": "Thomas, Aquinas, Saint",
+              "id": 874767534,
+              "slug": "thomas-aquinas-saint",
+              "unique_id": "29qnhvgjvc",
+              "full_slug": "thomas-aquinas-saint-29qnhvgjvc"
+            },
+            {
+              "display_name": "Laurence Shapcote",
+              "id": 633335039,
+              "slug": "laurence-shapcote",
+              "unique_id": "3vevxa6vw0",
+              "full_slug": "laurence-shapcote-3vevxa6vw0"
+            },
+            {
+              "display_name": "Daniel J. Sullivan",
+              "id": 2971978288,
+              "slug": "daniel-j-sullivan",
+              "unique_id": "30sl5afec1",
+              "full_slug": "daniel-j-sullivan-30sl5afec1"
+            },
+            {
+              "display_name": "Mortimer Jerome Adler",
+              "id": 2171372229,
+              "slug": "mortimer-jerome-adler",
+              "unique_id": "1vxf32hoa6",
+              "full_slug": "mortimer-jerome-adler-1vxf32hoa6"
+            }
+          ]
+        },
+        "affiliations": { "total": 0, "data": [] },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 130 } },
+        "tldr": "In this paper, the authors consider whether the properties presuppose the notional acts and whether the property presupposes the acts, and they conclude that the latter does not necessarily imply the latter."
+      },
+      {
+        "id": 1580631450,
+        "unique_id": "dth8b2snff",
+        "doi": null,
+        "title": "Summa theologiæ : a concise translation",
+        "issue": null,
+        "volume": null,
+        "publisher": "Christian Classics",
+        "date": "1989-01-01T00:00:00Z",
+        "online_date": null,
+        "journal": null,
+        "conference_series": null,
+        "first_page": null,
+        "last_page": null,
+        "is_retracted": false,
+        "full_slug": "summa-theologiae-a-concise-translation-dth8b2snff",
+        "publication_type": "Book",
+        "is_oa": true,
+        "oa_status": null,
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": null,
+        "abstract": "A single-volume \"Summa\" with modern chapter and paragraph layout written in modern non-technical English. The work represents a synthesis of Aristotelian learning and Catholic doctrine which builds to a comprehensive system and occupies a central place in medieval theology and philosophy. This concisely-distilled translation is designed to appeal to both professional students of theology and the general reader. This is the first time that the 60-volume work has been available in a single translation.",
+        "topics": {
+          "total": 1,
+          "data": [
+            {
+              "score": 0.52,
+              "display_name": "Paragraph",
+              "id": 2777206241,
+              "slug": "paragraph",
+              "unique_id": "c9ukds33",
+              "full_slug": "paragraph-c9ukds33"
+            }
+          ],
+          "is_show": true
+        },
+        "authors": {
+          "total": 2,
+          "data": [
+            {
+              "display_name": "Thomas, Aquinas, Saint",
+              "id": 874767534,
+              "slug": "thomas-aquinas-saint",
+              "unique_id": "29qnhvgjvc",
+              "full_slug": "thomas-aquinas-saint-29qnhvgjvc"
+            },
+            {
+              "display_name": "Timothy S. McDermott",
+              "id": 2168129934,
+              "slug": "timothy-s-mcdermott",
+              "unique_id": "4qmjzwufk4",
+              "full_slug": "timothy-s-mcdermott-4qmjzwufk4"
+            }
+          ]
+        },
+        "affiliations": { "total": 0, "data": [] },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 55 } },
+        "tldr": "A single volume \"Summa\" with modern chapter and paragraph layout written in modern non-technical English is available in a single translation as discussed by the authors, which is designed to appeal to both professional students of theology and the general reader."
+      },
+      {
+        "id": 2042638084,
+        "unique_id": "53sqmo740p",
+        "doi": "10.1016/J.CONB.2012.01.004",
+        "title": "Neurotechnology: Summa technologiae.",
+        "issue": "1",
+        "volume": "22",
+        "publisher": "Elsevier Current Trends",
+        "date": "2012-02-01T00:00:00Z",
+        "online_date": "2012-02-03T00:00:00Z",
+        "journal": {
+          "display_name": "Current Opinion in Neurobiology",
+          "official_page": null,
+          "issn": "0959-4388",
+          "alias": null,
+          "id": 120775027,
+          "slug": "current-opinion-in-neurobiology",
+          "unique_id": "3qcw1e5g",
+          "full_slug": "current-opinion-in-neurobiology-3qcw1e5g"
+        },
+        "conference_series": null,
+        "first_page": "1",
+        "last_page": "2",
+        "is_retracted": false,
+        "full_slug": "neurotechnology-summa-technologiae-53sqmo740p",
+        "publication_type": "Journal Article",
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": false,
+        "abstract": "Gero Miesenböck is Waynflete Professor of Physiology at the University of Oxford and director of the Centre for Neural Circuits and Behaviour. He was educated at the Universities of Innsbruck and Umeå and held faculty appointments at Memorial SloanKettering Cancer Center and Yale University before coming to Oxford. Summa technologiae was the title the Polish science fiction writer Stanisław Lem gave to a hefty tome of ruminations he published in 1964. In contrast to the similarly titled synthesis of theological knowledge compiled by Thomas Aquinas seven centuries earlier, Lem’s book attempted not only to summarize the status quo of technology but also to divine its future. His Summa contains, in addition to several off-the-mark predictions, others that do anticipate present-day technologies. Some even appear in the pages of this issue.",
+        "authors": {
+          "total": 2,
+          "data": [
+            {
+              "display_name": "Winfried Denk",
+              "id": 2000673969,
+              "slug": "winfried-denk",
+              "unique_id": "2wxpldgcma",
+              "full_slug": "winfried-denk-2wxpldgcma",
+              "affiliation_full_slug": "max-planck-society-3o0xx7lg"
+            },
+            {
+              "display_name": "Gero Miesenböck",
+              "id": 1977301018,
+              "slug": "gero-miesenbock",
+              "unique_id": "10855kr1md",
+              "full_slug": "gero-miesenbock-10855kr1md"
+            }
+          ]
+        },
+        "affiliations": {
+          "total": 1,
+          "data": [
+            {
+              "display_name": "Max Planck Society",
+              "city": "Munich",
+              "region": null,
+              "country": "Germany",
+              "id": 149899117,
+              "slug": "max-planck-society",
+              "unique_id": "3o0xx7lg",
+              "full_slug": "max-planck-society-3o0xx7lg"
+            }
+          ]
+        },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 123 } },
+        "tldr": "Gero Miesenböck is Waynflete Professor of Physiology at the University of Oxford and director of the Centre for Neural Circuits and Behaviour and has made off-the-mark predictions that do anticipate present-day technologies."
+      },
+      {
+        "id": 2020823768,
+        "unique_id": "3wf593stvj",
+        "doi": "10.1075/HL.2.1.02HUN",
+        "title": "Absoluta: The Summa of Petrus Hispanus on Priscianus Minor",
+        "issue": "1",
+        "volume": "2",
+        "publisher": "John Benjamins Publishing Company",
+        "date": "1975-01-01T00:00:00Z",
+        "online_date": "1975-01-01T00:00:00Z",
+        "journal": {
+          "display_name": "Historiographia Linguistica",
+          "official_page": null,
+          "issn": "0302-5160",
+          "alias": null,
+          "id": 57354637,
+          "slug": "historiographia-linguistica",
+          "unique_id": "2qvjk5yr",
+          "full_slug": "historiographia-linguistica-2qvjk5yr"
+        },
+        "conference_series": null,
+        "first_page": "1",
+        "last_page": "23",
+        "is_retracted": false,
+        "full_slug": "absoluta-the-summa-of-petrus-hispanus-on-priscianus-minor-3wf593stvj",
+        "publication_type": "Journal Article",
+        "is_oa": false,
+        "oa_status": "closed",
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": false,
+        "abstract": "The Absoluta is a Summa on Priscian's Institutiones grammaticae, Books XVII-XVIII, which deal with syntax, so called from its opening word. The author was probably Petrus Hispanus, who is otherwise unknown. The work was presumably written in Paris in the third quarter of the 12th century. It survives in 14 manuscripts spread widely over Europe, and dating from ca. 1200 to the 14th century. The same author perhaps wrote a Summa on Priscian, Books I-XVI, known also from its opening words as Strenuum negotiatorem, of which only a fragment of the beginning survives in a single manuscript. In the Absoluta the author follows the order of treatment of subjects in Priscian, but proceeds chiefly by raising questions on doubtful points. He emphatically distinguishes the tasks of the grammarian and of the dialectician, yet makes much use of the methods of the latter. Thus, in the discussion of the case to be used after the verb substantive, the rule is propounded and argued on logical grounds. His theoretical framework is that of the Summa of Petrus Helias (mid-12th cent.), which he uses freely, and though he makes some advances, as in the use of the term modus significandi and of the concept of suppositio, he is still at the stage where they do not bear their later technical sense.",
+        "authors": {
+          "total": 1,
+          "data": [
+            {
+              "display_name": "Richard William Hunt",
+              "id": 2122964845,
+              "slug": "richard-william-hunt",
+              "unique_id": "3jodentf25",
+              "full_slug": "richard-william-hunt-3jodentf25",
+              "affiliation_full_slug": "university-of-oxford-359i25ny"
+            }
+          ]
+        },
+        "affiliations": {
+          "total": 1,
+          "data": [
+            {
+              "display_name": "University of Oxford",
+              "city": "Oxford",
+              "region": "Oxfordshire",
+              "country": "United Kingdom",
+              "id": 40120149,
+              "slug": "university-of-oxford",
+              "unique_id": "359i25ny",
+              "full_slug": "university-of-oxford-359i25ny"
+            }
+          ]
+        },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 58 } },
+        "tldr": "The Absoluta as mentioned in this paper is a Summa on Priscian's Institutiones grammaticae, Books XVII-XVIII, which deal with syntax, so called from its opening word."
+      },
+      {
+        "id": 631623080,
+        "unique_id": "2hip84sqce",
+        "doi": null,
+        "title": "Thomas Aquinas on Human Nature: A Philosophical Study of Summa Theologiae, 1a 75-89",
+        "issue": null,
+        "volume": null,
+        "publisher": null,
+        "date": "2001-11-12T00:00:00Z",
+        "online_date": null,
+        "journal": null,
+        "conference_series": null,
+        "first_page": null,
+        "last_page": null,
+        "is_retracted": false,
+        "full_slug": "thomas-aquinas-on-human-nature-a-philosophical-study-of-2hip84sqce",
+        "publication_type": "Book",
+        "is_oa": true,
+        "oa_status": null,
+        "oa_url": null,
+        "is_archived": false,
+        "is_paratext": null,
+        "abstract": "This is a major new study of Thomas Aquinas, the most influential philosopher of the Middle Ages. The book offers a clear and accessible guide to the central project of Aquinas' philosophy: the understanding of human nature. Robert Pasnau sets the philosophy in the context of ancient and modern thought, and argues for some groundbreaking proposals for understanding some of the most difficult areas of Aquinas' thought: the relationship of soul to body, the workings of sense and intellect, the will and the passions, and personal identity. Structured around a close reading of the treatise on human nature from the Summa theologiae and deeply informed by a wide knowledge of the history of philosophy and contemporary philosophy, this study will offer specialists a series of novel and provocative interpretations, while providing students with a reference commentary on one of Aquinas' core texts.",
+        "topics": {
+          "total": 5,
+          "data": [
+            {
+              "score": 0.59,
+              "display_name": "Medieval philosophy",
+              "id": 2780267349,
+              "slug": "medieval-philosophy",
+              "unique_id": "ckrzeld6",
+              "full_slug": "medieval-philosophy-ckrzeld6"
+            },
+            {
+              "score": 0.59,
+              "display_name": "Contemporary philosophy",
+              "id": 522434184,
+              "slug": "contemporary-philosophy",
+              "unique_id": "3t1r1piv",
+              "full_slug": "contemporary-philosophy-3t1r1piv"
+            },
+            {
+              "score": 0.56,
+              "display_name": "Soul",
+              "id": 2780822299,
+              "slug": "soul",
+              "unique_id": "3n656uo0",
+              "full_slug": "soul-3n656uo0"
+            },
+            {
+              "score": 0.52,
+              "display_name": "Passions",
+              "id": 2776347870,
+              "slug": "passions",
+              "unique_id": "11hre6lw",
+              "full_slug": "passions-11hre6lw"
+            },
+            {
+              "score": 0.5,
+              "display_name": "Intellect",
+              "id": 2780146897,
+              "slug": "intellect",
+              "unique_id": "ltbhv7w7",
+              "full_slug": "intellect-ltbhv7w7"
+            }
+          ],
+          "is_show": true
+        },
+        "authors": {
+          "total": 1,
+          "data": [
+            {
+              "display_name": "Robert Pasnau",
+              "id": 2558801669,
+              "slug": "robert-pasnau",
+              "unique_id": "55dah3go1b",
+              "full_slug": "robert-pasnau-55dah3go1b",
+              "affiliation_full_slug": "university-of-colorado-boulder-23y9hx76"
+            }
+          ]
+        },
+        "affiliations": {
+          "total": 1,
+          "data": [
+            {
+              "display_name": "University of Colorado Boulder",
+              "city": "Boulder",
+              "region": "Colorado",
+              "country": "United States",
+              "id": 188538660,
+              "slug": "university-of-colorado-boulder",
+              "unique_id": "23y9hx76",
+              "full_slug": "university-of-colorado-boulder-23y9hx76"
+            }
+          ]
+        },
+        "fulltext_url": null,
+        "fulltext_url_no_follow": true,
+        "metrics": { "citations": { "total": 81 } },
+        "tldr": "Pasnau as mentioned in this paper presents a major new study of Thomas Aquinas, the most influential philosopher of the Middle Ages, and offers a clear and accessible guide to the central project of Aquinas' philosophy: the understanding of human nature, the relationship of soul to body, the workings of sense and intellect, the will and the passions, and personal identity."
+      }
+    ],
+    "is_show": true,
+    "isMobile": false,
+    "host": "typeset.io",
+    "auth": {
+      "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1aWQiOiAiNGFrZzFjb3BveSIsICJ0eXAiOiAiR1VFU1QiLCAiaXNzIjogImh0dHBzOi8vdHlwZXNldC5pby8iLCAiaWF0IjogMTY4MjUwNDE4MiwgImV4cCI6IDE2OTExNDQxODJ9.eVjO_s331fCAFLgR4p-bMIAs0mG-uk3NZCYGrPwlI0HQ9NxkCxqCETgG9tk-Iiz7ErBn4piVM38qbEhFGvCu0_sCAnQYZFNvtprgsUDTgJdyv_CYIOAqTyNm7u-WECSFmbSWzJDyMhqNeelvmXo1vjdwt2JTP5tEEClYYzItAsG_hZ4YDba8JXz1TkoI6y04sPir6aWSmfkgggRDhoA4UYZetsiBgVWBLC30XYkueGpWEreJFcjDTbqy-jUJ7jVmM-ErohG953Im-c54azJQsd_G9zmXmP3fSqnu0QPvopRyWTTkUozeLvP5c6_ttWOYrZGLYvbxhu8HCXZQmuDC5A"
+    },
+    "displayRibbon": true
+  },
+  "__N_SSP": true
+}
