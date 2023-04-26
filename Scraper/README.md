@@ -48,9 +48,10 @@ The json should follow this format:
 <td> Url of Search api
 
 ```json
-"//<<Query>>//" is placeholder for search query.
-so "https:/summa.com///<<Query>>//"
-will be "https://summa.com/summa"
+"//<<Query>>//" //is placeholder for search query.
+"https:/summa.com///<<Query>>//" 
+//will be
+"https://summa.com/summa"
 ```
  </td>
 </tr>
@@ -59,7 +60,7 @@ will be "https://summa.com/summa"
 <td> Describes the how to parse over the json
 
 ```json
-for example consider json
+//for example consider json
 {
     "results":{
         "pages":[
@@ -80,12 +81,12 @@ for example consider json
     "tocken":"jfskjshkfhjkadsfgfhkhlkdsdf"
 }
 
-to get all title the route would be
+//to get all title the route would be
 ["results", "pages", "//<<for>>//", "title"]
 
-"//<<for>>//" is use to initilize a for each loop.
+"//<<for>>//" //is use to initilize a for each loop.
 
-the title after for loop will apply to all the pages.
+//the title after for loop will apply to all the pages.
 ```
 
 </td>
