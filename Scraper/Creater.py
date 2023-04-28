@@ -1,12 +1,12 @@
 import json
 import os
 
-from Manager import Scrapers
+from .Manager import Scrapers
 
 script_dir = os.path.dirname(__file__)
 
-def save_domine(value):
-    data = json.loads(value)
+def save_domine(data):
+    value = json.dumps(data)
     name =  data['domine_name'].replace('.','_')+".json"
     with open(os.path.join(script_dir,name), 'w') as file:
         file.write(value)

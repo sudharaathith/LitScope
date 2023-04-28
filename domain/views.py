@@ -8,6 +8,7 @@ from rest_framework.response import Response
 @api_view(['POST'])
 def Save_domine(request):
     data = request.data
+    print(data)
     if save_domine(data):
         return Response(data, status=200)
     else:
