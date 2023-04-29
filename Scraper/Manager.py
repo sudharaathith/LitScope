@@ -22,6 +22,8 @@ class Scrapers:
             config = json.loads(str(file.read()))
             if config['mode'] == 'api':
                 return Scraper_api(config)
+            elif config['mode'] == 'web':
+                return Scraper_web(config)
             else:
                 raise f"the mode '{config['mode']}' not found."
 
@@ -57,9 +59,7 @@ class Scraper_api:
             req = requests.post(url=(
                 self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
-            print(json.dumps(self.config['search']['data']).replace('//<<Query>>//', query))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
-        print(req.text)
         req = json.loads(req.text)
         infor = False
         index = -1
@@ -93,7 +93,6 @@ class Scraper_web:
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
             print(json.dumps(self.config['search']['data']).replace('//<<Query>>//', query))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
-        print(req.text)
         req = BeautifulSoup(req.text)
         infor = False
         index = -1
@@ -112,9 +111,9 @@ class Scraper_web:
             res = []
             for i in req:
                 for j in self.config['search']['route'][index+1:]:
-                    if(i == '//<<text>>//'):
+                    if(j == '//<<text>>//'):
                         i = i.get_text()
-                    elif(i == '//<<href>>//'):
+                    elif(j == '//<<href>>//'):
                         i = i['href']
                     else:
                         i = i.select_one(j)
@@ -124,4 +123,4 @@ class Scraper_web:
 
 if __name__ == "__main__":
     t = Scrapers()
-    print(t['sematicscholar_org.json'].search("summa"))
+    print(t['paperswithcode_com.json'].search("summa"))
