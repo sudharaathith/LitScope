@@ -123,4 +123,4 @@ class Scraper_web:
 
 if __name__ == "__main__":
     t = Scrapers()
-    print(t['paperswithcode_com.json'].search("li"))
+    print(t['jstor_org.json'].search("Hi"))
