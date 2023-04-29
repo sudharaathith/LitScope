@@ -1,0 +1,11 @@
+{
+    "domine_name": "semanticscholar.org",
+    "mode":"api",
+    "search":{
+        "url":"https://www.semanticscholar.org/api/1/search",
+        "route":["results", "//<<for>>//", "title", "text"],
+        "method":"POST",
+        "data" : {"queryString":"//<<Query>>//","page":1,"pageSize":10,"sort":"relevance","authors":[],"coAuthors":[],"venues":[],"yearFilter":null,"requireViewablePdf":false,"fieldsOfStudy":[],"useFallbackRankerService":false,"useFallbackSearchCluster":false,"hydrateWithDdb":true,"includeTldrs":true,"performTitleMatch":true,"includeBadges":true,"getQuerySuggestions":false}
+        
+    }
+}
