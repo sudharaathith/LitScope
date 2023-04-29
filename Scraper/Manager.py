@@ -105,7 +105,21 @@ class Scraper_web:
             else:
                 if(n+1<len(self.config['search']['route'])):
                     if(self.config['search']['route'][n+1]=='//<<for>>//'):
-                        req = req.find_
+                        req = req.select(i)
+                        continue
+                req = req.select_one(i)
+        if infor:
+            res = []
+            for i in req:
+                for j in self.config['search']['route'][index+1:]:
+                    if(i == '//<<text>>//'):
+                        i = i.get_text()
+                    elif(i == '//<<href>>//'):
+                        i = i['href']
+                    else:
+                        i = i.select_one(j)
+                res.append(i)
+            return res
 
 
 if __name__ == "__main__":
