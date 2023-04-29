@@ -1,0 +1,9 @@
+{
+    "domine_name": "jstor.org",
+    "mode":"web",
+    "search":{
+        "url":"https://www.jstor.org/action/doBasicSearch?Query=//<<Query>>//",
+        "route":[".citation","//<<for>>//","span","//<<text>>//"],
+        "method":"GET"
+    }
+}
