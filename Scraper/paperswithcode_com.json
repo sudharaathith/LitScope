@@ -1,0 +1,9 @@
+{
+    "domine_name": "paperswithcode.com",
+    "mode":"web",
+    "search":{
+        "url":"https://paperswithcode.com/search?q_meta=&q_type=&q=//<<Query>>//",
+        "route":[".col-lg-9.item-content","//<<for>>//","h1","a","//<<text>>//"],
+        "method":"GET"
+    }
+}
