@@ -1,8 +1,8 @@
 # LitScope
 ## AI's to implement 
-- []Bing Search
-- [] Recommendation AI
-- [] Summarization AI
+- [ ] Bing Search
+- [ ] Recommendation AI
+- [ ] Summarization AI
  
 
 
