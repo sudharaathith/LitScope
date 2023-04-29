@@ -50,8 +50,13 @@ class Scraper_api:
         self.config = config
 
     def search(self, query):
-        req = requests.request(method=self.config['search']['method'], url=(
-            self.config['search']['url'].replace('//<<Query>>//', query)))
+        if(self.config['search'])['method'] == 'GET':
+            req = requests.request(method=self.config['search']['method'], url=(
+                self.config['search']['url'].replace('//<<Query>>//', query)))
+        elif(self.config['search'])['method'] == 'POST':
+            req = requests.post(url=(
+                self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
+                json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
         req = json.loads(req.text)
         infor = False
