@@ -1,844 +1,5662 @@
 {
-  "pageProps": {
-    "fss_config": {
-      "filter_details": {
-        "config": [
+  "results": [
+    {
+      "id": "1ae9e5a8805ae8f791d4da568bd2587b3ba53803",
+      "corpusId": 249613270,
+      "title": {
+        "text": "YaHS: yet another Hi-C scaffolding tool",
+        "fragments": [
           {
-            "key": "has_pdf",
-            "type": "checkbox",
-            "display_name": "PDF",
-            "default_value": null,
-            "has_search": false,
-            "description": "Show papers with PDF"
+            "start": 18,
+            "end": 20
+          }
+        ]
+      },
+      "slug": "YaHS:-yet-another-Hi-C-scaffolding-tool-Zhou-McCarthy",
+      "paperAbstract": {
+        "text": "We present YaHS, a user-friendly command-line tool for construction of chromosome-scale scaffolds from Hi-C data. It can be run with a single-line command, requires minimal input from users (an assembly file and an alignment file) which is compatible with similar tools, and provides assembly results in multiple formats, thereby enabling rapid, robust and scalable construction of high-quality genome assemblies with high accuracy and contiguity. YaHS is implemented in C and licensed under the MIT License. The source code, documentation and tutorial are available at https://github.com/c-zhou/yahs.",
+        "fragments": [
+          {
+            "start": 103,
+            "end": 105
+          }
+        ]
+      },
+      "paperAbstractTruncated": "We present YaHS, a user-friendly command-line tool for construction of chromosome-scale scaffolds from Hi-C data. It can...",
+      "tldr": {
+        "text": "YahHS can be run with a single-line command, requires minimal input from users, and provides assembly results in multiple formats, thereby enabling rapid, robust and scalable construction of high-quality genome assemblies with high accuracy and contiguity.",
+        "abstractSimilarityScore": 49
+      },
+      "authors": [
+        [
+          {
+            "name": "Chenxi Zhou",
+            "ids": [
+              "144363535"
+            ],
+            "slug": "Chenxi-Zhou",
+            "structuredName": {
+              "firstName": "Chenxi",
+              "middleNames": [],
+              "lastName": "Zhou"
+            },
+            "bitmap$0": false
           },
           {
-            "key": "open_access",
-            "type": "checkbox",
-            "display_name": "Open Access",
-            "default_value": null,
-            "has_search": false,
-            "description": "Show open access papers as per their publisher's copyright policy"
-          },
-          {
-            "key": "year",
-            "type": "year_range",
-            "display_name": "Year",
-            "default_value": null,
-            "has_search": false,
-            "description": null
-          },
-          {
-            "key": "publication_type",
-            "type": "multi_select",
-            "display_name": "Type",
-            "default_value": [],
-            "has_search": false,
-            "description": null
-          },
-          {
-            "key": "author",
-            "type": "multi_select",
-            "display_name": "Authors",
-            "default_value": [],
-            "has_search": true,
-            "description": null
-          },
-          {
-            "key": "institution",
-            "type": "multi_select",
-            "display_name": "Institutions",
-            "default_value": [],
-            "has_search": true,
-            "description": null
-          },
-          {
-            "key": "topic",
-            "type": "multi_select",
-            "display_name": "Topics",
-            "default_value": [],
-            "has_search": true,
-            "description": null
-          },
-          {
-            "key": "published_in",
-            "type": "multi_select",
-            "display_name": "Journals & Conferences",
-            "default_value": [],
-            "has_search": true,
-            "description": null
+            "text": "Chenxi Zhou",
+            "fragments": []
           }
         ],
-        "order": [
-          "has_pdf",
-          "open_access",
-          "year",
-          "publication_type",
-          "author",
-          "institution",
-          "topic",
-          "published_in"
-        ]
-      },
-      "sort_details": {
-        "config": [
-          { "key": "relevance", "display_name": "Relevance", "default": true },
+        [
           {
-            "key": "-citation_count",
-            "display_name": "Citation Count",
-            "default": null
+            "name": "Shane A. McCarthy",
+            "ids": [
+              "143770502"
+            ],
+            "slug": "Shane-A.-McCarthy",
+            "structuredName": {
+              "firstName": "Shane",
+              "middleNames": [
+                "A."
+              ],
+              "lastName": "McCarthy"
+            },
+            "bitmap$0": false
           },
           {
-            "key": "newest_first",
-            "display_name": "Newest First",
-            "default": null
-          },
-          {
-            "key": "oldest_first",
-            "display_name": "Oldest First",
-            "default": null
-          },
-          { "key": "alpha", "display_name": "A - Z", "default": null },
-          { "key": "-alpha", "display_name": "Z - A", "default": null }
+            "text": "Shane A. McCarthy",
+            "fragments": []
+          }
         ],
-        "order": [
-          "relevance",
-          "-citation_count",
-          "newest_first",
-          "oldest_first",
-          "alpha",
-          "-alpha"
+        [
+          {
+            "name": "R. Durbin",
+            "ids": [
+              "144187514"
+            ],
+            "slug": "R.-Durbin",
+            "structuredName": {
+              "firstName": "Richard",
+              "middleNames": [],
+              "lastName": "Durbin"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "R. Durbin",
+            "fragments": []
+          }
         ]
-      }
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Chenxi",
+          "middleNames": [],
+          "lastName": "Zhou"
+        },
+        {
+          "firstName": "Shane",
+          "middleNames": [
+            "A."
+          ],
+          "lastName": "McCarthy"
+        },
+        {
+          "firstName": "Richard",
+          "middleNames": [],
+          "lastName": "Durbin"
+        }
+      ],
+      "year": {
+        "text": "2022",
+        "fragments": []
+      },
+      "venue": {
+        "text": "bioRxiv",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 1
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 19
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 79
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 99,
+        "estNumCitations": 150.16655753527107,
+        "numReferences": 14,
+        "numKeyCitations": 3,
+        "numKeyReferences": 0,
+        "numViewableReferences": 14,
+        "keyCitationRate": 0.030303030303030304,
+        "citationVelocity": 10.0,
+        "firstCitationVelocityYear": 2021,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1655126849.140243000,
+      "journal": {
+        "name": "Bioinformatics",
+        "volume": "39"
+      },
+      "doiInfo": {
+        "doi": "10.1101/2022.06.09.495093",
+        "doiUrl": "https://doi.org/10.1101/2022.06.09.495093"
+      },
+      "links": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/36525368",
+          "linkType": "medline"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/36525368",
+        "linkType": "medline"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/06/30/2022.06.09.495093.full.pdf",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "https://doi.org/10.1093/bioinformatics/btac808",
+          "linkType": "dblp"
+        },
+        {
+          "url": "https://doi.org/10.1101/2022.06.09.495093",
+          "linkType": "doi"
+        }
+      ],
+      "entities": [],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 99,
+          "keyCitationCount": 3,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Biology"
+      ],
+      "openAccessInfo": {
+        "license": "CCBY",
+        "status": "GREEN",
+        "location": {
+          "url": "https://www.biorxiv.org/content/biorxiv/early/2022/06/30/2022.06.09.495093.full.pdf",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2022-06-09",
+      "pubUpdateDate": "2022-12-16",
+      "publisher": {
+        "name": "Cold Spring Harbor Laboratory"
+      },
+      "badges": [
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
     },
-    "total": 464,
-    "offset": 0,
-    "next": 10,
-    "data": [
-      {
-        "id": 2587068046,
-        "unique_id": "4zosvlmp4e",
-        "doi": null,
-        "title": "Summa Contra Gentiles",
-        "issue": null,
-        "volume": null,
-        "publisher": "University of Notre Dame Press",
-        "date": "1975-01-01T00:00:00Z",
-        "online_date": null,
-        "journal": null,
-        "conference_series": null,
-        "first_page": null,
-        "last_page": null,
-        "is_retracted": false,
-        "full_slug": "summa-contra-gentiles-4zosvlmp4e",
-        "publication_type": "Book",
-        "is_oa": true,
-        "oa_status": null,
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": null,
-        "abstract": "The Summa Contra Gentiles is not merely the only complete summary of Christian doctrine that St. Thomas has written, but also a creative and even revolutionary work of Christian apologetics composed at the precise moment when Christian thought needed to be intellectually creative in order to master and assimilate the intelligence and wisdom of the Greeks and the Arabs. In the Summa Aquinas works to save and purify the thought of the Greeks and the Arabs in the higher light of Christian Revelation, confident that all that had been rational in the ancient philosophers and their followers would become more rational within Christianity. This exposition and defense of divine truth has two main parts: the consideration of that truth that faith professes and reason investigates, and the consideration of the truth that faith professes and reason is not competent to investigate. The exposition of truths accessible to natural reason occupies Aquinas in the first three books of the Summa. His method is to bring forward demonstrative and probable arguments, some of which are drawn from the philosophers, to convince the skeptic. In the fourth book of the Summa St. Thomas appeals to the authority of the Sacred Scripture for those divine truths that surpass the capacity of reason. The present volume is the second part of a treatise on the hierarchy of creation, the divine providence over all things, and man's relation to God. Book 1 of the Summa deals with God; Book 2, Creation; and Book 4, Salvation.",
-        "topics": {
-          "total": 5,
-          "data": [
-            {
-              "score": 0.57,
-              "display_name": "Divine providence",
-              "id": 2776563008,
-              "slug": "divine-providence",
-              "unique_id": "3f0f95s0",
-              "full_slug": "divine-providence-3f0f95s0"
+    {
+      "id": "69035c339f9397ee3749dc0906857572165890a9",
+      "corpusId": 3893657,
+      "title": {
+        "text": "Juicer Provides a One-Click System for Analyzing Loop-Resolution Hi-C Experiments.",
+        "fragments": [
+          {
+            "start": 65,
+            "end": 67
+          }
+        ]
+      },
+      "slug": "Juicer-Provides-a-One-Click-System-for-Analyzing-Durand-Shamim",
+      "paperAbstract": {
+        "text": "",
+        "fragments": []
+      },
+      "paperAbstractTruncated": "",
+      "authors": [
+        [
+          {
+            "name": "Neva C. Durand",
+            "ids": [
+              "4240611"
+            ],
+            "slug": "Neva-C.-Durand",
+            "structuredName": {
+              "firstName": "Neva",
+              "middleNames": [
+                "C."
+              ],
+              "lastName": "Durand"
             },
-            {
-              "score": 0.54,
-              "display_name": "Christian apologetics",
-              "id": 559283250,
-              "slug": "christian-apologetics",
-              "unique_id": "1sjh7ad9",
-              "full_slug": "christian-apologetics-1sjh7ad9"
+            "bitmap$0": false
+          },
+          {
+            "text": "Neva C. Durand",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "M. Shamim",
+            "ids": [
+              "46598349"
+            ],
+            "slug": "M.-Shamim",
+            "structuredName": {
+              "firstName": "Muhammad",
+              "middleNames": [
+                "Saad"
+              ],
+              "lastName": "Shamim"
             },
-            {
-              "score": 0.52,
-              "display_name": "Faith",
-              "id": 2778692574,
-              "slug": "faith",
-              "unique_id": "2x4jtzuz",
-              "full_slug": "faith-2x4jtzuz"
+            "bitmap$0": false
+          },
+          {
+            "text": "M. Shamim",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Ido Machol",
+            "ids": [
+              "4188293"
+            ],
+            "slug": "Ido-Machol",
+            "structuredName": {
+              "firstName": "Ido",
+              "middleNames": [],
+              "lastName": "Machol"
             },
-            {
-              "score": 0.52,
-              "display_name": "Revelation",
-              "id": 2776405206,
-              "slug": "revelation",
-              "unique_id": "2hb9y0j1",
-              "full_slug": "revelation-2hb9y0j1"
+            "bitmap$0": false
+          },
+          {
+            "text": "Ido Machol",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Suhas S. P. Rao",
+            "ids": [
+              "33298776"
+            ],
+            "slug": "Suhas-S.-P.-Rao",
+            "structuredName": {
+              "firstName": "Suhas",
+              "middleNames": [
+                "S.",
+                "P."
+              ],
+              "lastName": "Rao"
             },
-            {
-              "score": 0.51,
-              "display_name": "Christianity",
-              "id": 551968917,
-              "slug": "christianity",
-              "unique_id": "sfsx6hle",
-              "full_slug": "christianity-sfsx6hle"
-            }
+            "bitmap$0": false
+          },
+          {
+            "text": "Suhas S. P. Rao",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "M. Huntley",
+            "ids": [
+              "3974403"
+            ],
+            "slug": "M.-Huntley",
+            "structuredName": {
+              "firstName": "Miriam",
+              "middleNames": [
+                "H"
+              ],
+              "lastName": "Huntley"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "M. Huntley",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Lander",
+            "ids": [
+              "9311320"
+            ],
+            "slug": "E.-Lander",
+            "structuredName": {
+              "firstName": "Eric",
+              "middleNames": [
+                "S."
+              ],
+              "lastName": "Lander"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Lander",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Aiden",
+            "ids": [
+              "7853656"
+            ],
+            "slug": "E.-Aiden",
+            "structuredName": {
+              "firstName": "Erez",
+              "middleNames": [
+                "Lieberman"
+              ],
+              "lastName": "Aiden"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Aiden",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Neva",
+          "middleNames": [
+            "C."
           ],
-          "is_show": true
+          "lastName": "Durand"
         },
-        "authors": {
-          "total": 2,
-          "data": [
-            {
-              "display_name": "Thomas Aquinas",
-              "id": 2627437428,
-              "slug": "thomas-aquinas",
-              "unique_id": "6m2r7wro7p",
-              "full_slug": "thomas-aquinas-6m2r7wro7p"
-            },
-            {
-              "display_name": "F.R.S.C. Anton C. Pegis",
-              "id": 2619810914,
-              "slug": "f-r-s-c-anton-c-pegis",
-              "unique_id": "2e8jnuz17i",
-              "full_slug": "f-r-s-c-anton-c-pegis-2e8jnuz17i"
-            }
-          ]
-        },
-        "affiliations": { "total": 0, "data": [] },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 406 } },
-        "tldr": "The Summa Contra Gentiles as mentioned in this paper is a complete summary of Christian doctrine that St. Thomas has written, but also a creative and even revolutionary work of Christian apologetics composed at the precise moment when Christian thought needed to be intellectually creative in order to master and assimilate the intelligence and wisdom of the Greeks and the Arabs."
-      },
-      {
-        "id": 3150242323,
-        "unique_id": "1r0t206j0g",
-        "doi": null,
-        "title": "Summa de arithmetica geometria proportioni et proportionalita",
-        "issue": null,
-        "volume": null,
-        "publisher": null,
-        "date": "2009-01-01T00:00:00Z",
-        "online_date": null,
-        "journal": null,
-        "conference_series": null,
-        "first_page": null,
-        "last_page": null,
-        "is_retracted": false,
-        "full_slug": "summa-de-arithmetica-geometria-proportioni-et-1r0t206j0g",
-        "publication_type": null,
-        "is_oa": true,
-        "oa_status": null,
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": null,
-        "abstract": "Here we present the relevant text of the Summa of Pacioli[1] associated with the division of stakes and a translation of it into English. A translation into German appears in the anthology of Ivo Schneider [2] which has been consulted. Footnotes have been placed at the end of each problem. Two images of the text are readily available. The better is part of the Archimedes Project at ECHO (the European Cultural Heritage Online) and the other through the University of Seville.",
-        "authors": {
-          "total": 2,
-          "data": [
-            {
-              "display_name": "Sepolcro (Pacioli)",
-              "id": 3140604456,
-              "slug": "sepolcro-pacioli",
-              "unique_id": "r112wy7z1j",
-              "full_slug": "sepolcro-pacioli-r112wy7z1j"
-            },
-            {
-              "display_name": "Ivo Schneider",
-              "id": 3149891880,
-              "slug": "ivo-schneider",
-              "unique_id": "2v9v19k40e",
-              "full_slug": "ivo-schneider-2v9v19k40e"
-            }
-          ]
-        },
-        "affiliations": { "total": 0, "data": [] },
-        "fulltext_url": "https://www.cs.xu.edu/math/Sources/Pacioli/summa.pdf",
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 68 } },
-        "tldr": "The relevant text of the Summa of Pacioli associated with the division of stakes and a translation of it into English can be found in this article, where a translation into German appears in the anthology of Ivo Schneider."
-      },
-      {
-        "id": 1977454957,
-        "unique_id": "2n2sfexto4",
-        "doi": "10.1097/00006123-199911000-00001",
-        "title": "Summa cum laude.",
-        "issue": "5",
-        "volume": "45",
-        "publisher": "Oxford Academic",
-        "date": "1999-11-01T00:00:00Z",
-        "online_date": null,
-        "journal": {
-          "display_name": "Neurosurgery",
-          "official_page": "http://www.neurosurgery-online.com/",
-          "issn": "0148-396X",
-          "alias": ["brain surgery"],
-          "id": 111727011,
-          "slug": "neurosurgery",
-          "unique_id": "jwj4oake",
-          "full_slug": "neurosurgery-jwj4oake"
-        },
-        "conference_series": null,
-        "first_page": "975",
-        "last_page": "976",
-        "is_retracted": false,
-        "full_slug": "summa-cum-laude-2n2sfexto4",
-        "publication_type": "Journal Article",
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": false,
-        "abstract": "* Degrees with distinction are conferred on candidates in West Campus programs for BA, BS and BE degrees who have achieved grade point averages of 3.85 (summa cum laude), 3.7 (magna cum laude) or 3.5 (cum laude). Degrees with distinction are conferred on candidates in the Health Sciences programs for the BS degree who have completed 60 credits (or 43 credits for Registered Nurse Baccalaureate program) and achieved grade point averages as follows: SHTM, 3.85 (summa), 3.75 (magna), 3.60 (cum laude); School of Nursing, 3.80 (summa), 3.70 (magna), 3.60 (cum laude); and School of Social Welfare, 3.90 (summa), 3.80 (magna), 3.70 (cum laude).",
-        "authors": {
-          "total": 1,
-          "data": [
-            {
-              "display_name": "Michael L.J. Apuzzo",
-              "id": 1507946715,
-              "slug": "michael-l-j-apuzzo",
-              "unique_id": "3rlirw1j6i",
-              "full_slug": "michael-l-j-apuzzo-3rlirw1j6i"
-            }
-          ]
-        },
-        "affiliations": { "total": 0, "data": [] },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 58 } },
-        "tldr": "* Degrees with distinction are conferred on candidates in West Campus programs for BA, BS and BE degrees who have achieved grade point averages of 3.85 (summa cum laude), 3.7 (magna Cum laude) or 3.5 (cum laude)."
-      },
-      {
-        "id": 1967891816,
-        "unique_id": "2j0p9ught2",
-        "doi": "10.1021/ES950240S",
-        "title": "Viability of Using SUMMA Polished Canisters for the Collection and Storage of Parts per Billion by Volume Level Volatile Organics",
-        "issue": "1",
-        "volume": "30",
-        "publisher": "American Chemical Society",
-        "date": "1996-12-01T00:00:00Z",
-        "online_date": "1995-12-27T00:00:00Z",
-        "journal": {
-          "display_name": "Environmental Science & Technology",
-          "official_page": "http://pubs.acs.org/journals/esthag/",
-          "issn": "0013-936X",
-          "alias": null,
-          "id": 13479253,
-          "slug": "environmental-science-technology",
-          "unique_id": "nufr6xdf",
-          "full_slug": "environmental-science-technology-nufr6xdf"
-        },
-        "conference_series": null,
-        "first_page": "188",
-        "last_page": "195",
-        "is_retracted": false,
-        "full_slug": "viability-of-using-summa-polished-canisters-for-the-2j0p9ught2",
-        "publication_type": "Journal Article",
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": false,
-        "abstract": "The collection of whole air samples using SUMMA polished canisters has been a commonly used technique for over a decade. This technique has been examined for sample storage, analyte stability, and recovery for up to 45 compounds routinely detected in ambient air. However, this technique is often used for a more extended set of target analytes for which little or no published validation data exist. This paper reports the accuracy, precision, and storage stability results for 194 volatile organic compounds generated in humidified ambient air and collected in SUMMA polished canisters. In addition, instrument and method detection limits for the gas chromatography/multidetector (GC/MD) analytical system were determined from the resulting data. A small percentage of the study compounds displayed high variability, low recovery, or poor storage stability for which qualitative only data can be generated with this technique. However, 168 of 194 (86%) compounds studied appear to be amenable to the canister technique...",
-        "authors": {
-          "total": 4,
-          "data": [
-            {
-              "display_name": "David A. Brymer",
-              "id": 2319600394,
-              "slug": "david-a-brymer",
-              "unique_id": "5fgj0rhat9",
-              "full_slug": "david-a-brymer-5fgj0rhat9"
-            },
-            {
-              "display_name": "Larry D. Ogle",
-              "id": 2665893010,
-              "slug": "larry-d-ogle",
-              "unique_id": "394xmyi63f",
-              "full_slug": "larry-d-ogle-394xmyi63f"
-            },
-            {
-              "display_name": "Chris J. Jones",
-              "id": 2333184960,
-              "slug": "chris-j-jones",
-              "unique_id": "2ygdw815dk",
-              "full_slug": "chris-j-jones-2ygdw815dk"
-            },
-            {
-              "display_name": "David L. Lewis",
-              "id": 2295857575,
-              "slug": "david-l-lewis",
-              "unique_id": "14n5lcsdaz",
-              "full_slug": "david-l-lewis-14n5lcsdaz"
-            }
-          ]
-        },
-        "affiliations": { "total": 0, "data": [] },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 51 } },
-        "tldr": "In this paper, the authors report the accuracy, precision, and storage stability results for 194 volatile organic compounds generated in humidified ambient air and collected in SUMMA polished canisters."
-      },
-      {
-        "id": 2007215792,
-        "unique_id": "1b0svvyeke",
-        "doi": "10.1016/0004-6981(86)90011-9",
-        "title": "Sample integrity of trace level volatile organic compounds in ambient air stored in SUMMA® polished canisters",
-        "issue": "7",
-        "volume": "20",
-        "publisher": "Elsevier",
-        "date": "1986-01-01T00:00:00Z",
-        "online_date": "2003-05-14T00:00:00Z",
-        "journal": {
-          "display_name": "Atmospheric Environment",
-          "official_page": null,
-          "issn": null,
-          "alias": null,
-          "id": 2400914,
-          "slug": "atmospheric-environment",
-          "unique_id": "4dil1g5l",
-          "full_slug": "atmospheric-environment-4dil1g5l"
-        },
-        "conference_series": null,
-        "first_page": "1403",
-        "last_page": "1411",
-        "is_retracted": false,
-        "full_slug": "sample-integrity-of-trace-level-volatile-organic-compounds-1b0svvyeke",
-        "publication_type": "Journal Article",
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": false,
-        "abstract": "Sets of new and used SUMMA® polished stainless steel canisters were tested for storage stability of volatile organic compounds (VOCs). Evacuated canisters were filled at a controlled rate with ambient air containing added concentrations of 15 VOCs (14 chlorinated, one brominated) at",
-        "authors": {
-          "total": 3,
-          "data": [
-            {
-              "display_name": "Karen D. Oliver",
-              "id": 2068938031,
-              "slug": "karen-d-oliver",
-              "unique_id": "161ndhwccv",
-              "full_slug": "karen-d-oliver-161ndhwccv",
-              "affiliation_full_slug": "research-triangle-park-2os7dvou"
-            },
-            {
-              "display_name": "Joachim D. Pleil",
-              "id": 520471017,
-              "slug": "joachim-d-pleil",
-              "unique_id": "1sqz13eato",
-              "full_slug": "joachim-d-pleil-1sqz13eato",
-              "affiliation_full_slug": "research-triangle-park-2os7dvou"
-            },
-            {
-              "display_name": "William A. McClenny",
-              "id": 2503199175,
-              "slug": "william-a-mcclenny",
-              "unique_id": "myoihgl03h",
-              "full_slug": "william-a-mcclenny-myoihgl03h",
-              "affiliation_full_slug": "united-states-environmental-protection-agency-2hjdhe4p"
-            }
-          ]
-        },
-        "affiliations": {
-          "total": 2,
-          "data": [
-            {
-              "display_name": "Research Triangle Park",
-              "city": "Durham",
-              "region": "North Carolina",
-              "country": "United States",
-              "id": 1309191912,
-              "slug": "research-triangle-park",
-              "unique_id": "2os7dvou",
-              "full_slug": "research-triangle-park-2os7dvou"
-            },
-            {
-              "display_name": "United States Environmental Protection Agency",
-              "city": "Washington D.C.",
-              "region": "District of Columbia",
-              "country": "United States",
-              "id": 1302368450,
-              "slug": "united-states-environmental-protection-agency",
-              "unique_id": "2hjdhe4p",
-              "full_slug": "united-states-environmental-protection-agency-2hjdhe4p"
-            }
-          ]
-        },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 60 } },
-        "tldr": "Sets of new and used SUMMA® polished stainless steel canisters were tested for storage stability of volatile organic compounds (VOCs) as mentioned in this paper, and the canisters filled at a controlled rate with ambient air containing added concentrations of 15 VOCs (14 chlorinated, one brominated) at"
-      },
-      {
-        "id": 563068896,
-        "unique_id": "4tfih84hr2",
-        "doi": null,
-        "title": "The Summa theologica.",
-        "issue": null,
-        "volume": null,
-        "publisher": null,
-        "date": "2013-01-01T00:00:00Z",
-        "online_date": null,
-        "journal": null,
-        "conference_series": null,
-        "first_page": null,
-        "last_page": null,
-        "is_retracted": false,
-        "full_slug": "the-summa-theologica-4tfih84hr2",
-        "publication_type": "Book",
-        "is_oa": true,
-        "oa_status": null,
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": null,
-        "abstract": "ed from the persons?. . . . . . . . . . . . . . . . . . . . . . . . . . p. 277 Article. 4 Whether the properties presuppose the notional acts?. . . . xi Saint Thomas Aquinas Summa Theologica",
-        "authors": {
-          "total": 4,
-          "data": [
-            {
-              "display_name": "Thomas, Aquinas, Saint",
-              "id": 874767534,
-              "slug": "thomas-aquinas-saint",
-              "unique_id": "29qnhvgjvc",
-              "full_slug": "thomas-aquinas-saint-29qnhvgjvc"
-            },
-            {
-              "display_name": "Laurence Shapcote",
-              "id": 633335039,
-              "slug": "laurence-shapcote",
-              "unique_id": "3vevxa6vw0",
-              "full_slug": "laurence-shapcote-3vevxa6vw0"
-            },
-            {
-              "display_name": "Daniel J. Sullivan",
-              "id": 2971978288,
-              "slug": "daniel-j-sullivan",
-              "unique_id": "30sl5afec1",
-              "full_slug": "daniel-j-sullivan-30sl5afec1"
-            },
-            {
-              "display_name": "Mortimer Jerome Adler",
-              "id": 2171372229,
-              "slug": "mortimer-jerome-adler",
-              "unique_id": "1vxf32hoa6",
-              "full_slug": "mortimer-jerome-adler-1vxf32hoa6"
-            }
-          ]
-        },
-        "affiliations": { "total": 0, "data": [] },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 130 } },
-        "tldr": "In this paper, the authors consider whether the properties presuppose the notional acts and whether the property presupposes the acts, and they conclude that the latter does not necessarily imply the latter."
-      },
-      {
-        "id": 1580631450,
-        "unique_id": "dth8b2snff",
-        "doi": null,
-        "title": "Summa theologiæ : a concise translation",
-        "issue": null,
-        "volume": null,
-        "publisher": "Christian Classics",
-        "date": "1989-01-01T00:00:00Z",
-        "online_date": null,
-        "journal": null,
-        "conference_series": null,
-        "first_page": null,
-        "last_page": null,
-        "is_retracted": false,
-        "full_slug": "summa-theologiae-a-concise-translation-dth8b2snff",
-        "publication_type": "Book",
-        "is_oa": true,
-        "oa_status": null,
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": null,
-        "abstract": "A single-volume \"Summa\" with modern chapter and paragraph layout written in modern non-technical English. The work represents a synthesis of Aristotelian learning and Catholic doctrine which builds to a comprehensive system and occupies a central place in medieval theology and philosophy. This concisely-distilled translation is designed to appeal to both professional students of theology and the general reader. This is the first time that the 60-volume work has been available in a single translation.",
-        "topics": {
-          "total": 1,
-          "data": [
-            {
-              "score": 0.52,
-              "display_name": "Paragraph",
-              "id": 2777206241,
-              "slug": "paragraph",
-              "unique_id": "c9ukds33",
-              "full_slug": "paragraph-c9ukds33"
-            }
+        {
+          "firstName": "Muhammad",
+          "middleNames": [
+            "Saad"
           ],
-          "is_show": true
+          "lastName": "Shamim"
         },
-        "authors": {
-          "total": 2,
-          "data": [
-            {
-              "display_name": "Thomas, Aquinas, Saint",
-              "id": 874767534,
-              "slug": "thomas-aquinas-saint",
-              "unique_id": "29qnhvgjvc",
-              "full_slug": "thomas-aquinas-saint-29qnhvgjvc"
-            },
-            {
-              "display_name": "Timothy S. McDermott",
-              "id": 2168129934,
-              "slug": "timothy-s-mcdermott",
-              "unique_id": "4qmjzwufk4",
-              "full_slug": "timothy-s-mcdermott-4qmjzwufk4"
-            }
-          ]
+        {
+          "firstName": "Ido",
+          "middleNames": [],
+          "lastName": "Machol"
         },
-        "affiliations": { "total": 0, "data": [] },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 55 } },
-        "tldr": "A single volume \"Summa\" with modern chapter and paragraph layout written in modern non-technical English is available in a single translation as discussed by the authors, which is designed to appeal to both professional students of theology and the general reader."
-      },
-      {
-        "id": 2042638084,
-        "unique_id": "53sqmo740p",
-        "doi": "10.1016/J.CONB.2012.01.004",
-        "title": "Neurotechnology: Summa technologiae.",
-        "issue": "1",
-        "volume": "22",
-        "publisher": "Elsevier Current Trends",
-        "date": "2012-02-01T00:00:00Z",
-        "online_date": "2012-02-03T00:00:00Z",
-        "journal": {
-          "display_name": "Current Opinion in Neurobiology",
-          "official_page": null,
-          "issn": "0959-4388",
-          "alias": null,
-          "id": 120775027,
-          "slug": "current-opinion-in-neurobiology",
-          "unique_id": "3qcw1e5g",
-          "full_slug": "current-opinion-in-neurobiology-3qcw1e5g"
-        },
-        "conference_series": null,
-        "first_page": "1",
-        "last_page": "2",
-        "is_retracted": false,
-        "full_slug": "neurotechnology-summa-technologiae-53sqmo740p",
-        "publication_type": "Journal Article",
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": false,
-        "abstract": "Gero Miesenböck is Waynflete Professor of Physiology at the University of Oxford and director of the Centre for Neural Circuits and Behaviour. He was educated at the Universities of Innsbruck and Umeå and held faculty appointments at Memorial SloanKettering Cancer Center and Yale University before coming to Oxford. Summa technologiae was the title the Polish science fiction writer Stanisław Lem gave to a hefty tome of ruminations he published in 1964. In contrast to the similarly titled synthesis of theological knowledge compiled by Thomas Aquinas seven centuries earlier, Lem’s book attempted not only to summarize the status quo of technology but also to divine its future. His Summa contains, in addition to several off-the-mark predictions, others that do anticipate present-day technologies. Some even appear in the pages of this issue.",
-        "authors": {
-          "total": 2,
-          "data": [
-            {
-              "display_name": "Winfried Denk",
-              "id": 2000673969,
-              "slug": "winfried-denk",
-              "unique_id": "2wxpldgcma",
-              "full_slug": "winfried-denk-2wxpldgcma",
-              "affiliation_full_slug": "max-planck-society-3o0xx7lg"
-            },
-            {
-              "display_name": "Gero Miesenböck",
-              "id": 1977301018,
-              "slug": "gero-miesenbock",
-              "unique_id": "10855kr1md",
-              "full_slug": "gero-miesenbock-10855kr1md"
-            }
-          ]
-        },
-        "affiliations": {
-          "total": 1,
-          "data": [
-            {
-              "display_name": "Max Planck Society",
-              "city": "Munich",
-              "region": null,
-              "country": "Germany",
-              "id": 149899117,
-              "slug": "max-planck-society",
-              "unique_id": "3o0xx7lg",
-              "full_slug": "max-planck-society-3o0xx7lg"
-            }
-          ]
-        },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 123 } },
-        "tldr": "Gero Miesenböck is Waynflete Professor of Physiology at the University of Oxford and director of the Centre for Neural Circuits and Behaviour and has made off-the-mark predictions that do anticipate present-day technologies."
-      },
-      {
-        "id": 2020823768,
-        "unique_id": "3wf593stvj",
-        "doi": "10.1075/HL.2.1.02HUN",
-        "title": "Absoluta: The Summa of Petrus Hispanus on Priscianus Minor",
-        "issue": "1",
-        "volume": "2",
-        "publisher": "John Benjamins Publishing Company",
-        "date": "1975-01-01T00:00:00Z",
-        "online_date": "1975-01-01T00:00:00Z",
-        "journal": {
-          "display_name": "Historiographia Linguistica",
-          "official_page": null,
-          "issn": "0302-5160",
-          "alias": null,
-          "id": 57354637,
-          "slug": "historiographia-linguistica",
-          "unique_id": "2qvjk5yr",
-          "full_slug": "historiographia-linguistica-2qvjk5yr"
-        },
-        "conference_series": null,
-        "first_page": "1",
-        "last_page": "23",
-        "is_retracted": false,
-        "full_slug": "absoluta-the-summa-of-petrus-hispanus-on-priscianus-minor-3wf593stvj",
-        "publication_type": "Journal Article",
-        "is_oa": false,
-        "oa_status": "closed",
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": false,
-        "abstract": "The Absoluta is a Summa on Priscian's Institutiones grammaticae, Books XVII-XVIII, which deal with syntax, so called from its opening word. The author was probably Petrus Hispanus, who is otherwise unknown. The work was presumably written in Paris in the third quarter of the 12th century. It survives in 14 manuscripts spread widely over Europe, and dating from ca. 1200 to the 14th century. The same author perhaps wrote a Summa on Priscian, Books I-XVI, known also from its opening words as Strenuum negotiatorem, of which only a fragment of the beginning survives in a single manuscript. In the Absoluta the author follows the order of treatment of subjects in Priscian, but proceeds chiefly by raising questions on doubtful points. He emphatically distinguishes the tasks of the grammarian and of the dialectician, yet makes much use of the methods of the latter. Thus, in the discussion of the case to be used after the verb substantive, the rule is propounded and argued on logical grounds. His theoretical framework is that of the Summa of Petrus Helias (mid-12th cent.), which he uses freely, and though he makes some advances, as in the use of the term modus significandi and of the concept of suppositio, he is still at the stage where they do not bear their later technical sense.",
-        "authors": {
-          "total": 1,
-          "data": [
-            {
-              "display_name": "Richard William Hunt",
-              "id": 2122964845,
-              "slug": "richard-william-hunt",
-              "unique_id": "3jodentf25",
-              "full_slug": "richard-william-hunt-3jodentf25",
-              "affiliation_full_slug": "university-of-oxford-359i25ny"
-            }
-          ]
-        },
-        "affiliations": {
-          "total": 1,
-          "data": [
-            {
-              "display_name": "University of Oxford",
-              "city": "Oxford",
-              "region": "Oxfordshire",
-              "country": "United Kingdom",
-              "id": 40120149,
-              "slug": "university-of-oxford",
-              "unique_id": "359i25ny",
-              "full_slug": "university-of-oxford-359i25ny"
-            }
-          ]
-        },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 58 } },
-        "tldr": "The Absoluta as mentioned in this paper is a Summa on Priscian's Institutiones grammaticae, Books XVII-XVIII, which deal with syntax, so called from its opening word."
-      },
-      {
-        "id": 631623080,
-        "unique_id": "2hip84sqce",
-        "doi": null,
-        "title": "Thomas Aquinas on Human Nature: A Philosophical Study of Summa Theologiae, 1a 75-89",
-        "issue": null,
-        "volume": null,
-        "publisher": null,
-        "date": "2001-11-12T00:00:00Z",
-        "online_date": null,
-        "journal": null,
-        "conference_series": null,
-        "first_page": null,
-        "last_page": null,
-        "is_retracted": false,
-        "full_slug": "thomas-aquinas-on-human-nature-a-philosophical-study-of-2hip84sqce",
-        "publication_type": "Book",
-        "is_oa": true,
-        "oa_status": null,
-        "oa_url": null,
-        "is_archived": false,
-        "is_paratext": null,
-        "abstract": "This is a major new study of Thomas Aquinas, the most influential philosopher of the Middle Ages. The book offers a clear and accessible guide to the central project of Aquinas' philosophy: the understanding of human nature. Robert Pasnau sets the philosophy in the context of ancient and modern thought, and argues for some groundbreaking proposals for understanding some of the most difficult areas of Aquinas' thought: the relationship of soul to body, the workings of sense and intellect, the will and the passions, and personal identity. Structured around a close reading of the treatise on human nature from the Summa theologiae and deeply informed by a wide knowledge of the history of philosophy and contemporary philosophy, this study will offer specialists a series of novel and provocative interpretations, while providing students with a reference commentary on one of Aquinas' core texts.",
-        "topics": {
-          "total": 5,
-          "data": [
-            {
-              "score": 0.59,
-              "display_name": "Medieval philosophy",
-              "id": 2780267349,
-              "slug": "medieval-philosophy",
-              "unique_id": "ckrzeld6",
-              "full_slug": "medieval-philosophy-ckrzeld6"
-            },
-            {
-              "score": 0.59,
-              "display_name": "Contemporary philosophy",
-              "id": 522434184,
-              "slug": "contemporary-philosophy",
-              "unique_id": "3t1r1piv",
-              "full_slug": "contemporary-philosophy-3t1r1piv"
-            },
-            {
-              "score": 0.56,
-              "display_name": "Soul",
-              "id": 2780822299,
-              "slug": "soul",
-              "unique_id": "3n656uo0",
-              "full_slug": "soul-3n656uo0"
-            },
-            {
-              "score": 0.52,
-              "display_name": "Passions",
-              "id": 2776347870,
-              "slug": "passions",
-              "unique_id": "11hre6lw",
-              "full_slug": "passions-11hre6lw"
-            },
-            {
-              "score": 0.5,
-              "display_name": "Intellect",
-              "id": 2780146897,
-              "slug": "intellect",
-              "unique_id": "ltbhv7w7",
-              "full_slug": "intellect-ltbhv7w7"
-            }
+        {
+          "firstName": "Suhas",
+          "middleNames": [
+            "S.",
+            "P."
           ],
-          "is_show": true
+          "lastName": "Rao"
         },
-        "authors": {
-          "total": 1,
-          "data": [
-            {
-              "display_name": "Robert Pasnau",
-              "id": 2558801669,
-              "slug": "robert-pasnau",
-              "unique_id": "55dah3go1b",
-              "full_slug": "robert-pasnau-55dah3go1b",
-              "affiliation_full_slug": "university-of-colorado-boulder-23y9hx76"
-            }
-          ]
+        {
+          "firstName": "Miriam",
+          "middleNames": [
+            "H"
+          ],
+          "lastName": "Huntley"
         },
-        "affiliations": {
-          "total": 1,
-          "data": [
-            {
-              "display_name": "University of Colorado Boulder",
-              "city": "Boulder",
-              "region": "Colorado",
-              "country": "United States",
-              "id": 188538660,
-              "slug": "university-of-colorado-boulder",
-              "unique_id": "23y9hx76",
-              "full_slug": "university-of-colorado-boulder-23y9hx76"
-            }
-          ]
+        {
+          "firstName": "Eric",
+          "middleNames": [
+            "S."
+          ],
+          "lastName": "Lander"
         },
-        "fulltext_url": null,
-        "fulltext_url_no_follow": true,
-        "metrics": { "citations": { "total": 81 } },
-        "tldr": "Pasnau as mentioned in this paper presents a major new study of Thomas Aquinas, the most influential philosopher of the Middle Ages, and offers a clear and accessible guide to the central project of Aquinas' philosophy: the understanding of human nature, the relationship of soul to body, the workings of sense and intellect, the will and the passions, and personal identity."
+        {
+          "firstName": "Erez",
+          "middleNames": [
+            "Lieberman"
+          ],
+          "lastName": "Aiden"
+        }
+      ],
+      "year": {
+        "text": "2016",
+        "fragments": []
+      },
+      "venue": {
+        "text": "Cell Systems",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2016,
+            "endKey": 2016,
+            "count": 8
+          },
+          {
+            "startKey": 2017,
+            "endKey": 2017,
+            "count": 39
+          },
+          {
+            "startKey": 2018,
+            "endKey": 2018,
+            "count": 85
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 178
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 250
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 343
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 369
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 122
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 1396,
+        "estNumCitations": 1892.235854005221,
+        "numReferences": 9,
+        "numKeyCitations": 118,
+        "numKeyReferences": 0,
+        "numViewableReferences": 9,
+        "keyCitationRate": 0.08452722063037249,
+        "citationVelocity": 320.6666666666667,
+        "citationAcceleration": 0.07580174927113703,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1522715838.550645000,
+      "journal": {
+        "name": "Cell systems",
+        "volume": "3 1",
+        "pages": "\n          95-8\n        "
+      },
+      "doiInfo": {
+        "doi": "10.1016/j.cels.2016.07.002",
+        "doiUrl": "https://doi.org/10.1016/j.cels.2016.07.002"
+      },
+      "links": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/27467249",
+          "linkType": "medline"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/27467249",
+        "linkType": "medline"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "http://www.cell.com/article/S2405471216302198/pdf",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "http://dspace.mit.edu/openaccess-disseminate/1721.1/106809",
+          "linkType": "anansi"
+        },
+        {
+          "url": "https://doi.org/10.1016/j.cels.2016.07.002",
+          "linkType": "doi"
+        },
+        {
+          "url": "https://www.cell.com/cell-systems/pdf/S2405-4712(16)30219-8.pdf",
+          "linkType": "anansi"
+        }
+      ],
+      "entities": [],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 1396,
+          "keyCitationCount": 118,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Computer Science"
+      ],
+      "openAccessInfo": {
+        "license": "CCBY",
+        "status": "HYBRID",
+        "location": {
+          "url": "http://www.cell.com/article/S2405471216302198/pdf",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2016-07-01",
+      "pubUpdateDate": "2016-07-27",
+      "badges": [
+        {
+          "id": "UNPAYWALL"
+        },
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "564e224da06efb083bb33c7e31288b201653a923",
+      "corpusId": 15118311,
+      "title": {
+        "text": "HiC-Pro: an optimized and flexible pipeline for Hi-C data processing",
+        "fragments": [
+          {
+            "start": 48,
+            "end": 50
+          }
+        ]
+      },
+      "slug": "HiC-Pro:-an-optimized-and-flexible-pipeline-for-Servant-Varoquaux",
+      "paperAbstract": {
+        "text": "HiC-Pro is an optimized and flexible pipeline for processing Hi-C data from raw reads to normalized contact maps. HiC-Pro maps reads, detects valid ligation products, performs quality controls and generates intra- and inter-chromosomal contact maps. It includes a fast implementation of the iterative correction method and is based on a memory-efficient data format for Hi-C contact maps. In addition, HiC-Pro can use phased genotype data to build allele-specific contact maps. We applied HiC-Pro to different Hi-C datasets, demonstrating its ability to easily process large data in a reasonable time. Source code and documentation are available at http://github.com/nservant/HiC-Pro.",
+        "fragments": [
+          {
+            "start": 61,
+            "end": 63
+          },
+          {
+            "start": 370,
+            "end": 372
+          },
+          {
+            "start": 510,
+            "end": 512
+          }
+        ]
+      },
+      "paperAbstractTruncated": "HiC-Pro is an optimized and flexible pipeline for processing Hi-C data from raw reads to normalized contact maps. HiC-Pr...",
+      "tldr": {
+        "text": "This work applied HiC-Pro to different Hi-C datasets, demonstrating its ability to easily process large data in a reasonable time and its fast implementation of the iterative correction method.",
+        "abstractSimilarityScore": 43
+      },
+      "authors": [
+        [
+          {
+            "name": "N. Servant",
+            "ids": [
+              "1761236"
+            ],
+            "slug": "N.-Servant",
+            "structuredName": {
+              "firstName": "Nicolas",
+              "middleNames": [],
+              "lastName": "Servant"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "N. Servant",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "N. Varoquaux",
+            "ids": [
+              "2567677"
+            ],
+            "slug": "N.-Varoquaux",
+            "structuredName": {
+              "firstName": "Nelle",
+              "middleNames": [],
+              "lastName": "Varoquaux"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "N. Varoquaux",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "B. Lajoie",
+            "ids": [
+              "2399615"
+            ],
+            "slug": "B.-Lajoie",
+            "structuredName": {
+              "firstName": "Bryan",
+              "middleNames": [
+                "R."
+              ],
+              "lastName": "Lajoie"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "B. Lajoie",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Viara",
+            "ids": [
+              "2070897"
+            ],
+            "slug": "E.-Viara",
+            "structuredName": {
+              "firstName": "Eric",
+              "middleNames": [],
+              "lastName": "Viara"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Viara",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Chong-Jian Chen",
+            "ids": [
+              "1859872"
+            ],
+            "slug": "Chong-Jian-Chen",
+            "structuredName": {
+              "firstName": "Chong-Jian",
+              "middleNames": [],
+              "lastName": "Chen"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Chong-Jian Chen",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Jean-Philippe Vert",
+            "ids": [
+              "152303545"
+            ],
+            "slug": "Jean-Philippe-Vert",
+            "structuredName": {
+              "firstName": "Jean-Philippe",
+              "middleNames": [],
+              "lastName": "Vert"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Jean-Philippe Vert",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Heard",
+            "ids": [
+              "2099250"
+            ],
+            "slug": "E.-Heard",
+            "structuredName": {
+              "firstName": "Edith",
+              "middleNames": [],
+              "lastName": "Heard"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Heard",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "J. Dekker",
+            "ids": [
+              "145696688"
+            ],
+            "slug": "J.-Dekker",
+            "structuredName": {
+              "firstName": "Job",
+              "middleNames": [],
+              "lastName": "Dekker"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "J. Dekker",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Barillot",
+            "ids": [
+              "1790392"
+            ],
+            "slug": "E.-Barillot",
+            "structuredName": {
+              "firstName": "Emmanuel",
+              "middleNames": [],
+              "lastName": "Barillot"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Barillot",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Nicolas",
+          "middleNames": [],
+          "lastName": "Servant"
+        },
+        {
+          "firstName": "Nelle",
+          "middleNames": [],
+          "lastName": "Varoquaux"
+        },
+        {
+          "firstName": "Bryan",
+          "middleNames": [
+            "R."
+          ],
+          "lastName": "Lajoie"
+        },
+        {
+          "firstName": "Eric",
+          "middleNames": [],
+          "lastName": "Viara"
+        },
+        {
+          "firstName": "Chong-Jian",
+          "middleNames": [],
+          "lastName": "Chen"
+        },
+        {
+          "firstName": "Jean-Philippe",
+          "middleNames": [],
+          "lastName": "Vert"
+        },
+        {
+          "firstName": "Edith",
+          "middleNames": [],
+          "lastName": "Heard"
+        },
+        {
+          "firstName": "Job",
+          "middleNames": [],
+          "lastName": "Dekker"
+        },
+        {
+          "firstName": "Emmanuel",
+          "middleNames": [],
+          "lastName": "Barillot"
+        }
+      ],
+      "year": {
+        "text": "2015",
+        "fragments": []
+      },
+      "venue": {
+        "text": "Genome Biology",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2015,
+            "endKey": 2015,
+            "count": 2
+          },
+          {
+            "startKey": 2016,
+            "endKey": 2016,
+            "count": 17
+          },
+          {
+            "startKey": 2017,
+            "endKey": 2017,
+            "count": 49
+          },
+          {
+            "startKey": 2018,
+            "endKey": 2018,
+            "count": 89
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 185
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 267
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 287
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 277
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 88
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 1262,
+        "estNumCitations": 1706.7908368557155,
+        "numReferences": 29,
+        "numKeyCitations": 127,
+        "numKeyReferences": 1,
+        "numViewableReferences": 29,
+        "keyCitationRate": 0.10063391442155309,
+        "citationVelocity": 277.0,
+        "citationAcceleration": -0.03484320557491289,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1463091310.714000000,
+      "journal": {
+        "name": "Genome Biology",
+        "volume": "16"
+      },
+      "doiInfo": {
+        "doi": "10.1186/s13059-015-0831-x",
+        "doiUrl": "https://doi.org/10.1186/s13059-015-0831-x"
+      },
+      "links": [
+        {
+          "url": "https://doi.org/10.1186/s13059-015-0831-x",
+          "linkType": "publisher",
+          "publisherName": "Springer"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://doi.org/10.1186/s13059-015-0831-x",
+        "linkType": "publisher",
+        "publisherName": "Springer"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-015-0831-x",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "http://escholarship.umassmed.edu/cgi/viewcontent.cgi?article=3654&context=oapubs",
+          "linkType": "crawler"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/26619908",
+          "linkType": "medline"
+        }
+      ],
+      "entities": [
+        {
+          "id": "162920",
+          "name": "MDFIC gene",
+          "slug": "MDFIC-gene"
+        },
+        {
+          "id": "2492",
+          "name": "Ligation",
+          "slug": "Ligation"
+        },
+        {
+          "id": "119477",
+          "name": "Microtubule-Associated Proteins",
+          "slug": "Microtubule-Associated-Proteins"
+        }
+      ],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 1262,
+          "keyCitationCount": 127,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Computer Science"
+      ],
+      "openAccessInfo": {
+        "license": "CCBY",
+        "status": "GOLD",
+        "location": {
+          "url": "https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-015-0831-x",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2015-12-01",
+      "pubUpdateDate": "2015-12-01",
+      "badges": [
+        {
+          "id": "UNPAYWALL"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "fd4e5a3b53d2d7fd62b6e8acfdcc564f50960201",
+      "corpusId": 55711062,
+      "title": {
+        "text": "The Leiden/Argentine/Bonn (LAB) Survey of Galactic HI - Final data release of the combined LDS and IAR surveys with improved stray-radiation corrections",
+        "fragments": [
+          {
+            "start": 51,
+            "end": 53
+          }
+        ]
+      },
+      "slug": "The-Leiden-Argentine-Bonn-(LAB)-Survey-of-Galactic-Kalberla-Burton",
+      "paperAbstract": {
+        "text": "We present the final data release of observations of ?21-cm emission from Galactic neutral hydrogen over the entire sky, merging the Leiden/Dwingeloo Survey (LDS: Hartmann & Burton 1997, Atlas of Galactic Neutral Hydrogen) of the sky north of ? = ?30? with the Instituto Argentino de Radioastronomia Survey (IAR: Arnal et al. 2000, AA and Bajaja et al. 2005, A&A, 440, 767) of the sky south of ? = ?25?. The angular resolution of the combined material is HPBW ? 0. ?6. The LSR velocity coverage spans the interval ?450 km s?1 to +400 km s?1, at a resolution of 1.3 kms?1. The data were corrected for stray radiation at the Institute for Radioastronomy of the University of Bonn, refining the original correction applied to the LDS. The rms brightness-temperature noise of the merged database is 0.07?0.09 K. Residual errors in the profile wings due to defects in the correction for stray radiation are for most of the data below a level of 20?40 mK. It would be necessary to construct a telescope with a main beam efficiency of ?MB >? 99% to achieve the same accuracy. The merged and refined material entering the LAB Survey of Galactic HI is intended to be a general resource useful to a wide range of studies of the physical and structural characteristices of the Galactic interstellar environment. The LAB Survey is the most sensitive Milky Way HI survey to date, with the most extensive coverage both spatially and kinematically.",
+        "fragments": [
+          {
+            "start": 1137,
+            "end": 1139
+          },
+          {
+            "start": 1348,
+            "end": 1350
+          }
+        ]
+      },
+      "paperAbstractTruncated": "We present the final data release of observations of ?21-cm emission from Galactic neutral hydrogen over the entire sky,...",
+      "authors": [
+        [
+          {
+            "name": "P. Kalberla",
+            "ids": [
+              "4163154"
+            ],
+            "slug": "P.-Kalberla",
+            "structuredName": {
+              "firstName": "P.",
+              "middleNames": [
+                "M.",
+                "W."
+              ],
+              "lastName": "Kalberla"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "P. Kalberla",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "W. B. Burton",
+            "ids": [
+              "2700965"
+            ],
+            "slug": "W.-B.-Burton",
+            "structuredName": {
+              "firstName": "William",
+              "middleNames": [
+                "Butler"
+              ],
+              "lastName": "Burton"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "W. B. Burton",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "D. Hartmann",
+            "ids": [
+              "2082526636"
+            ],
+            "slug": "D.-Hartmann",
+            "structuredName": {
+              "firstName": "D.",
+              "middleNames": [],
+              "lastName": "Hartmann"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "D. Hartmann",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. M. Arnal",
+            "ids": [
+              "6137418"
+            ],
+            "slug": "E.-M.-Arnal",
+            "structuredName": {
+              "firstName": "Edmundo",
+              "middleNames": [
+                "Marcelo"
+              ],
+              "lastName": "Arnal"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. M. Arnal",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Bajaja",
+            "ids": [
+              "88819047"
+            ],
+            "slug": "E.-Bajaja",
+            "structuredName": {
+              "firstName": "Esteban",
+              "middleNames": [],
+              "lastName": "Bajaja"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Bajaja",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "R. Morras",
+            "ids": [
+              "90681381"
+            ],
+            "slug": "R.-Morras",
+            "structuredName": {
+              "firstName": "Ricardo",
+              "middleNames": [],
+              "lastName": "Morras"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "R. Morras",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "W.G.L. Poppel Radioastronomisches Institut",
+            "ids": [
+              "103257192"
+            ],
+            "slug": "W.G.L.-Poppel-Radioastronomisches-Institut",
+            "structuredName": {
+              "firstName": "W.G.L.",
+              "middleNames": [
+                "Poppel",
+                "Radioastronomisches"
+              ],
+              "lastName": "Institut"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "W.G.L. Poppel Radioastronomisches Institut",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "U. Bonn",
+            "ids": [
+              "103336381"
+            ],
+            "slug": "U.-Bonn",
+            "structuredName": {
+              "firstName": "University",
+              "middleNames": [
+                "of"
+              ],
+              "lastName": "Bonn"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "U. Bonn",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "S. Leiden",
+            "ids": [
+              "90113895"
+            ],
+            "slug": "S.-Leiden",
+            "structuredName": {
+              "firstName": "Sterrewacht",
+              "middleNames": [],
+              "lastName": "Leiden"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "S. Leiden",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Nrao",
+            "ids": [
+              "102347720"
+            ],
+            "slug": "Nrao",
+            "structuredName": {
+              "firstName": "",
+              "middleNames": [],
+              "lastName": "Nrao"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Nrao",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Delft University of Technology",
+            "ids": [
+              "89020719"
+            ],
+            "slug": "Delft-University-of-Technology",
+            "structuredName": {
+              "firstName": "Delft",
+              "middleNames": [
+                "University",
+                "of"
+              ],
+              "lastName": "Technology"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Delft University of Technology",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Instituto Argentino de Radioastronomia",
+            "ids": [
+              "103309518"
+            ],
+            "slug": "Instituto-Argentino-de-Radioastronomia",
+            "structuredName": {
+              "firstName": "Instituto",
+              "middleNames": [
+                "Argentino",
+                "de"
+              ],
+              "lastName": "Radioastronomia"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Instituto Argentino de Radioastronomia",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "F. C. A. Y. Geofisicas",
+            "ids": [
+              "2083557071"
+            ],
+            "slug": "F.-C.-A.-Y.-Geofisicas",
+            "structuredName": {
+              "firstName": "Facultad",
+              "middleNames": [
+                "de",
+                "Ciencias",
+                "Astronomicas",
+                "y"
+              ],
+              "lastName": "Geofisicas"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "F. C. A. Y. Geofisicas",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Unlp",
+            "ids": [
+              "97646150"
+            ],
+            "slug": "Unlp",
+            "structuredName": {
+              "firstName": "",
+              "middleNames": [],
+              "lastName": "Unlp"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Unlp",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "P.",
+          "middleNames": [
+            "M.",
+            "W."
+          ],
+          "lastName": "Kalberla"
+        },
+        {
+          "firstName": "William",
+          "middleNames": [
+            "Butler"
+          ],
+          "lastName": "Burton"
+        },
+        {
+          "firstName": "D.",
+          "middleNames": [],
+          "lastName": "Hartmann"
+        },
+        {
+          "firstName": "Edmundo",
+          "middleNames": [
+            "Marcelo"
+          ],
+          "lastName": "Arnal"
+        },
+        {
+          "firstName": "Esteban",
+          "middleNames": [],
+          "lastName": "Bajaja"
+        },
+        {
+          "firstName": "Ricardo",
+          "middleNames": [],
+          "lastName": "Morras"
+        },
+        {
+          "firstName": "W.G.L.",
+          "middleNames": [
+            "Poppel",
+            "Radioastronomisches"
+          ],
+          "lastName": "Institut"
+        },
+        {
+          "firstName": "University",
+          "middleNames": [
+            "of"
+          ],
+          "lastName": "Bonn"
+        },
+        {
+          "firstName": "Sterrewacht",
+          "middleNames": [],
+          "lastName": "Leiden"
+        },
+        {
+          "firstName": "",
+          "middleNames": [],
+          "lastName": "Nrao"
+        },
+        {
+          "firstName": "Delft",
+          "middleNames": [
+            "University",
+            "of"
+          ],
+          "lastName": "Technology"
+        },
+        {
+          "firstName": "Instituto",
+          "middleNames": [
+            "Argentino",
+            "de"
+          ],
+          "lastName": "Radioastronomia"
+        },
+        {
+          "firstName": "Facultad",
+          "middleNames": [
+            "de",
+            "Ciencias",
+            "Astronomicas",
+            "y"
+          ],
+          "lastName": "Geofisicas"
+        },
+        {
+          "firstName": "",
+          "middleNames": [],
+          "lastName": "Unlp"
+        }
+      ],
+      "year": {
+        "text": "2005",
+        "fragments": []
+      },
+      "venue": {
+        "text": "",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2005,
+            "endKey": 2005,
+            "count": 1
+          },
+          {
+            "startKey": 2006,
+            "endKey": 2006,
+            "count": 20
+          },
+          {
+            "startKey": 2007,
+            "endKey": 2007,
+            "count": 19
+          },
+          {
+            "startKey": 2008,
+            "endKey": 2008,
+            "count": 48
+          },
+          {
+            "startKey": 2009,
+            "endKey": 2009,
+            "count": 94
+          },
+          {
+            "startKey": 2010,
+            "endKey": 2010,
+            "count": 76
+          },
+          {
+            "startKey": 2011,
+            "endKey": 2011,
+            "count": 65
+          },
+          {
+            "startKey": 2012,
+            "endKey": 2012,
+            "count": 52
+          },
+          {
+            "startKey": 2013,
+            "endKey": 2013,
+            "count": 79
+          },
+          {
+            "startKey": 2014,
+            "endKey": 2014,
+            "count": 195
+          },
+          {
+            "startKey": 2015,
+            "endKey": 2015,
+            "count": 263
+          },
+          {
+            "startKey": 2016,
+            "endKey": 2016,
+            "count": 265
+          },
+          {
+            "startKey": 2017,
+            "endKey": 2017,
+            "count": 215
+          },
+          {
+            "startKey": 2018,
+            "endKey": 2018,
+            "count": 258
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 221
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 192
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 85
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 68
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 14
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 2231,
+        "estNumCitations": 799.1747695814867,
+        "numReferences": 6,
+        "numKeyCitations": 1068,
+        "numKeyReferences": 1,
+        "numViewableReferences": 6,
+        "keyCitationRate": 0.47870909905871806,
+        "citationVelocity": 115.0,
+        "citationAcceleration": -0.2,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1544283454.675322000,
+      "journal": {
+        "name": "Astronomy and Astrophysics",
+        "volume": "440",
+        "pages": "775-782"
+      },
+      "doiInfo": {
+        "doi": "10.1051/0004-6361:20041864",
+        "doiUrl": "https://doi.org/10.1051/0004-6361%3A20041864"
+      },
+      "links": [
+        {
+          "url": "https://arxiv.org/pdf/astro-ph/0504140.pdf",
+          "linkType": "arxiv"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://arxiv.org/pdf/astro-ph/0504140.pdf",
+        "linkType": "arxiv"
+      },
+      "alternatePaperLinks": [],
+      "entities": [],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 2231,
+          "keyCitationCount": 1068,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Physics"
+      ],
+      "openAccessInfo": {
+        "status": "BRONZE",
+        "location": {
+          "url": "https://www.aanda.org/articles/aa/pdf/2005/35/aa1864-04.pdf",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2005-04-06",
+      "pubUpdateDate": "2005-09-01",
+      "badges": [
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "b43696b7b1cf113cf46c719db2a40d13519d870e",
+      "corpusId": 231899344,
+      "title": {
+        "text": "Liquid chromatin Hi-C characterizes compartment-dependent chromatin interaction dynamics",
+        "fragments": [
+          {
+            "start": 17,
+            "end": 19
+          }
+        ]
+      },
+      "slug": "Liquid-chromatin-Hi-C-characterizes-chromatin-Belaghzal-Borrman",
+      "paperAbstract": {
+        "text": "Nuclear compartmentalization of active and inactive chromatin is thought to occur through microphase separation mediated by interactions between loci of similar type. The nature and dynamics of these interactions are not known. We developed liquid chromatin Hi-C to map the stability of associations between loci. Before fixation and Hi-C, chromosomes are fragmented, which removes strong polymeric constraint, enabling detection of intrinsic locus–locus interaction stabilities. Compartmentalization is stable when fragments are larger than 10–25 kb. Fragmentation of chromatin into pieces smaller than 6 kb leads to gradual loss of genome organization. Lamin-associated domains are most stable, whereas interactions for speckle- and polycomb-associated loci are more dynamic. Cohesin-mediated loops dissolve after fragmentation. Liquid chromatin Hi-C provides a genome-wide view of chromosome interaction dynamics. Liquid chromatin Hi-C maps the intrinsic stability of associations between loci. Lamin-associated domains are most stable, whereas interactions for speckle- and polycomb-associated loci are more dynamic.",
+        "fragments": [
+          {
+            "start": 258,
+            "end": 260
+          },
+          {
+            "start": 334,
+            "end": 336
+          },
+          {
+            "start": 848,
+            "end": 850
+          },
+          {
+            "start": 934,
+            "end": 936
+          }
+        ]
+      },
+      "paperAbstractTruncated": "Nuclear compartmentalization of active and inactive chromatin is thought to occur through microphase separation mediated...",
+      "tldr": {
+        "text": "Liquid chromatin Hi-C provides a genome-wide view of chromosome interaction dynamics and maps the intrinsic stability of associations between loci, finding lamin-associated domains are most stable, whereas interactions for speckle- and polycomb-associated loci are more dynamic.",
+        "abstractSimilarityScore": 9
+      },
+      "authors": [
+        [
+          {
+            "name": "Houda Belaghzal",
+            "ids": [
+              "6301875"
+            ],
+            "slug": "Houda-Belaghzal",
+            "structuredName": {
+              "firstName": "Houda",
+              "middleNames": [],
+              "lastName": "Belaghzal"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Houda Belaghzal",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Tyler Borrman",
+            "ids": [
+              "3408576"
+            ],
+            "slug": "Tyler-Borrman",
+            "structuredName": {
+              "firstName": "Tyler",
+              "middleNames": [],
+              "lastName": "Borrman"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Tyler Borrman",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Andrew D. Stephens",
+            "ids": [
+              "39601669"
+            ],
+            "slug": "Andrew-D.-Stephens",
+            "structuredName": {
+              "firstName": "Andrew",
+              "middleNames": [
+                "D."
+              ],
+              "lastName": "Stephens"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Andrew D. Stephens",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "D. Lafontaine",
+            "ids": [
+              "5307504"
+            ],
+            "slug": "D.-Lafontaine",
+            "structuredName": {
+              "firstName": "Denis",
+              "middleNames": [
+                "L.",
+                "J."
+              ],
+              "lastName": "Lafontaine"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "D. Lafontaine",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Sergey V. Venev",
+            "ids": [
+              "47867760"
+            ],
+            "slug": "Sergey-V.-Venev",
+            "structuredName": {
+              "firstName": "Sergey",
+              "middleNames": [
+                "V."
+              ],
+              "lastName": "Venev"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Sergey V. Venev",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Z. Weng",
+            "ids": [
+              "145348257"
+            ],
+            "slug": "Z.-Weng",
+            "structuredName": {
+              "firstName": "Zhiping",
+              "middleNames": [],
+              "lastName": "Weng"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Z. Weng",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "J. Marko",
+            "ids": [
+              "4415108"
+            ],
+            "slug": "J.-Marko",
+            "structuredName": {
+              "firstName": "John",
+              "middleNames": [
+                "F."
+              ],
+              "lastName": "Marko"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "J. Marko",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "J. Dekker",
+            "ids": [
+              "145696688"
+            ],
+            "slug": "J.-Dekker",
+            "structuredName": {
+              "firstName": "Job",
+              "middleNames": [],
+              "lastName": "Dekker"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "J. Dekker",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Houda",
+          "middleNames": [],
+          "lastName": "Belaghzal"
+        },
+        {
+          "firstName": "Tyler",
+          "middleNames": [],
+          "lastName": "Borrman"
+        },
+        {
+          "firstName": "Andrew",
+          "middleNames": [
+            "D."
+          ],
+          "lastName": "Stephens"
+        },
+        {
+          "firstName": "Denis",
+          "middleNames": [
+            "L.",
+            "J."
+          ],
+          "lastName": "Lafontaine"
+        },
+        {
+          "firstName": "Sergey",
+          "middleNames": [
+            "V."
+          ],
+          "lastName": "Venev"
+        },
+        {
+          "firstName": "Zhiping",
+          "middleNames": [],
+          "lastName": "Weng"
+        },
+        {
+          "firstName": "John",
+          "middleNames": [
+            "F."
+          ],
+          "lastName": "Marko"
+        },
+        {
+          "firstName": "Job",
+          "middleNames": [],
+          "lastName": "Dekker"
+        }
+      ],
+      "year": {
+        "text": "2021",
+        "fragments": []
+      },
+      "venue": {
+        "text": "Nature Genetics",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 1
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 17
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 27
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 7
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 52,
+        "estNumCitations": 62.55784431156484,
+        "numReferences": 95,
+        "numKeyCitations": 0,
+        "numKeyReferences": 0,
+        "numViewableReferences": 95,
+        "keyCitationRate": 0.0,
+        "citationVelocity": 15.0,
+        "citationAcceleration": 0.5882352941176471,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1613196998.888161000,
+      "journal": {
+        "name": "Nature genetics",
+        "volume": "53",
+        "pages": "367 - 378"
+      },
+      "doiInfo": {
+        "doi": "10.1038/s41588-021-00784-4",
+        "doiUrl": "https://doi.org/10.1038/s41588-021-00784-4"
+      },
+      "links": [
+        {
+          "url": "https://doi.org/10.1038/s41588-021-00784-4",
+          "linkType": "publisher",
+          "publisherName": "Springer"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://doi.org/10.1038/s41588-021-00784-4",
+        "linkType": "publisher",
+        "publisherName": "Springer"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "https://repository.escholarship.umassmed.edu/bitstream/20.500.14038/29798/2/s41588_021_00784_4.pdf",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/33574602",
+          "linkType": "medline"
+        }
+      ],
+      "entities": [],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 52,
+          "keyCitationCount": 0,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Biology"
+      ],
+      "openAccessInfo": {
+        "status": "GREEN",
+        "location": {
+          "url": "https://repository.escholarship.umassmed.edu/bitstream/20.500.14038/29798/2/s41588_021_00784_4.pdf",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2021-01-26",
+      "pubUpdateDate": "2021-02-11",
+      "publisher": {
+        "name": "Nature Publishing Group US"
+      },
+      "badges": [
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "9887337bc350ff71b2aa0c1c5a137ae0333244e4",
+      "corpusId": 206655169,
+      "title": {
+        "text": "De novo assembly of the Aedes aegypti genome using Hi-C yields chromosome-length scaffolds",
+        "fragments": [
+          {
+            "start": 51,
+            "end": 53
+          }
+        ]
+      },
+      "slug": "De-novo-assembly-of-the-Aedes-aegypti-genome-using-Dudchenko-Batra",
+      "paperAbstract": {
+        "text": "Hi-C for mosquito genomes Most genomes sequenced today are determined through the generation of short sequenced bits of DNA that are computationally pieced together like a jigsaw puzzle. This has resulted in the need for funds and additional data to fill in gaps in order to fully assemble the many chromosomes that make up a eukaryotic genome. Dudchenko et al. used the Hi-C method, which measures the distance between contact points within and between chromosomes for scaffold validation, together with correction and ordering to more completely determine the arrangement of short sequencing reads for genome mapping. They validated their approach through the de novo generation of a complete human genome. A comparative analysis of mosquito genomes was made possible by improving the Culex quinquefasciatus genome assembly and generating the genome of Aedes aegypti, the vector of Zika virus. Science, this issue p. 92 The DNA proximity ligation method Hi-C was used to create a genome assembly for the mosquito Aedes aegypti. The Zika outbreak, spread by the Aedes aegypti mosquito, highlights the need to create high-quality assemblies of large genomes in a rapid and cost-effective way. Here we combine Hi-C data with existing draft assemblies to generate chromosome-length scaffolds. We validate this method by assembling a human genome, de novo, from short reads alone (67× coverage). We then combine our method with draft sequences to create genome assemblies of the mosquito disease vectors Ae. aegypti and Culex quinquefasciatus, each consisting of three scaffolds corresponding to the three chromosomes in each species. These assemblies indicate that almost all genomic rearrangements among these species occur within, rather than between, chromosome arms. The genome assembly procedure we describe is fast, inexpensive, and accurate, and can be applied to many species.",
+        "fragments": [
+          {
+            "start": 0,
+            "end": 2
+          },
+          {
+            "start": 371,
+            "end": 373
+          },
+          {
+            "start": 956,
+            "end": 958
+          },
+          {
+            "start": 1209,
+            "end": 1211
+          }
+        ]
+      },
+      "paperAbstractTruncated": "Hi-C for mosquito genomes Most genomes sequenced today are determined through the generation of short sequenced bits of ...",
+      "tldr": {
+        "text": "The Hi-C method, which measures the distance between contact points within and between chromosomes for scaffold validation, was used to create a genome assembly for the mosquito Aedes aegypti, and assemblies indicate that almost all genomic rearrangements among these species occur within, rather than between, chromosome arms.",
+        "abstractSimilarityScore": 41
+      },
+      "authors": [
+        [
+          {
+            "name": "Olga Dudchenko",
+            "ids": [
+              "144905440"
+            ],
+            "slug": "Olga-Dudchenko",
+            "structuredName": {
+              "firstName": "Olga",
+              "middleNames": [],
+              "lastName": "Dudchenko"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Olga Dudchenko",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "S. S. Batra",
+            "ids": [
+              "2265310"
+            ],
+            "slug": "S.-S.-Batra",
+            "structuredName": {
+              "firstName": "Sanjit",
+              "middleNames": [
+                "Singh"
+              ],
+              "lastName": "Batra"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "S. S. Batra",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "A. Omer",
+            "ids": [
+              "2619550"
+            ],
+            "slug": "A.-Omer",
+            "structuredName": {
+              "firstName": "Arina",
+              "middleNames": [
+                "D."
+              ],
+              "lastName": "Omer"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "A. Omer",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Sarah K. Nyquist",
+            "ids": [
+              "9734534"
+            ],
+            "slug": "Sarah-K.-Nyquist",
+            "structuredName": {
+              "firstName": "Sarah",
+              "middleNames": [
+                "K."
+              ],
+              "lastName": "Nyquist"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Sarah K. Nyquist",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Marie Hoeger",
+            "ids": [
+              "9741679"
+            ],
+            "slug": "Marie-Hoeger",
+            "structuredName": {
+              "firstName": "Marie",
+              "middleNames": [],
+              "lastName": "Hoeger"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Marie Hoeger",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Neva C. Durand",
+            "ids": [
+              "4240611"
+            ],
+            "slug": "Neva-C.-Durand",
+            "structuredName": {
+              "firstName": "Neva",
+              "middleNames": [
+                "C."
+              ],
+              "lastName": "Durand"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Neva C. Durand",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "M. Shamim",
+            "ids": [
+              "46598349"
+            ],
+            "slug": "M.-Shamim",
+            "structuredName": {
+              "firstName": "Muhammad",
+              "middleNames": [
+                "Saad"
+              ],
+              "lastName": "Shamim"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "M. Shamim",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Ido Machol",
+            "ids": [
+              "4188293"
+            ],
+            "slug": "Ido-Machol",
+            "structuredName": {
+              "firstName": "Ido",
+              "middleNames": [],
+              "lastName": "Machol"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Ido Machol",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Lander",
+            "ids": [
+              "9311320"
+            ],
+            "slug": "E.-Lander",
+            "structuredName": {
+              "firstName": "Eric",
+              "middleNames": [
+                "S."
+              ],
+              "lastName": "Lander"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Lander",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "A. P. Aiden",
+            "ids": [
+              "5214149"
+            ],
+            "slug": "A.-P.-Aiden",
+            "structuredName": {
+              "firstName": "Aviva",
+              "middleNames": [
+                "Presser"
+              ],
+              "lastName": "Aiden"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "A. P. Aiden",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Aiden",
+            "ids": [
+              "7853656"
+            ],
+            "slug": "E.-Aiden",
+            "structuredName": {
+              "firstName": "Erez",
+              "middleNames": [
+                "Lieberman"
+              ],
+              "lastName": "Aiden"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Aiden",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Olga",
+          "middleNames": [],
+          "lastName": "Dudchenko"
+        },
+        {
+          "firstName": "Sanjit",
+          "middleNames": [
+            "Singh"
+          ],
+          "lastName": "Batra"
+        },
+        {
+          "firstName": "Arina",
+          "middleNames": [
+            "D."
+          ],
+          "lastName": "Omer"
+        },
+        {
+          "firstName": "Sarah",
+          "middleNames": [
+            "K."
+          ],
+          "lastName": "Nyquist"
+        },
+        {
+          "firstName": "Marie",
+          "middleNames": [],
+          "lastName": "Hoeger"
+        },
+        {
+          "firstName": "Neva",
+          "middleNames": [
+            "C."
+          ],
+          "lastName": "Durand"
+        },
+        {
+          "firstName": "Muhammad",
+          "middleNames": [
+            "Saad"
+          ],
+          "lastName": "Shamim"
+        },
+        {
+          "firstName": "Ido",
+          "middleNames": [],
+          "lastName": "Machol"
+        },
+        {
+          "firstName": "Eric",
+          "middleNames": [
+            "S."
+          ],
+          "lastName": "Lander"
+        },
+        {
+          "firstName": "Aviva",
+          "middleNames": [
+            "Presser"
+          ],
+          "lastName": "Aiden"
+        },
+        {
+          "firstName": "Erez",
+          "middleNames": [
+            "Lieberman"
+          ],
+          "lastName": "Aiden"
+        }
+      ],
+      "year": {
+        "text": "2017",
+        "fragments": []
+      },
+      "venue": {
+        "text": "Science",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2017,
+            "endKey": 2017,
+            "count": 24
+          },
+          {
+            "startKey": 2018,
+            "endKey": 2018,
+            "count": 58
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 87
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 176
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 210
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 224
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 54
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 833,
+        "estNumCitations": 1009.158256747886,
+        "numReferences": 44,
+        "numKeyCitations": 53,
+        "numKeyReferences": 6,
+        "numViewableReferences": 44,
+        "keyCitationRate": 0.06362545018007203,
+        "citationVelocity": 203.33333333333334,
+        "citationAcceleration": 0.06666666666666667,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1501528866.105074000,
+      "journal": {
+        "name": "Science",
+        "volume": "356",
+        "pages": "92 - 95"
+      },
+      "doiInfo": {
+        "doi": "10.1126/science.aal3327",
+        "doiUrl": "https://doi.org/10.1126/science.aal3327"
+      },
+      "links": [
+        {
+          "url": "https://doi.org/10.1126/science.aal3327",
+          "linkType": "publisher",
+          "publisherName": "Science"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://doi.org/10.1126/science.aal3327",
+        "linkType": "publisher",
+        "publisherName": "Science"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "https://europepmc.org/articles/pmc5635820?pdf=render",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "http://dspace.mit.edu/openaccess-disseminate/1721.1/116720",
+          "linkType": "anansi"
+        },
+        {
+          "url": "http://science.sciencemag.org/content/sci/356/6333/92.full.pdf",
+          "linkType": "anansi"
+        },
+        {
+          "url": "https://dash.harvard.edu/bitstream/handle/1/32689443/aal3327_CombinedPDF_v2.pdf?isAllowed=y&sequence=1",
+          "linkType": "anansi"
+        },
+        {
+          "url": "https://web.archive.org/web/20180722125612/https://dash.harvard.edu/bitstream/handle/1/32689443/aal3327_CombinedPDF_v2.pdf?sequence=1",
+          "linkType": "adhoc"
+        },
+        {
+          "url": "https://web.archive.org/web/20190504083046/https://dash.harvard.edu/bitstream/handle/1/32689443/aal3327_CombinedPDF_v2.pdf;jsessionid=F5967B0DBECE063902A79E2B39FCC2AB?sequence=1",
+          "linkType": "adhoc"
+        },
+        {
+          "url": "https://web.archive.org/web/20200312201309/https://dash.harvard.edu/bitstream/handle/1/32689443/aal3327_CombinedPDF_v2.pdf;jsessionid=5C0D6F6103B7C14DBAFF98D2BF708155?sequence=1",
+          "linkType": "adhoc"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/28336562",
+          "linkType": "medline"
+        }
+      ],
+      "entities": [
+        {
+          "id": "3380",
+          "name": "Culicidae",
+          "slug": "Culicidae"
+        },
+        {
+          "id": "5648",
+          "name": "Disease Vectors",
+          "slug": "Disease-Vectors"
+        },
+        {
+          "id": "2733",
+          "name": "Chromosomes",
+          "slug": "Chromosomes"
+        },
+        {
+          "id": "284990",
+          "name": "Alveolar rhabdomyosarcoma",
+          "slug": "Alveolar-rhabdomyosarcoma"
+        },
+        {
+          "id": "181695",
+          "name": "DNA Sequence Rearrangement",
+          "slug": "DNA-Sequence-Rearrangement"
+        }
+      ],
+      "entityRelations": [
+        {
+          "srcEntityId": "5648",
+          "destEntityId": "3380",
+          "srcEntityName": "Disease Vectors",
+          "destEntityName": "Culicidae",
+          "relationshipType": {
+            "id": "is_related_to"
+          },
+          "relationshipSubtype": "no_subtype",
+          "mentionContexts": [
+            "We then combine our method with draft sequences to create genome assemblies of the <e2>mosquito</e2> <e1>disease vectors</e1> Ae ."
+          ],
+          "mentionTexts": [
+            [
+              "disease vectors",
+              "mosquito"
+            ]
+          ],
+          "srcEntitySlug": "Disease-Vectors",
+          "destEntitySlug": "Culicidae"
+        },
+        {
+          "srcEntityId": "3380",
+          "destEntityId": "5648",
+          "srcEntityName": "Culicidae",
+          "destEntityName": "Disease Vectors",
+          "relationshipType": {
+            "id": "is_related_to"
+          },
+          "relationshipSubtype": "no_subtype",
+          "mentionContexts": [
+            "We then combine our method with draft sequences to create genome assemblies of the <e1>mosquito</e1> <e2>disease vectors</e2> Ae ."
+          ],
+          "mentionTexts": [
+            [
+              "mosquito",
+              "disease vectors"
+            ]
+          ],
+          "srcEntitySlug": "Culicidae",
+          "destEntitySlug": "Disease-Vectors"
+        }
+      ],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 833,
+          "keyCitationCount": 53,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Biology",
+        "Medicine"
+      ],
+      "openAccessInfo": {
+        "status": "GREEN",
+        "location": {
+          "url": "https://europepmc.org/articles/pmc5635820?pdf=render",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2017-03-01",
+      "pubUpdateDate": "2017-04-07",
+      "publisher": {
+        "name": "American Association for the Advancement of Science",
+        "abbreviation": "AAAS"
+      },
+      "badges": [
+        {
+          "id": "UNPAYWALL"
+        },
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "55228e700ae3a1fefffcb7f7ae5d2bf51fdd4ec7",
+      "corpusId": 90889257,
+      "title": {
+        "text": "Integrating Hi-C links with assembly graphs for chromosome-scale assembly",
+        "fragments": [
+          {
+            "start": 12,
+            "end": 14
+          }
+        ]
+      },
+      "slug": "Integrating-Hi-C-links-with-assembly-graphs-for-Ghurye-Rhie",
+      "paperAbstract": {
+        "text": "Motivation Long-read sequencing and novel long-range assays have revolutionized de novo genome assembly by automating the reconstruction of reference-quality genomes. In particular, Hi-C sequencing is becoming an economical method for generating chromosome-scale scaffolds. Despite its increasing popularity, there are limited open-source tools available. Errors, particularly inversions and fusions across chromosomes, remain higher than alternate scaffolding technologies. Results We present a novel open-source Hi-C scaffolder that does not require an a priori estimate of chromosome number and minimizes errors by scaffolding with the assistance of an assembly graph. We demonstrate higher accuracy than the state-of-the-art methods across a variety of Hi-C library preparations and input assembly sizes. Availability and Implementation The Python and C++ code for our method is openly available at https://github.com/machinegun/SALSA Contact sergey.koren@nih.gov, adam.phillippy@nih.gov Supplementary information Not available online.",
+        "fragments": [
+          {
+            "start": 182,
+            "end": 184
+          },
+          {
+            "start": 514,
+            "end": 516
+          },
+          {
+            "start": 757,
+            "end": 759
+          }
+        ]
+      },
+      "paperAbstractTruncated": "Motivation Long-read sequencing and novel long-range assays have revolutionized de novo genome assembly by automating th...",
+      "tldr": {
+        "text": "This work presents a novel open-source Hi-C scaffolder that does not require an a priori estimate of chromosome number and minimizes errors by scaffolding with the assistance of an assembly graph.",
+        "abstractSimilarityScore": 39
+      },
+      "authors": [
+        [
+          {
+            "name": "J. Ghurye",
+            "ids": [
+              "3437186"
+            ],
+            "slug": "J.-Ghurye",
+            "structuredName": {
+              "firstName": "Jay",
+              "middleNames": [],
+              "lastName": "Ghurye"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "J. Ghurye",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "A. Rhie",
+            "ids": [
+              "50419299"
+            ],
+            "slug": "A.-Rhie",
+            "structuredName": {
+              "firstName": "Arang",
+              "middleNames": [],
+              "lastName": "Rhie"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "A. Rhie",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "B. Walenz",
+            "ids": [
+              "1756685"
+            ],
+            "slug": "B.-Walenz",
+            "structuredName": {
+              "firstName": "Brian",
+              "middleNames": [
+                "P."
+              ],
+              "lastName": "Walenz"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "B. Walenz",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "A. Schmitt",
+            "ids": [
+              "4630745"
+            ],
+            "slug": "A.-Schmitt",
+            "structuredName": {
+              "firstName": "Anthony",
+              "middleNames": [
+                "D."
+              ],
+              "lastName": "Schmitt"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "A. Schmitt",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Siddarth Selvaraj",
+            "ids": [
+              "1864933"
+            ],
+            "slug": "Siddarth-Selvaraj",
+            "structuredName": {
+              "firstName": "Siddarth",
+              "middleNames": [],
+              "lastName": "Selvaraj"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Siddarth Selvaraj",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "M. Pop",
+            "ids": [
+              "144538650"
+            ],
+            "slug": "M.-Pop",
+            "structuredName": {
+              "firstName": "Mihai",
+              "middleNames": [],
+              "lastName": "Pop"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "M. Pop",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "A. Phillippy",
+            "ids": [
+              "2468566"
+            ],
+            "slug": "A.-Phillippy",
+            "structuredName": {
+              "firstName": "Adam",
+              "middleNames": [
+                "M."
+              ],
+              "lastName": "Phillippy"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "A. Phillippy",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "S. Koren",
+            "ids": [
+              "1695694"
+            ],
+            "slug": "S.-Koren",
+            "structuredName": {
+              "firstName": "Sergey",
+              "middleNames": [],
+              "lastName": "Koren"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "S. Koren",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Jay",
+          "middleNames": [],
+          "lastName": "Ghurye"
+        },
+        {
+          "firstName": "Arang",
+          "middleNames": [],
+          "lastName": "Rhie"
+        },
+        {
+          "firstName": "Brian",
+          "middleNames": [
+            "P."
+          ],
+          "lastName": "Walenz"
+        },
+        {
+          "firstName": "Anthony",
+          "middleNames": [
+            "D."
+          ],
+          "lastName": "Schmitt"
+        },
+        {
+          "firstName": "Siddarth",
+          "middleNames": [],
+          "lastName": "Selvaraj"
+        },
+        {
+          "firstName": "Mihai",
+          "middleNames": [],
+          "lastName": "Pop"
+        },
+        {
+          "firstName": "Adam",
+          "middleNames": [
+            "M."
+          ],
+          "lastName": "Phillippy"
+        },
+        {
+          "firstName": "Sergey",
+          "middleNames": [],
+          "lastName": "Koren"
+        }
+      ],
+      "year": {
+        "text": "2018",
+        "fragments": []
+      },
+      "venue": {
+        "text": "bioRxiv",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2016,
+            "endKey": 2016,
+            "count": 1
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 15
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 34
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 103
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 128
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 56
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 337,
+        "estNumCitations": 432.9766798138787,
+        "numReferences": 59,
+        "numKeyCitations": 24,
+        "numKeyReferences": 4,
+        "numViewableReferences": 59,
+        "keyCitationRate": 0.0712166172106825,
+        "citationVelocity": 88.33333333333333,
+        "citationAcceleration": 0.24271844660194175,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1554210805.874000000,
+      "journal": {
+        "name": "PLoS Computational Biology",
+        "volume": "15"
+      },
+      "doiInfo": {
+        "doi": "10.1371/journal.pcbi.1007273",
+        "doiUrl": "https://doi.org/10.1371/journal.pcbi.1007273"
+      },
+      "links": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/31433799",
+          "linkType": "medline"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/31433799",
+        "linkType": "medline"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007273&type=printable",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "https://doi.org/10.1371/journal.pcbi.1007273",
+          "linkType": "doi"
+        },
+        {
+          "url": "https://www.wikidata.org/entity/Q92749888",
+          "linkType": "dblp"
+        }
+      ],
+      "entities": [
+        {
+          "id": "31127",
+          "name": "Graph - visual representation",
+          "slug": "Graph-visual-representation"
+        },
+        {
+          "id": "3593964",
+          "name": "Biopolymer Sequencing",
+          "slug": "Biopolymer-Sequencing"
+        },
+        {
+          "id": "18446",
+          "name": "Genome",
+          "slug": "Genome"
+        },
+        {
+          "id": "55405",
+          "name": "Chromosome inversion",
+          "slug": "Chromosome-inversion"
+        }
+      ],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 337,
+          "keyCitationCount": 24,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Biology"
+      ],
+      "openAccessInfo": {
+        "license": "CC0",
+        "status": "GOLD",
+        "location": {
+          "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007273&type=printable",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2018-02-07",
+      "pubUpdateDate": "2019-08-21",
+      "publisher": {
+        "name": "Cold Spring Harbor Laboratory"
+      },
+      "badges": [
+        {
+          "id": "UNPAYWALL"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "7162b2582ce0f75564b4b290a2e205e58ed974b6",
+      "corpusId": 206596581,
+      "title": {
+        "text": "Juicebox Provides a Visualization System for Hi-C Contact Maps with Unlimited Zoom.",
+        "fragments": [
+          {
+            "start": 45,
+            "end": 47
+          }
+        ]
+      },
+      "slug": "Juicebox-Provides-a-Visualization-System-for-Hi-C-Durand-Robinson",
+      "paperAbstract": {
+        "text": "",
+        "fragments": []
+      },
+      "paperAbstractTruncated": "",
+      "authors": [
+        [
+          {
+            "name": "Neva C. Durand",
+            "ids": [
+              "4240611"
+            ],
+            "slug": "Neva-C.-Durand",
+            "structuredName": {
+              "firstName": "Neva",
+              "middleNames": [
+                "C."
+              ],
+              "lastName": "Durand"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Neva C. Durand",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "James T. Robinson",
+            "ids": [
+              "2115279017"
+            ],
+            "slug": "James-T.-Robinson",
+            "structuredName": {
+              "firstName": "James",
+              "middleNames": [
+                "T."
+              ],
+              "lastName": "Robinson"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "James T. Robinson",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "M. Shamim",
+            "ids": [
+              "46598349"
+            ],
+            "slug": "M.-Shamim",
+            "structuredName": {
+              "firstName": "Muhammad",
+              "middleNames": [
+                "Saad"
+              ],
+              "lastName": "Shamim"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "M. Shamim",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Ido Machol",
+            "ids": [
+              "4188293"
+            ],
+            "slug": "Ido-Machol",
+            "structuredName": {
+              "firstName": "Ido",
+              "middleNames": [],
+              "lastName": "Machol"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Ido Machol",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "J. Mesirov",
+            "ids": [
+              "1727782"
+            ],
+            "slug": "J.-Mesirov",
+            "structuredName": {
+              "firstName": "Jill",
+              "middleNames": [
+                "P."
+              ],
+              "lastName": "Mesirov"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "J. Mesirov",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Lander",
+            "ids": [
+              "9311320"
+            ],
+            "slug": "E.-Lander",
+            "structuredName": {
+              "firstName": "Eric",
+              "middleNames": [
+                "S."
+              ],
+              "lastName": "Lander"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Lander",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "E. Aiden",
+            "ids": [
+              "7853656"
+            ],
+            "slug": "E.-Aiden",
+            "structuredName": {
+              "firstName": "Erez",
+              "middleNames": [
+                "Lieberman"
+              ],
+              "lastName": "Aiden"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "E. Aiden",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Neva",
+          "middleNames": [
+            "C."
+          ],
+          "lastName": "Durand"
+        },
+        {
+          "firstName": "James",
+          "middleNames": [
+            "T."
+          ],
+          "lastName": "Robinson"
+        },
+        {
+          "firstName": "Muhammad",
+          "middleNames": [
+            "Saad"
+          ],
+          "lastName": "Shamim"
+        },
+        {
+          "firstName": "Ido",
+          "middleNames": [],
+          "lastName": "Machol"
+        },
+        {
+          "firstName": "Jill",
+          "middleNames": [
+            "P."
+          ],
+          "lastName": "Mesirov"
+        },
+        {
+          "firstName": "Eric",
+          "middleNames": [
+            "S."
+          ],
+          "lastName": "Lander"
+        },
+        {
+          "firstName": "Erez",
+          "middleNames": [
+            "Lieberman"
+          ],
+          "lastName": "Aiden"
+        }
+      ],
+      "year": {
+        "text": "2016",
+        "fragments": []
+      },
+      "venue": {
+        "text": "Cell Systems",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2016,
+            "endKey": 2016,
+            "count": 9
+          },
+          {
+            "startKey": 2017,
+            "endKey": 2017,
+            "count": 40
+          },
+          {
+            "startKey": 2018,
+            "endKey": 2018,
+            "count": 77
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 129
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 149
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 175
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 174
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 65
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 818,
+        "estNumCitations": 1249.1518125685682,
+        "numReferences": 7,
+        "numKeyCitations": 72,
+        "numKeyReferences": 0,
+        "numViewableReferences": 7,
+        "keyCitationRate": 0.08801955990220049,
+        "citationVelocity": 166.0,
+        "citationAcceleration": -0.005714285714285714,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1522731191.782435000,
+      "journal": {
+        "name": "Cell systems",
+        "volume": "3 1",
+        "pages": "\n          99-101\n        "
+      },
+      "doiInfo": {
+        "doi": "10.1016/j.cels.2015.07.012",
+        "doiUrl": "https://doi.org/10.1016/j.cels.2015.07.012"
+      },
+      "links": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/27467250",
+          "linkType": "medline"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://www.ncbi.nlm.nih.gov/pubmed/27467250",
+        "linkType": "medline"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "http://www.cell.com/article/S240547121500054X/pdf",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "https://doi.org/10.1016/j.cels.2015.07.012",
+          "linkType": "doi"
+        },
+        {
+          "url": "https://dspace.mit.edu/bitstream/handle/1721.1/105759/Lander_Juicebox.pdf?isAllowed=y&sequence=1",
+          "linkType": "anansi"
+        },
+        {
+          "url": "https://dspace.mit.edu/openaccess-disseminate/1721.1/105759",
+          "linkType": "anansi"
+        }
+      ],
+      "entities": [
+        {
+          "id": "119477",
+          "name": "Microtubule-Associated Proteins",
+          "slug": "Microtubule-Associated-Proteins"
+        }
+      ],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 818,
+          "keyCitationCount": 72,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Computer Science"
+      ],
+      "openAccessInfo": {
+        "license": "CCBY",
+        "status": "HYBRID",
+        "location": {
+          "url": "http://www.cell.com/article/S240547121500054X/pdf",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2016-07-01",
+      "pubUpdateDate": "2016-07-27",
+      "badges": [
+        {
+          "id": "UNPAYWALL"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "d82441dde46eac6233dcd0626b355de2570fb6f4",
+      "corpusId": 205254836,
+      "title": {
+        "text": "Single-nucleus Hi-C reveals unique chromatin reorganization at oocyte-to-zygote transition",
+        "fragments": [
+          {
+            "start": 15,
+            "end": 17
+          }
+        ]
+      },
+      "slug": "Single-nucleus-Hi-C-reveals-unique-chromatin-at-Flyamer-Gassler",
+      "paperAbstract": {
+        "text": "Chromatin is reprogrammed after fertilization to produce a totipotent zygote with the potential to generate a new organism. The maternal genome inherited from the oocyte and the paternal genome provided by sperm coexist as separate haploid nuclei in the zygote. How these two epigenetically distinct genomes are spatially organized is poorly understood. Existing chromosome conformation capture-based methods are not applicable to oocytes and zygotes owing to a paucity of material. To study three-dimensional chromatin organization in rare cell types, we developed a single-nucleus Hi-C (high-resolution chromosome conformation capture) protocol that provides greater than tenfold more contacts per cell than the previous method. Here we show that chromatin architecture is uniquely reorganized during the oocyte-to-zygote transition in mice and is distinct in paternal and maternal nuclei within single-cell zygotes. Features of genomic organization including compartments, topologically associating domains (TADs) and loops are present in individual oocytes when averaged over the genome, but the presence of each feature at a locus varies between cells. At the sub-megabase level, we observed stochastic clusters of contacts that can occur across TAD boundaries but average into TADs. Notably, we found that TADs and loops, but not compartments, are present in zygotic maternal chromatin, suggesting that these are generated by different mechanisms. Our results demonstrate that the global chromatin organization of zygote nuclei is fundamentally different from that of other interphase cells. An understanding of this zygotic chromatin ‘ground state’ could potentially provide insights into reprogramming cells to a state of totipotency.",
+        "fragments": [
+          {
+            "start": 583,
+            "end": 585
+          }
+        ]
+      },
+      "paperAbstractTruncated": "Chromatin is reprogrammed after fertilization to produce a totipotent zygote with the potential to generate a new organi...",
+      "tldr": {
+        "text": "It is shown that chromatin architecture is uniquely reorganized during the oocyte-to-zygote transition in mice and is distinct in paternal and maternal nuclei within single-cell zygotes, demonstrating that the global chromatin organization of zygote nuclei is fundamentally different from that of other interphase cells.",
+        "abstractSimilarityScore": 43
+      },
+      "authors": [
+        [
+          {
+            "name": "Ilya M. Flyamer",
+            "ids": [
+              "9804032"
+            ],
+            "slug": "Ilya-M.-Flyamer",
+            "structuredName": {
+              "firstName": "Ilya",
+              "middleNames": [
+                "M."
+              ],
+              "lastName": "Flyamer"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Ilya M. Flyamer",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Johanna Gassler",
+            "ids": [
+              "39919569"
+            ],
+            "slug": "Johanna-Gassler",
+            "structuredName": {
+              "firstName": "Johanna",
+              "middleNames": [],
+              "lastName": "Gassler"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Johanna Gassler",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Maxim Imakaev",
+            "ids": [
+              "2330542"
+            ],
+            "slug": "Maxim-Imakaev",
+            "structuredName": {
+              "firstName": "Maxim",
+              "middleNames": [],
+              "lastName": "Imakaev"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Maxim Imakaev",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Hugo B. Brandão",
+            "ids": [
+              "49095674"
+            ],
+            "slug": "Hugo-B.-Brandão",
+            "structuredName": {
+              "firstName": "Hugo",
+              "middleNames": [
+                "B."
+              ],
+              "lastName": "Brandão"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Hugo B. Brandão",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "S. Ulianov",
+            "ids": [
+              "5254442"
+            ],
+            "slug": "S.-Ulianov",
+            "structuredName": {
+              "firstName": "Sergey",
+              "middleNames": [
+                "V."
+              ],
+              "lastName": "Ulianov"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "S. Ulianov",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Nezar Abdennur",
+            "ids": [
+              "88992497"
+            ],
+            "slug": "Nezar-Abdennur",
+            "structuredName": {
+              "firstName": "Nezar",
+              "middleNames": [],
+              "lastName": "Abdennur"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Nezar Abdennur",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "S. Razin",
+            "ids": [
+              "2761957"
+            ],
+            "slug": "S.-Razin",
+            "structuredName": {
+              "firstName": "Sergey",
+              "middleNames": [
+                "V."
+              ],
+              "lastName": "Razin"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "S. Razin",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "L. Mirny",
+            "ids": [
+              "1988955"
+            ],
+            "slug": "L.-Mirny",
+            "structuredName": {
+              "firstName": "Leonid",
+              "middleNames": [
+                "A."
+              ],
+              "lastName": "Mirny"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "L. Mirny",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Kikuë Tachibana-Konwalski",
+            "ids": [
+              "1398528538"
+            ],
+            "slug": "Kikuë-Tachibana-Konwalski",
+            "structuredName": {
+              "firstName": "Kikuë",
+              "middleNames": [],
+              "lastName": "Tachibana-Konwalski"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Kikuë Tachibana-Konwalski",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Ilya",
+          "middleNames": [
+            "M."
+          ],
+          "lastName": "Flyamer"
+        },
+        {
+          "firstName": "Johanna",
+          "middleNames": [],
+          "lastName": "Gassler"
+        },
+        {
+          "firstName": "Maxim",
+          "middleNames": [],
+          "lastName": "Imakaev"
+        },
+        {
+          "firstName": "Hugo",
+          "middleNames": [
+            "B."
+          ],
+          "lastName": "Brandão"
+        },
+        {
+          "firstName": "Sergey",
+          "middleNames": [
+            "V."
+          ],
+          "lastName": "Ulianov"
+        },
+        {
+          "firstName": "Nezar",
+          "middleNames": [],
+          "lastName": "Abdennur"
+        },
+        {
+          "firstName": "Sergey",
+          "middleNames": [
+            "V."
+          ],
+          "lastName": "Razin"
+        },
+        {
+          "firstName": "Leonid",
+          "middleNames": [
+            "A."
+          ],
+          "lastName": "Mirny"
+        },
+        {
+          "firstName": "Kikuë",
+          "middleNames": [],
+          "lastName": "Tachibana-Konwalski"
+        }
+      ],
+      "year": {
+        "text": "2017",
+        "fragments": []
+      },
+      "venue": {
+        "text": "Nature",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2016,
+            "endKey": 2016,
+            "count": 1
+          },
+          {
+            "startKey": 2017,
+            "endKey": 2017,
+            "count": 46
+          },
+          {
+            "startKey": 2018,
+            "endKey": 2018,
+            "count": 81
+          },
+          {
+            "startKey": 2019,
+            "endKey": 2019,
+            "count": 111
+          },
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 105
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 94
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 75
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 11
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 524,
+        "estNumCitations": 890.9411252531097,
+        "numReferences": 41,
+        "numKeyCitations": 26,
+        "numKeyReferences": 0,
+        "numViewableReferences": 41,
+        "keyCitationRate": 0.04961832061068702,
+        "citationVelocity": 91.33333333333333,
+        "citationAcceleration": -0.20212765957446807,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1522415030.899000000,
+      "journal": {
+        "name": "Nature",
+        "volume": "544",
+        "pages": "110 - 114"
+      },
+      "doiInfo": {
+        "doi": "10.1038/nature21711",
+        "doiUrl": "https://doi.org/10.1038/nature21711"
+      },
+      "links": [
+        {
+          "url": "https://doi.org/10.1038/nature21711",
+          "linkType": "publisher",
+          "publisherName": "Springer"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "https://doi.org/10.1038/nature21711",
+        "linkType": "publisher",
+        "publisherName": "Springer"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "https://dspace.mit.edu/bitstream/1721.1/112793/1/nihms852755.pdf",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "http://dspace.mit.edu/openaccess-disseminate/1721.1/112793",
+          "linkType": "anansi"
+        },
+        {
+          "url": "https://dash.harvard.edu/bitstream/handle/1/34492446/5639698.pdf?sequence=1",
+          "linkType": "anansi"
+        },
+        {
+          "url": "https://web.archive.org/web/20190503033933/https://dash.harvard.edu/bitstream/handle/1/34492446/5639698.pdf;jsessionid=7106ADEF04A48E349D7BA082B3EB6C58?sequence=1",
+          "linkType": "adhoc"
+        },
+        {
+          "url": "https://web.archive.org/web/20200313002415/https://dash.harvard.edu/bitstream/handle/1/34492446/5639698.pdf;jsessionid=66A9D51F110E1B956DAAD008BFB660B9?sequence=1",
+          "linkType": "adhoc"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/28355183",
+          "linkType": "medline"
+        }
+      ],
+      "entities": [
+        {
+          "id": "48799",
+          "name": "Structure of zygote",
+          "slug": "Structure-of-zygote"
+        },
+        {
+          "id": "5787",
+          "name": "Oocytes",
+          "slug": "Oocytes"
+        },
+        {
+          "id": "1542",
+          "name": "Cell Nucleus",
+          "slug": "Cell-Nucleus"
+        },
+        {
+          "id": "64330",
+          "name": "Reprogram",
+          "slug": "Reprogram"
+        },
+        {
+          "id": "4759",
+          "name": "Fertilization",
+          "slug": "Fertilization"
+        },
+        {
+          "id": "11857",
+          "name": "Haploidy",
+          "slug": "Haploidy"
+        },
+        {
+          "id": "18446",
+          "name": "Genome",
+          "slug": "Genome"
+        },
+        {
+          "id": "4187573",
+          "name": "aminoglutethimide/danazol/hydrocortisone/tamoxifen",
+          "slug": "aminoglutethimide-danazol-hydrocortisone-tamoxifen"
+        },
+        {
+          "id": "16728",
+          "name": "Interphase",
+          "slug": "Interphase"
+        },
+        {
+          "id": "11610",
+          "name": "sperm cell",
+          "slug": "sperm-cell"
+        }
+      ],
+      "entityRelations": [
+        {
+          "srcEntityId": "5787",
+          "destEntityId": "11610",
+          "srcEntityName": "Oocytes",
+          "destEntityName": "sperm cell",
+          "relationshipType": {
+            "id": "is_sibling_of"
+          },
+          "relationshipSubtype": "no_subtype",
+          "mentionContexts": [
+            "The maternal genome inherited from the <e1>oocyte</e1> and the paternal genome provided by <e2>sperm</e2> coexist as separate haploid nuclei in the zygote ."
+          ],
+          "mentionTexts": [
+            [
+              "oocyte",
+              "sperm"
+            ]
+          ],
+          "srcEntitySlug": "Oocytes",
+          "destEntitySlug": "sperm-cell"
+        },
+        {
+          "srcEntityId": "11610",
+          "destEntityId": "5787",
+          "srcEntityName": "sperm cell",
+          "destEntityName": "Oocytes",
+          "relationshipType": {
+            "id": "is_sibling_of"
+          },
+          "relationshipSubtype": "no_subtype",
+          "mentionContexts": [
+            "The maternal genome inherited from the <e2>oocyte</e2> and the paternal genome provided by <e1>sperm</e1> coexist as separate haploid nuclei in the zygote ."
+          ],
+          "mentionTexts": [
+            [
+              "sperm",
+              "oocyte"
+            ]
+          ],
+          "srcEntitySlug": "sperm-cell",
+          "destEntitySlug": "Oocytes"
+        },
+        {
+          "srcEntityId": "5787",
+          "destEntityId": "48799",
+          "srcEntityName": "Oocytes",
+          "destEntityName": "Structure of zygote",
+          "relationshipType": {
+            "id": "is_sibling_of"
+          },
+          "relationshipSubtype": "no_subtype",
+          "mentionContexts": [
+            "The maternal genome inherited from the <e1>oocyte</e1> and the paternal genome provided by sperm coexist as separate haploid nuclei in the <e2>zygote</e2> .",
+            "Single - nucleus Hi - C reveals unique chromatin reorganization at <e1>oocyte</e1> - to - <e2>zygote</e2> transition .",
+            "Here we show that chromatin architecture is uniquely reorganized during the <e1>oocyte</e1> - to - <e2>zygote</e2> transition in mice and is distinct in paternal and maternal nuclei within single - cell zygotes .",
+            "Here we show that chromatin architecture is uniquely reorganized during the <e1>oocyte</e1> - to - zygote transition in mice and is distinct in paternal and maternal nuclei within single - cell <e2>zygotes</e2> ."
+          ],
+          "mentionTexts": [
+            [
+              "oocyte",
+              "zygote"
+            ],
+            [
+              "oocyte",
+              "zygote"
+            ],
+            [
+              "oocyte",
+              "zygote"
+            ],
+            [
+              "oocyte",
+              "zygotes"
+            ]
+          ],
+          "srcEntitySlug": "Oocytes",
+          "destEntitySlug": "Structure-of-zygote"
+        },
+        {
+          "srcEntityId": "48799",
+          "destEntityId": "5787",
+          "srcEntityName": "Structure of zygote",
+          "destEntityName": "Oocytes",
+          "relationshipType": {
+            "id": "is_sibling_of"
+          },
+          "relationshipSubtype": "no_subtype",
+          "mentionContexts": [
+            "The maternal genome inherited from the <e2>oocyte</e2> and the paternal genome provided by sperm coexist as separate haploid nuclei in the <e1>zygote</e1> .",
+            "Here we show that chromatin architecture is uniquely reorganized during the <e2>oocyte</e2> - to - <e1>zygote</e1> transition in mice and is distinct in paternal and maternal nuclei within single - cell zygotes .",
+            "Here we show that chromatin architecture is uniquely reorganized during the <e2>oocyte</e2> - to - zygote transition in mice and is distinct in paternal and maternal nuclei within single - cell <e1>zygotes</e1> .",
+            "Single - nucleus Hi - C reveals unique chromatin reorganization at <e2>oocyte</e2> - to - <e1>zygote</e1> transition ."
+          ],
+          "mentionTexts": [
+            [
+              "zygote",
+              "oocyte"
+            ],
+            [
+              "zygote",
+              "oocyte"
+            ],
+            [
+              "zygotes",
+              "oocyte"
+            ],
+            [
+              "zygote",
+              "oocyte"
+            ]
+          ],
+          "srcEntitySlug": "Structure-of-zygote",
+          "destEntitySlug": "Oocytes"
+        }
+      ],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 524,
+          "keyCitationCount": 26,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Biology"
+      ],
+      "openAccessInfo": {
+        "license": "CCBYNC",
+        "status": "GREEN",
+        "location": {
+          "url": "https://dspace.mit.edu/bitstream/1721.1/112793/1/nihms852755.pdf",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2017-02-23",
+      "pubUpdateDate": "2017-04-06",
+      "publisher": {
+        "name": "Nature Publishing Group UK"
+      },
+      "badges": [
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
+    },
+    {
+      "id": "e44da625e6af8551402f645709cdd7672d06b099",
+      "corpusId": 211082884,
+      "title": {
+        "text": "Hi-Net: Hybrid-Fusion Network for Multi-Modal MR Image Synthesis",
+        "fragments": [
+          {
+            "start": 0,
+            "end": 2
+          }
+        ]
+      },
+      "slug": "Hi-Net:-Hybrid-Fusion-Network-for-Multi-Modal-MR-Zhou-Fu",
+      "paperAbstract": {
+        "text": "Magnetic resonance imaging (MRI) is a widely used neuroimaging technique that can provide images of different contrasts (i.e., modalities). Fusing this multi-modal data has proven particularly effective for boosting model performance in many tasks. However, due to poor data quality and frequent patient dropout, collecting all modalities for every patient remains a challenge. Medical image synthesis has been proposed as an effective solution, where any missing modalities are synthesized from the existing ones. In this paper, we propose a novel Hybrid-fusion Network (Hi-Net) for multi-modal MR image synthesis, which learns a mapping from multi-modal source images (i.e., existing modalities) to target images (i.e., missing modalities). In our Hi-Net, a modality-specific network is utilized to learn representations for each individual modality, and a fusion network is employed to learn the common latent representation of multi-modal data. Then, a multi-modal synthesis network is designed to densely combine the latent representation with hierarchical features from each modality, acting as a generator to synthesize the target images. Moreover, a layer-wise multi-modal fusion strategy effectively exploits the correlations among multiple modalities, where a Mixed Fusion Block (MFB) is proposed to adaptively weight different fusion strategies. Extensive experiments demonstrate the proposed model outperforms other state-of-the-art medical image synthesis methods.",
+        "fragments": [
+          {
+            "start": 572,
+            "end": 574
+          },
+          {
+            "start": 750,
+            "end": 752
+          }
+        ]
+      },
+      "paperAbstractTruncated": "Magnetic resonance imaging (MRI) is a widely used neuroimaging technique that can provide images of different contrasts ...",
+      "tldr": {
+        "text": "A novel Hybrid-fusion Network (Hi-Net) is proposed for multi-modal MR image synthesis, which learns a mapping from multi- modal source images to target images, and effectively exploits the correlations among multiple modalities.",
+        "abstractSimilarityScore": 41
+      },
+      "authors": [
+        [
+          {
+            "name": "Tao Zhou",
+            "ids": [
+              "153295714"
+            ],
+            "slug": "Tao-Zhou",
+            "structuredName": {
+              "firstName": "Tao",
+              "middleNames": [],
+              "lastName": "Zhou"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Tao Zhou",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "H. Fu",
+            "ids": [
+              "1929093"
+            ],
+            "slug": "H.-Fu",
+            "structuredName": {
+              "firstName": "H.",
+              "middleNames": [],
+              "lastName": "Fu"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "H. Fu",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Geng Chen",
+            "ids": [
+              "143808551"
+            ],
+            "slug": "Geng-Chen",
+            "structuredName": {
+              "firstName": "Geng",
+              "middleNames": [],
+              "lastName": "Chen"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Geng Chen",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Jianbing Shen",
+            "ids": [
+              "145953515"
+            ],
+            "slug": "Jianbing-Shen",
+            "structuredName": {
+              "firstName": "Jianbing",
+              "middleNames": [],
+              "lastName": "Shen"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Jianbing Shen",
+            "fragments": []
+          }
+        ],
+        [
+          {
+            "name": "Ling Shao",
+            "ids": [
+              "144082425"
+            ],
+            "slug": "Ling-Shao",
+            "structuredName": {
+              "firstName": "Ling",
+              "middleNames": [],
+              "lastName": "Shao"
+            },
+            "bitmap$0": false
+          },
+          {
+            "text": "Ling Shao",
+            "fragments": []
+          }
+        ]
+      ],
+      "structuredAuthors": [
+        {
+          "firstName": "Tao",
+          "middleNames": [],
+          "lastName": "Zhou"
+        },
+        {
+          "firstName": "H.",
+          "middleNames": [],
+          "lastName": "Fu"
+        },
+        {
+          "firstName": "Geng",
+          "middleNames": [],
+          "lastName": "Chen"
+        },
+        {
+          "firstName": "Jianbing",
+          "middleNames": [],
+          "lastName": "Shen"
+        },
+        {
+          "firstName": "Ling",
+          "middleNames": [],
+          "lastName": "Shao"
+        }
+      ],
+      "year": {
+        "text": "2020",
+        "fragments": []
+      },
+      "venue": {
+        "text": "IEEE Transactions on Medical Imaging",
+        "fragments": []
+      },
+      "citationContexts": [],
+      "citationStats": {
+        "citedByBuckets": [
+          {
+            "startKey": 2020,
+            "endKey": 2020,
+            "count": 20
+          },
+          {
+            "startKey": 2021,
+            "endKey": 2021,
+            "count": 26
+          },
+          {
+            "startKey": 2022,
+            "endKey": 2022,
+            "count": 50
+          },
+          {
+            "startKey": 2023,
+            "endKey": 2023,
+            "count": 23
+          }
+        ],
+        "keyCitedByBuckets": [],
+        "numCitations": 119,
+        "estNumCitations": 179.40817734532007,
+        "numReferences": 54,
+        "numKeyCitations": 13,
+        "numKeyReferences": 4,
+        "numViewableReferences": 54,
+        "keyCitationRate": 0.1092436974789916,
+        "citationVelocity": 32.0,
+        "citationAcceleration": 0.9230769230769231,
+        "firstCitationVelocityYear": 2020,
+        "lastCitationVelocityYear": 2022
+      },
+      "earliestAcquisitionsDate": 1581559258.011000000,
+      "journal": {
+        "name": "IEEE Transactions on Medical Imaging",
+        "volume": "39",
+        "pages": "2772-2781"
+      },
+      "doiInfo": {
+        "doi": "10.1109/TMI.2020.2975344",
+        "doiUrl": "https://doi.org/10.1109/TMI.2020.2975344"
+      },
+      "links": [
+        {
+          "url": "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9004544",
+          "linkType": "ieee"
+        }
+      ],
+      "primaryPaperLink": {
+        "url": "http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9004544",
+        "linkType": "ieee"
+      },
+      "alternatePaperLinks": [
+        {
+          "url": "http://arxiv.org/pdf/2002.05000",
+          "linkType": "openaccess"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2002.05000.pdf",
+          "linkType": "arxiv"
+        },
+        {
+          "url": "https://doi.org/10.1109/TMI.2020.2975344",
+          "linkType": "doi"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pubmed/32086202",
+          "linkType": "medline"
+        },
+        {
+          "url": "https://www.wikidata.org/entity/Q89837297",
+          "linkType": "dblp"
+        }
+      ],
+      "entities": [
+        {
+          "id": "61528",
+          "name": "Modal logic",
+          "slug": "Modal-logic"
+        },
+        {
+          "id": "15667",
+          "name": "Rendering (computer graphics)",
+          "slug": "Rendering-(computer-graphics)"
+        },
+        {
+          "id": "462",
+          "name": "Modality (human–computer interaction)",
+          "slug": "Modality-(human–computer-interaction)"
+        },
+        {
+          "id": "53532",
+          "name": "Dropout (neural networks)",
+          "slug": "Dropout-(neural-networks)"
+        },
+        {
+          "id": "23731",
+          "name": "Data quality",
+          "slug": "Data-quality"
+        },
+        {
+          "id": "5848",
+          "name": "Boosting (machine learning)",
+          "slug": "Boosting-(machine-learning)"
+        },
+        {
+          "id": "378",
+          "name": "Experiment",
+          "slug": "Experiment"
+        },
+        {
+          "id": "2699",
+          "name": "Resonance",
+          "slug": "Resonance"
+        },
+        {
+          "id": "52938",
+          "name": "Expectation–maximization algorithm",
+          "slug": "Expectation–maximization-algorithm"
+        }
+      ],
+      "entityRelations": [],
+      "faqs": [],
+      "scorecardStats": [
+        {
+          "typeKey": "cited_by",
+          "citationCount": 119,
+          "keyCitationCount": 13,
+          "score": 10.0
+        }
+      ],
+      "fieldsOfStudy": [
+        "Computer Science",
+        "Engineering"
+      ],
+      "openAccessInfo": {
+        "status": "GREEN",
+        "location": {
+          "url": "http://arxiv.org/pdf/2002.05000",
+          "isPdf": true
+        }
+      },
+      "pubDate": "2020-02-11",
+      "pubUpdateDate": "2020-09-01",
+      "badges": [
+        {
+          "id": "UNPAYWALL"
+        },
+        {
+          "id": "OPEN_ACCESS"
+        }
+      ],
+      "cues": {}
+    }
+  ],
+  "query": {
+    "queryString": "Hi",
+    "pageSize": 10,
+    "page": 1,
+    "sort": "relevance",
+    "authors": [],
+    "coAuthors": [],
+    "venues": [],
+    "requireViewablePdf": false,
+    "useFallbackRankerService": false,
+    "useFallbackSearchCluster": false,
+    "includeTldrs": true,
+    "getQuerySuggestions": false,
+    "fieldsOfStudy": [],
+    "performTitleMatch": true,
+    "hydrateWithDdb": true,
+    "includeBadges": true,
+    "safeFieldsOfStudy": []
+  },
+  "querySuggestions": [],
+  "totalPages": 28238,
+  "totalResults": 282386,
+  "stats": {
+    "coAuthors": [],
+    "authors": [
+      {
+        "value": "Unidentified",
+        "documentCount": 539,
+        "unfilteredDocumentCount": 539
+      },
+      {
+        "value": "Yun‐Hi Kim",
+        "documentCount": 497,
+        "unfilteredDocumentCount": 497
+      },
+      {
+        "value": "Wood-Hi Cheng",
+        "documentCount": 334,
+        "unfilteredDocumentCount": 334
+      },
+      {
+        "value": "Hi Deok Lee",
+        "documentCount": 331,
+        "unfilteredDocumentCount": 331
+      },
+      {
+        "value": "Hi-Joon Park",
+        "documentCount": 331,
+        "unfilteredDocumentCount": 331
+      },
+      {
+        "value": "Hi",
+        "documentCount": 310,
+        "unfilteredDocumentCount": 310
+      },
+      {
+        "value": "Soon-Ki Kwon",
+        "documentCount": 302,
+        "unfilteredDocumentCount": 302
+      },
+      {
+        "value": "Won Hi Hong",
+        "documentCount": 273,
+        "unfilteredDocumentCount": 273
+      },
+      {
+        "value": "Kyung Hi Chang",
+        "documentCount": 267,
+        "unfilteredDocumentCount": 267
+      },
+      {
+        "value": "Yun‐Hi Lee",
+        "documentCount": 195,
+        "unfilteredDocumentCount": 195
       }
     ],
-    "is_show": true,
-    "isMobile": false,
-    "host": "typeset.io",
-    "auth": {
-      "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1aWQiOiAiNGFrZzFjb3BveSIsICJ0eXAiOiAiR1VFU1QiLCAiaXNzIjogImh0dHBzOi8vdHlwZXNldC5pby8iLCAiaWF0IjogMTY4MjUwNDE4MiwgImV4cCI6IDE2OTExNDQxODJ9.eVjO_s331fCAFLgR4p-bMIAs0mG-uk3NZCYGrPwlI0HQ9NxkCxqCETgG9tk-Iiz7ErBn4piVM38qbEhFGvCu0_sCAnQYZFNvtprgsUDTgJdyv_CYIOAqTyNm7u-WECSFmbSWzJDyMhqNeelvmXo1vjdwt2JTP5tEEClYYzItAsG_hZ4YDba8JXz1TkoI6y04sPir6aWSmfkgggRDhoA4UYZetsiBgVWBLC30XYkueGpWEreJFcjDTbqy-jUJ7jVmM-ErohG953Im-c54azJQsd_G9zmXmP3fSqnu0QPvopRyWTTkUozeLvP5c6_ttWOYrZGLYvbxhu8HCXZQmuDC5A"
-    },
-    "displayRibbon": true
+    "venues": [
+      {
+        "value": "bioRxiv",
+        "documentCount": 783,
+        "unfilteredDocumentCount": 783
+      },
+      {
+        "value": "Nature",
+        "documentCount": 375,
+        "unfilteredDocumentCount": 375
+      },
+      {
+        "value": "PloS one",
+        "documentCount": 344,
+        "unfilteredDocumentCount": 344
+      },
+      {
+        "value": "Blood",
+        "documentCount": 309,
+        "unfilteredDocumentCount": 309
+      },
+      {
+        "value": "Scientific Reports",
+        "documentCount": 279,
+        "unfilteredDocumentCount": 279
+      },
+      {
+        "value": "Proceedings of the International Astronomical Union",
+        "documentCount": 273,
+        "unfilteredDocumentCount": 273
+      },
+      {
+        "value": "Pediatric Research",
+        "documentCount": 258,
+        "unfilteredDocumentCount": 258
+      },
+      {
+        "value": "Naturwissenschaften",
+        "documentCount": 247,
+        "unfilteredDocumentCount": 247
+      },
+      {
+        "value": "Nature Communications",
+        "documentCount": 209,
+        "unfilteredDocumentCount": 209
+      },
+      {
+        "value": "Avian diseases",
+        "documentCount": 199,
+        "unfilteredDocumentCount": 199
+      }
+    ],
+    "years": [
+      {
+        "key": 1931,
+        "count": 32
+      },
+      {
+        "key": 1932,
+        "count": 77
+      },
+      {
+        "key": 1933,
+        "count": 44
+      },
+      {
+        "key": 1934,
+        "count": 56
+      },
+      {
+        "key": 1935,
+        "count": 69
+      },
+      {
+        "key": 1936,
+        "count": 76
+      },
+      {
+        "key": 1937,
+        "count": 58
+      },
+      {
+        "key": 1938,
+        "count": 59
+      },
+      {
+        "key": 1939,
+        "count": 79
+      },
+      {
+        "key": 1940,
+        "count": 43
+      },
+      {
+        "key": 1941,
+        "count": 57
+      },
+      {
+        "key": 1942,
+        "count": 42
+      },
+      {
+        "key": 1943,
+        "count": 38
+      },
+      {
+        "key": 1944,
+        "count": 30
+      },
+      {
+        "key": 1945,
+        "count": 26
+      },
+      {
+        "key": 1946,
+        "count": 38
+      },
+      {
+        "key": 1947,
+        "count": 50
+      },
+      {
+        "key": 1948,
+        "count": 51
+      },
+      {
+        "key": 1949,
+        "count": 83
+      },
+      {
+        "key": 1950,
+        "count": 71
+      },
+      {
+        "key": 1951,
+        "count": 76
+      },
+      {
+        "key": 1952,
+        "count": 71
+      },
+      {
+        "key": 1953,
+        "count": 67
+      },
+      {
+        "key": 1954,
+        "count": 98
+      },
+      {
+        "key": 1955,
+        "count": 84
+      },
+      {
+        "key": 1956,
+        "count": 119
+      },
+      {
+        "key": 1957,
+        "count": 114
+      },
+      {
+        "key": 1958,
+        "count": 108
+      },
+      {
+        "key": 1959,
+        "count": 139
+      },
+      {
+        "key": 1960,
+        "count": 163
+      },
+      {
+        "key": 1961,
+        "count": 168
+      },
+      {
+        "key": 1962,
+        "count": 185
+      },
+      {
+        "key": 1963,
+        "count": 200
+      },
+      {
+        "key": 1964,
+        "count": 219
+      },
+      {
+        "key": 1965,
+        "count": 202
+      },
+      {
+        "key": 1966,
+        "count": 225
+      },
+      {
+        "key": 1967,
+        "count": 246
+      },
+      {
+        "key": 1968,
+        "count": 264
+      },
+      {
+        "key": 1969,
+        "count": 319
+      },
+      {
+        "key": 1970,
+        "count": 410
+      },
+      {
+        "key": 1971,
+        "count": 345
+      },
+      {
+        "key": 1972,
+        "count": 357
+      },
+      {
+        "key": 1973,
+        "count": 371
+      },
+      {
+        "key": 1974,
+        "count": 413
+      },
+      {
+        "key": 1975,
+        "count": 412
+      },
+      {
+        "key": 1976,
+        "count": 459
+      },
+      {
+        "key": 1977,
+        "count": 470
+      },
+      {
+        "key": 1978,
+        "count": 560
+      },
+      {
+        "key": 1979,
+        "count": 552
+      },
+      {
+        "key": 1980,
+        "count": 554
+      },
+      {
+        "key": 1981,
+        "count": 625
+      },
+      {
+        "key": 1982,
+        "count": 643
+      },
+      {
+        "key": 1983,
+        "count": 668
+      },
+      {
+        "key": 1984,
+        "count": 709
+      },
+      {
+        "key": 1985,
+        "count": 744
+      },
+      {
+        "key": 1986,
+        "count": 798
+      },
+      {
+        "key": 1987,
+        "count": 803
+      },
+      {
+        "key": 1988,
+        "count": 900
+      },
+      {
+        "key": 1989,
+        "count": 1010
+      },
+      {
+        "key": 1990,
+        "count": 1062
+      },
+      {
+        "key": 1991,
+        "count": 1051
+      },
+      {
+        "key": 1992,
+        "count": 1053
+      },
+      {
+        "key": 1993,
+        "count": 1206
+      },
+      {
+        "key": 1994,
+        "count": 1207
+      },
+      {
+        "key": 1995,
+        "count": 1372
+      },
+      {
+        "key": 1996,
+        "count": 1524
+      },
+      {
+        "key": 1997,
+        "count": 1658
+      },
+      {
+        "key": 1998,
+        "count": 1687
+      },
+      {
+        "key": 1999,
+        "count": 1823
+      },
+      {
+        "key": 2000,
+        "count": 2018
+      },
+      {
+        "key": 2001,
+        "count": 2499
+      },
+      {
+        "key": 2002,
+        "count": 2593
+      },
+      {
+        "key": 2003,
+        "count": 2983
+      },
+      {
+        "key": 2004,
+        "count": 3405
+      },
+      {
+        "key": 2005,
+        "count": 4216
+      },
+      {
+        "key": 2006,
+        "count": 3880
+      },
+      {
+        "key": 2007,
+        "count": 4261
+      },
+      {
+        "key": 2008,
+        "count": 4559
+      },
+      {
+        "key": 2009,
+        "count": 4775
+      },
+      {
+        "key": 2010,
+        "count": 5046
+      },
+      {
+        "key": 2011,
+        "count": 5323
+      },
+      {
+        "key": 2012,
+        "count": 5403
+      },
+      {
+        "key": 2013,
+        "count": 6212
+      },
+      {
+        "key": 2014,
+        "count": 6201
+      },
+      {
+        "key": 2015,
+        "count": 6182
+      },
+      {
+        "key": 2016,
+        "count": 6273
+      },
+      {
+        "key": 2017,
+        "count": 5878
+      },
+      {
+        "key": 2018,
+        "count": 5671
+      },
+      {
+        "key": 2019,
+        "count": 5400
+      },
+      {
+        "key": 2020,
+        "count": 5385
+      },
+      {
+        "key": 2021,
+        "count": 4741
+      },
+      {
+        "key": 2022,
+        "count": 4027
+      },
+      {
+        "key": 2023,
+        "count": 1031
+      }
+    ],
+    "filteredYears": [
+      {
+        "key": 1931,
+        "count": 32
+      },
+      {
+        "key": 1932,
+        "count": 77
+      },
+      {
+        "key": 1933,
+        "count": 44
+      },
+      {
+        "key": 1934,
+        "count": 56
+      },
+      {
+        "key": 1935,
+        "count": 69
+      },
+      {
+        "key": 1936,
+        "count": 76
+      },
+      {
+        "key": 1937,
+        "count": 58
+      },
+      {
+        "key": 1938,
+        "count": 59
+      },
+      {
+        "key": 1939,
+        "count": 79
+      },
+      {
+        "key": 1940,
+        "count": 43
+      },
+      {
+        "key": 1941,
+        "count": 57
+      },
+      {
+        "key": 1942,
+        "count": 42
+      },
+      {
+        "key": 1943,
+        "count": 38
+      },
+      {
+        "key": 1944,
+        "count": 30
+      },
+      {
+        "key": 1945,
+        "count": 26
+      },
+      {
+        "key": 1946,
+        "count": 38
+      },
+      {
+        "key": 1947,
+        "count": 50
+      },
+      {
+        "key": 1948,
+        "count": 51
+      },
+      {
+        "key": 1949,
+        "count": 83
+      },
+      {
+        "key": 1950,
+        "count": 71
+      },
+      {
+        "key": 1951,
+        "count": 76
+      },
+      {
+        "key": 1952,
+        "count": 71
+      },
+      {
+        "key": 1953,
+        "count": 67
+      },
+      {
+        "key": 1954,
+        "count": 98
+      },
+      {
+        "key": 1955,
+        "count": 84
+      },
+      {
+        "key": 1956,
+        "count": 119
+      },
+      {
+        "key": 1957,
+        "count": 114
+      },
+      {
+        "key": 1958,
+        "count": 108
+      },
+      {
+        "key": 1959,
+        "count": 139
+      },
+      {
+        "key": 1960,
+        "count": 163
+      },
+      {
+        "key": 1961,
+        "count": 168
+      },
+      {
+        "key": 1962,
+        "count": 185
+      },
+      {
+        "key": 1963,
+        "count": 200
+      },
+      {
+        "key": 1964,
+        "count": 219
+      },
+      {
+        "key": 1965,
+        "count": 202
+      },
+      {
+        "key": 1966,
+        "count": 225
+      },
+      {
+        "key": 1967,
+        "count": 246
+      },
+      {
+        "key": 1968,
+        "count": 264
+      },
+      {
+        "key": 1969,
+        "count": 319
+      },
+      {
+        "key": 1970,
+        "count": 410
+      },
+      {
+        "key": 1971,
+        "count": 345
+      },
+      {
+        "key": 1972,
+        "count": 357
+      },
+      {
+        "key": 1973,
+        "count": 371
+      },
+      {
+        "key": 1974,
+        "count": 413
+      },
+      {
+        "key": 1975,
+        "count": 412
+      },
+      {
+        "key": 1976,
+        "count": 459
+      },
+      {
+        "key": 1977,
+        "count": 470
+      },
+      {
+        "key": 1978,
+        "count": 560
+      },
+      {
+        "key": 1979,
+        "count": 552
+      },
+      {
+        "key": 1980,
+        "count": 554
+      },
+      {
+        "key": 1981,
+        "count": 625
+      },
+      {
+        "key": 1982,
+        "count": 643
+      },
+      {
+        "key": 1983,
+        "count": 668
+      },
+      {
+        "key": 1984,
+        "count": 709
+      },
+      {
+        "key": 1985,
+        "count": 744
+      },
+      {
+        "key": 1986,
+        "count": 798
+      },
+      {
+        "key": 1987,
+        "count": 803
+      },
+      {
+        "key": 1988,
+        "count": 900
+      },
+      {
+        "key": 1989,
+        "count": 1010
+      },
+      {
+        "key": 1990,
+        "count": 1062
+      },
+      {
+        "key": 1991,
+        "count": 1051
+      },
+      {
+        "key": 1992,
+        "count": 1053
+      },
+      {
+        "key": 1993,
+        "count": 1206
+      },
+      {
+        "key": 1994,
+        "count": 1207
+      },
+      {
+        "key": 1995,
+        "count": 1372
+      },
+      {
+        "key": 1996,
+        "count": 1524
+      },
+      {
+        "key": 1997,
+        "count": 1658
+      },
+      {
+        "key": 1998,
+        "count": 1687
+      },
+      {
+        "key": 1999,
+        "count": 1823
+      },
+      {
+        "key": 2000,
+        "count": 2018
+      },
+      {
+        "key": 2001,
+        "count": 2499
+      },
+      {
+        "key": 2002,
+        "count": 2593
+      },
+      {
+        "key": 2003,
+        "count": 2983
+      },
+      {
+        "key": 2004,
+        "count": 3405
+      },
+      {
+        "key": 2005,
+        "count": 4216
+      },
+      {
+        "key": 2006,
+        "count": 3880
+      },
+      {
+        "key": 2007,
+        "count": 4261
+      },
+      {
+        "key": 2008,
+        "count": 4559
+      },
+      {
+        "key": 2009,
+        "count": 4775
+      },
+      {
+        "key": 2010,
+        "count": 5046
+      },
+      {
+        "key": 2011,
+        "count": 5323
+      },
+      {
+        "key": 2012,
+        "count": 5403
+      },
+      {
+        "key": 2013,
+        "count": 6212
+      },
+      {
+        "key": 2014,
+        "count": 6201
+      },
+      {
+        "key": 2015,
+        "count": 6182
+      },
+      {
+        "key": 2016,
+        "count": 6273
+      },
+      {
+        "key": 2017,
+        "count": 5878
+      },
+      {
+        "key": 2018,
+        "count": 5671
+      },
+      {
+        "key": 2019,
+        "count": 5400
+      },
+      {
+        "key": 2020,
+        "count": 5385
+      },
+      {
+        "key": 2021,
+        "count": 4741
+      },
+      {
+        "key": 2022,
+        "count": 4027
+      },
+      {
+        "key": 2023,
+        "count": 1031
+      }
+    ],
+    "countOfPapersWithViewablePdf": 32112,
+    "publicationTypes": [
+      {
+        "value": "JournalArticle",
+        "documentCount": 26516,
+        "unfilteredDocumentCount": 26516
+      },
+      {
+        "value": "Review",
+        "documentCount": 12673,
+        "unfilteredDocumentCount": 12673
+      },
+      {
+        "value": "Study",
+        "documentCount": 2262,
+        "unfilteredDocumentCount": 2262
+      },
+      {
+        "value": "Conference",
+        "documentCount": 2244,
+        "unfilteredDocumentCount": 2244
+      },
+      {
+        "value": "LettersAndComments",
+        "documentCount": 808,
+        "unfilteredDocumentCount": 808
+      },
+      {
+        "value": "CaseReport",
+        "documentCount": 674,
+        "unfilteredDocumentCount": 674
+      },
+      {
+        "value": "ClinicalTrial",
+        "documentCount": 538,
+        "unfilteredDocumentCount": 538
+      },
+      {
+        "value": "Editorial",
+        "documentCount": 222,
+        "unfilteredDocumentCount": 222
+      },
+      {
+        "value": "Book",
+        "documentCount": 128,
+        "unfilteredDocumentCount": 128
+      },
+      {
+        "value": "News",
+        "documentCount": 55,
+        "unfilteredDocumentCount": 55
+      }
+    ],
+    "fieldsOfStudy": [
+      {
+        "value": "Medicine",
+        "documentCount": 25554,
+        "unfilteredDocumentCount": 25554
+      },
+      {
+        "value": "Biology",
+        "documentCount": 24442,
+        "unfilteredDocumentCount": 24442
+      },
+      {
+        "value": "Physics",
+        "documentCount": 17321,
+        "unfilteredDocumentCount": 17321
+      },
+      {
+        "value": "Agricultural And Food Sciences",
+        "documentCount": 9157,
+        "unfilteredDocumentCount": 9157
+      },
+      {
+        "value": "Chemistry",
+        "documentCount": 7279,
+        "unfilteredDocumentCount": 7279
+      },
+      {
+        "value": "Computer Science",
+        "documentCount": 5493,
+        "unfilteredDocumentCount": 5493
+      },
+      {
+        "value": "Environmental Science",
+        "documentCount": 5330,
+        "unfilteredDocumentCount": 5330
+      },
+      {
+        "value": "Engineering",
+        "documentCount": 4989,
+        "unfilteredDocumentCount": 4989
+      },
+      {
+        "value": "Materials Science",
+        "documentCount": 4856,
+        "unfilteredDocumentCount": 4856
+      },
+      {
+        "value": "Education",
+        "documentCount": 3925,
+        "unfilteredDocumentCount": 3925
+      }
+    ],
+    "totalCountAfterFilters": 140472
   },
-  "__N_SSP": true
+  "matchedAuthors": [
+    {
+      "id": "15553470",
+      "name": "H. Sone",
+      "slug": "H.-Sone",
+      "influentialCitationCount": 767,
+      "citationCount": 17156,
+      "paperCount": 574
+    },
+    {
+      "id": "2074452087",
+      "name": "Hi",
+      "slug": "Hi",
+      "influentialCitationCount": 143,
+      "citationCount": 1069,
+      "paperCount": 73
+    },
+    {
+      "id": "114449718",
+      "name": "Hicheon Kim",
+      "slug": "Hicheon-Kim",
+      "influentialCitationCount": 266,
+      "citationCount": 4262,
+      "paperCount": 33
+    },
+    {
+      "id": "74368470",
+      "name": "Hi-Bahl Lee",
+      "slug": "Hi-Bahl-Lee",
+      "influentialCitationCount": 173,
+      "citationCount": 4623,
+      "paperCount": 72
+    },
+    {
+      "id": "1388399508",
+      "name": "HI 96720",
+      "slug": "HI-96720",
+      "influentialCitationCount": 232,
+      "citationCount": 1694,
+      "paperCount": 4
+    },
+    {
+      "id": "2898327",
+      "name": "Mengchi Liu",
+      "slug": "Mengchi-Liu",
+      "influentialCitationCount": 224,
+      "citationCount": 1600,
+      "paperCount": 132
+    },
+    {
+      "id": "48212001",
+      "name": "Hiroaki Ishikawa",
+      "slug": "Hiroaki-Ishikawa",
+      "influentialCitationCount": 172,
+      "citationCount": 2502,
+      "paperCount": 32
+    },
+    {
+      "id": "2209856",
+      "name": "H. Yamamura",
+      "slug": "H.-Yamamura",
+      "influentialCitationCount": 332,
+      "citationCount": 9623,
+      "paperCount": 228
+    },
+    {
+      "id": "69443034",
+      "name": "S. Choi",
+      "slug": "S.-Choi",
+      "influentialCitationCount": 107,
+      "citationCount": 1272,
+      "paperCount": 80
+    },
+    {
+      "id": "145225782",
+      "name": "Takashi Kato",
+      "slug": "Takashi-Kato",
+      "influentialCitationCount": 176,
+      "citationCount": 4479,
+      "paperCount": 167
+    }
+  ],
+  "matchedEntity": {
+    "id": "881",
+    "name": "Image resolution",
+    "slug": "Image-resolution",
+    "definition": "Image resolution is the detail an image holds. The term applies to raster digital images, film images, and other types of images. Higher resolution means more image detail. Image resolution can be measured in various ways. Resolution quantifies how close lines can be to each other and still be visibly resolved. Resolution units can be tied to physical sizes (e.g. lines per mm, lines per inch), to the overall size of a picture (lines per picture height, also known simply as lines, TV lines, or TVL), or to angular subtense. Line pairs are often used instead of lines; a line pair comprises a dark line and an adjacent light line. A line is either a dark line or a light line. A resolution of 10 lines per millimeter means 5 dark lines alternating with 5 light lines, or 5 line pairs per millimete",
+    "definitionText": "Image resolution is the detail an image holds. The term applies to raster digital images, film images, and other types of images. Higher resolution means more image detail. Image resolution can be measured in various ways. Resolution quantifies how close lines can be to each other and still be visibly resolved. Resolution units can be tied to physical sizes (e.g. lines per mm, lines per inch), to the overall size of a picture (lines per picture height, also known simply as lines, TV lines, or TVL), or to angular subtense. Line pairs are often used instead of lines; a line pair comprises a dark line and an adjacent light line. A line is either a dark line or a light line. A resolution of 10 lines per millimeter means 5 dark lines alternating with 5 light lines, or 5 line pairs per millimete",
+    "sourceUrls": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Image resolution",
+        "text": "Wikipedia"
+      }
+    ],
+    "relatedEntities": [
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "93553",
+        "name": "2D computer graphics",
+        "slug": "2D-computer-graphics"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "60173",
+        "name": "4K resolution",
+        "slug": "4K-resolution"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "70745",
+        "name": "Acutance",
+        "slug": "Acutance"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "739238",
+        "name": "Advanced Spaceborne Thermal Emission and Reflection Radiometer",
+        "slug": "Advanced-Spaceborne-Thermal-Emission-and-Reflection"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "274789",
+        "name": "Apple Watch",
+        "slug": "Apple-Watch"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "626815",
+        "name": "Blu-ray",
+        "slug": "Blu-ray"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "245168",
+        "name": "Color filter array",
+        "slug": "Color-filter-array"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "2731024",
+        "name": "Comparison of video codecs",
+        "slug": "Comparison-of-video-codecs"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "4858604",
+        "name": "Computer-aided mural",
+        "slug": "Computer-aided-mural"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "10567",
+        "name": "Digital image",
+        "slug": "Digital-image"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "122509",
+        "name": "Digital photography",
+        "slug": "Digital-photography"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "1370",
+        "name": "Dots per inch",
+        "slug": "Dots-per-inch"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "1815633",
+        "name": "Droste effect",
+        "slug": "Droste-effect"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "833090",
+        "name": "Foveated imaging",
+        "slug": "Foveated-imaging"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "2556512",
+        "name": "Giclée",
+        "slug": "Giclée"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "274734",
+        "name": "Gigapixel image",
+        "slug": "Gigapixel-image"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "2887382",
+        "name": "Google Photos",
+        "slug": "Google-Photos"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "647828",
+        "name": "Ground sample distance",
+        "slug": "Ground-sample-distance"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "2263542",
+        "name": "Géoportail",
+        "slug": "Géoportail"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "668898",
+        "name": "Hurricane Weather Research and Forecasting model",
+        "slug": "Hurricane-Weather-Research-and-Forecasting-model"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "123485",
+        "name": "IMAX",
+        "slug": "IMAX"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "6665",
+        "name": "Image",
+        "slug": "Image"
+      },
+      {
+        "label": {
+          "parentToChild": "Narrower than",
+          "childToParent": "Broader"
+        },
+        "id": "7842",
+        "name": "Image processing",
+        "slug": "Image-processing"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "6527",
+        "name": "Image scanner",
+        "slug": "Image-scanner"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "33586",
+        "name": "Image sensor",
+        "slug": "Image-sensor"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "8025763",
+        "name": "Intrapixel and Interpixel processing",
+        "slug": "Intrapixel-and-Interpixel-processing"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "144561",
+        "name": "Kanade–Lucas–Tomasi feature tracker",
+        "slug": "Kanade–Lucas–Tomasi-feature-tracker"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "750461",
+        "name": "Lightmap",
+        "slug": "Lightmap"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "16150",
+        "name": "Medical ultrasound",
+        "slug": "Medical-ultrasound"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "12283863",
+        "name": "Microsoft Lumia 550",
+        "slug": "Microsoft-Lumia-550"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "3033206",
+        "name": "Minimum resolvable contrast",
+        "slug": "Minimum-resolvable-contrast"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "567581",
+        "name": "Molecular graphics",
+        "slug": "Molecular-graphics"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "162930",
+        "name": "Multispectral image",
+        "slug": "Multispectral-image"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "918541",
+        "name": "Optical mouse",
+        "slug": "Optical-mouse"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "11009",
+        "name": "PAL",
+        "slug": "PAL"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "7692669",
+        "name": "Panorama Viewer",
+        "slug": "Panorama-Viewer"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "5921079",
+        "name": "Passage",
+        "slug": "Passage"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "3576222",
+        "name": "Photoacoustic Doppler effect",
+        "slug": "Photoacoustic-Doppler-effect"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "205662",
+        "name": "Photoanalysis",
+        "slug": "Photoanalysis"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "4254",
+        "name": "Pixel",
+        "slug": "Pixel"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "960257",
+        "name": "Pixel geometry",
+        "slug": "Pixel-geometry"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "659368",
+        "name": "Pixelation",
+        "slug": "Pixelation"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "9222",
+        "name": "PostScript",
+        "slug": "PostScript"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "1985",
+        "name": "Printer (computing)",
+        "slug": "Printer-(computing)"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "376289",
+        "name": "Raster data",
+        "slug": "Raster-data"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "15667",
+        "name": "Rendering (computer graphics)",
+        "slug": "Rendering-(computer-graphics)"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "1093682",
+        "name": "Resel",
+        "slug": "Resel"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "521777",
+        "name": "Spatial application",
+        "slug": "Spatial-application"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "3232036",
+        "name": "Ultrasound computer tomography",
+        "slug": "Ultrasound-computer-tomography"
+      },
+      {
+        "label": {
+          "parentToChild": "Related to",
+          "childToParent": "Related"
+        },
+        "id": "391594",
+        "name": "Unsharp masking",
+        "slug": "Unsharp-masking"
+      }
+    ]
+  }
 }
