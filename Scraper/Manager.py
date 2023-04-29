@@ -57,7 +57,9 @@ class Scraper_api:
             req = requests.post(url=(
                 self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
+            print(json.dumps(self.config['search']['data']).replace('//<<Query>>//', query))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
+        print(req.text)
         req = json.loads(req.text)
         infor = False
         index = -1
@@ -75,8 +77,37 @@ class Scraper_api:
                     i = i[j]
                 res.append(i)
             return res
+        
+
+class Scraper_web:
+    def __init__(self, config):
+        self.config = config
+        
+    def search(self, query):
+        if(self.config['search'])['method'] == 'GET':
+            req = requests.request(method=self.config['search']['method'], url=(
+                self.config['search']['url'].replace('//<<Query>>//', query)))
+        elif(self.config['search'])['method'] == 'POST':
+            req = requests.post(url=(
+                self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
+                json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
+            print(json.dumps(self.config['search']['data']).replace('//<<Query>>//', query))
+        # req = open('Scrapers\\typeset_io_data.json','r').read()
+        print(req.text)
+        req = BeautifulSoup(req.text)
+        infor = False
+        index = -1
+        for n, i in enumerate(self.config['search']['route']):
+            if i == '//<<for>>//':
+                infor = True
+                index = n
+                break
+            else:
+                if(n+1<len(self.config['search']['route'])):
+                    if(self.config['search']['route'][n+1]=='//<<for>>//'):
+                        req = req.find_
 
 
 if __name__ == "__main__":
     t = Scrapers()
-    print(t['typeset_io.json'])
+    print(t['sematicscholar_org.json'].search("summa"))
