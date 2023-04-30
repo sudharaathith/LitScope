@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../../Components/NavBar';
 import Form from 'react-bootstrap/Form';
-import InputBox from '../../Components/InputBox';
+import CreateForm from '../../Components/CreateForm';
 
 function Create(props) {
     return (
@@ -12,7 +12,7 @@ function Create(props) {
             </div>
             <div>
             
-            <InputBox />
+                <CreateForm />
             </div>
         </div>
     );
