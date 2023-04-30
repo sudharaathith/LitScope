@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import InputBox from './InputBox';
 import { Select, Option } from "@material-tailwind/react";
+import SearchApi from './SearchApi';
 
 function CreateForm(props) {
+    let [mode, setMode] = useState("");
     return (
         <div className='flex flex-col justify-center mt-3'>
         <div className='flex flex-row  items-center'>
@@ -17,13 +19,17 @@ function CreateForm(props) {
                 mode
             </div>
             <div className=" absolute left-60">
-        <Select label='mode'>
-            <Option>web</Option>
-            <Option>api</Option>
+        <Select label='mode' onChange={(e)=>{
+            setMode(e)
+        }}>
+            <Option value='web'>web</Option>
+            <Option value='api'>api</Option>
         </Select>
         </div>
         </div>
-       
+        <div className=' mt-9'>
+       {(mode=='api')?<SearchApi/>:null}
+        </div>
         </div>
     );
 }
