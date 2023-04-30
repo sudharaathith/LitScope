@@ -2,7 +2,7 @@
     "domine_name": "paperity.org",
     "mode":"web",
     "search":{
-        "url":"https://paperity.org/search/?q=//<<Query>>//",
+        "url":"https://paperity.org/search/?q=///<<Query>>//",
         "route":[".col.col-sm-12.col-md-9","//<<for>>//","h4","a","//<<text>>//"],
         "method":"GET"
     }

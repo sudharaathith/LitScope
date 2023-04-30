@@ -9,15 +9,21 @@ function CreateForm(props) {
             <div className="ml-10 w-1/2  items-center">
                 Domine name
             </div>
-            <InputBox className="" text="domain name" />
+            <div className=" absolute left-60">
+            <InputBox className="" text="domain name" /></div>
         </div>
-        <div className='flex flex-row  items-center mt-3'>
-            <div className="ml-10 w-1/2  items-center">
-                Domine name
+        <div className='flex flex-row  mt-3'>
+            <div className="ml-10 items-center">
+                mode
             </div>
-            <InputBox className="" text="domain name" />
+            <div className=" absolute left-60">
+        <Select label='mode'>
+            <Option>web</Option>
+            <Option>api</Option>
+        </Select>
         </div>
-        
+        </div>
+       
         </div>
     );
 }
