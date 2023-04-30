@@ -94,7 +94,6 @@ class Scraper_web:
             print(json.dumps(self.config['search']['data']).replace('//<<Query>>//', query))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
         req = BeautifulSoup(req.text)
-        print(req)
         infor = False
         index = -1
         for n, i in enumerate(self.config['search']['route']):
@@ -127,4 +126,4 @@ class Scraper_web:
 
 if __name__ == "__main__":
     t = Scrapers()
-    print(t['researchgate_net.json'].search("Hi"))
+    print(t['paperity_org.json'].search("Research"))
