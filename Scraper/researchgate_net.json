@@ -1,0 +1,9 @@
+{
+    "domine_name": "researchgate.net",
+    "mode":"web",
+    "search":{
+        "url":"https://www.researchgate.net/search/publication?q=//<<Query>>//",
+        "route":[".nova-legacy-v-publication-item__stack-item","//<<for>>//","a","//<<text>>//"],
+        "method":"GET"
+    }
+}
