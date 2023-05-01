@@ -10,6 +10,12 @@ function SearchWeb(props) {
     let [methode, setMethode] = useState("");
     let [route, setRoute] = useState([]);
     let [data, setdata] = useState("");
+
+    useEffect(()=>{
+        if(props.startData!==null){
+            setUrl(props.startData['url']);
+        }
+    },[])
     
     let update = ()=>{
         props.onChange({
@@ -35,6 +41,7 @@ function SearchWeb(props) {
                 success={(validator.matches(url,"^https?://(?:[a-z0-9-]+\\.)+[a-z]{2,}(?:/[^/\\s]*)+((//<<Query>>//)?)$"))}
                 error={!(validator.matches(url,"^https?://(?:[a-z0-9-]+\\.)+[a-z]{2,}(?:/[^/\\s]*)+((//<<Query>>//)?)$"))}
                 label='Url'
+                value={url}
                 onChange={(e) => {
                     setUrl(e.target.value);
                 }}
@@ -48,11 +55,11 @@ function SearchWeb(props) {
             
         </div>
             <div className=" absolute mt-5 left-10 " >
-           <WebRoute onChange={(val) =>{
+           <WebRoute startData={props.startData['route']} onChange={(val) =>{
             setRoute(val);
            }}/>
         </div>
-       <Method onChange={(val) =>{
+       <Method startData={{"method":props.startData['method'],"data":props.startData['data']}} onChange={(val) =>{
         setMethode(val['method'])
         setdata(val['data'])
        }

@@ -1,13 +1,22 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import CreateForm from '../../Components/CreateForm';
 import NavBar from '../../Components/NavBar';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 function Edit(props) {
 
+    const params = useParams();
+    let[data, setData] = useState(null);
+
     useEffect(()=>{
-        axios
+        axios.get('http://127.0.0.1:8000/api/domain/edit/'+params.domain).then((res)=>{
+            setData(res.data);
+        })
     },[])
+    useEffect(()=>{
+        console.log(data)
+    },[data])
 
     return (
         <div>
@@ -16,7 +25,7 @@ function Edit(props) {
                 Edit
             </div>
             <div className=' mx-auto'>
-                <CreateForm startData="" />
+                <CreateForm startData={data} />
             </div>
         </div>
     );

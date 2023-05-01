@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import InputBox from "./InputBox";
 import { IonIcon, } from "@ionic/react";
 import { thumbsUpSharp, bug } from 'ionicons/icons';
 import { useNavigate } from "react-router-dom";
 import {
+  Input,
   Select,
   Option,
   Button,
@@ -14,17 +14,22 @@ import SearchApi from "./SearchApi";
 import axios from "axios";
 import ReactLoading from "react-loading";
 import SearchWeb from "./SearchWeb";
+import validator from "validator";
 
 function CreateForm(props) {
   let [domainName, setDomainName] = useState("");
   let [mode, setMode] = useState("");
+  let [icon, setIcon] = useState("");
   let [search, setSearch] = useState({});
   let [dialogOpen, setDialogOpen] = useState(false);
   let [dialogMode, setDialogMode] = useState(0);
 
-  useEffect(()=>{
-    console.log(search)
-  },[search])
+  useEffect(()=>{if(props.startData!==null && domainName==''){
+    console.log(props.startData)
+    setDomainName(props.startData['domine_name']);
+    setMode(props.startData['mode'])
+    setIcon(props.startData['icon'])
+  }})
 
   let navigate = useNavigate();
 
@@ -32,13 +37,15 @@ function CreateForm(props) {
     <div className="flex flex-col justify-center mt-3">
       <div className="flex flex-row  items-center">
         <div className="ml-10 w-1/2  items-center">Domine name</div>
-        <div className=" absolute left-60">
-          <InputBox
+        <div className="w-96 absolute left-60">
+          <Input
+          value={domainName}
             className=""
             onChange={(val) => {
-              setDomainName(val);
+              setDomainName(val.target.value);
             }}
-            text="domain name"
+            label="domain name"
+             
           />
         </div>
       </div>
@@ -46,6 +53,7 @@ function CreateForm(props) {
         <div className="ml-10 items-center">mode</div>
         <div className=" absolute left-60">
           <Select
+          value={mode}
             label="mode"
             onChange={(e) => {
               setMode(e);
@@ -57,6 +65,21 @@ function CreateForm(props) {
         </div>
       </div>
       <div className=" mt-9">
+      <div className="mb-10 flex flex-row  items-center">
+        <div className="ml-10 w-1/2  items-center">icon</div>
+        <div className="w-96 absolute left-60">
+          <Input
+          sucess={validator.isURL(icon)}
+          error={!validator.isURL(icon)}
+            className=" w-96"
+            onChange={(val) => {
+              setIcon(val.target.value);
+            }}
+            value={icon}
+            label="Icon Url"
+          />
+        </div>
+      </div>
 
         {mode === "api" ? (
             
@@ -64,11 +87,14 @@ function CreateForm(props) {
             onChange={(val) => {
               setSearch(val);
             }}
+            startData={props.startData['search']}
           />
         ) : (mode === "web")?(<SearchWeb
             onChange={(val) => {
               setSearch(val);
-            }}/>):null
+            }} 
+            startData={props.startData['search']}
+            />):null
           }
       </div>
       <div className="ml-8 mt-10">
@@ -93,6 +119,7 @@ function CreateForm(props) {
               let data = {
                 domine_name: domainName,
                 mode: mode,
+                icon:icon,
                 search: search,
               };
 

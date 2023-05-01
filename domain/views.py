@@ -26,5 +26,5 @@ def get_domain(request):
 
 @api_view(['GET'])
 def edit(request,name):
-    return Response(get_domine_config())
+    return Response(get_domine_config(name))
 

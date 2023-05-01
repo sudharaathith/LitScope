@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Button, Menu, MenuHandler, MenuItem, MenuList } from '@material-tailwind/react';
 
 function InputFront(props){
-    let [text, setText] = useState("");
+    let [text, setText] = useState(props.text);
+
     
     return (
         <div  className={`' flex w-fit resize-none flex-grow  border-r ${(props.index===0)?"rounded-l-xl":""}'`}>
@@ -15,7 +16,7 @@ function InputFront(props){
 }
 
 function InputBack(props){
-    let [text, setText] = useState("");
+    let [text, setText] = useState(props.text);
     return (
         <div  className={` flex w-fit resize-none flex-grow  `}>
             <input type="text" style={{width:`${text.length*8}px`}} onChange={(e) => {
@@ -32,6 +33,13 @@ function WebRoute(props) {
     let [fronttext, setFronttext] = useState([]);
     let [backtext, setBacktext] = useState([]);
     let [intext, setIntext] = useState("");
+
+    useEffect(()=>{
+        if(props.startData!==null){
+            let temp = props.startData;
+            setIntext(temp.pop());
+        }
+    },[])
 
     let updatefront= (str, index)=>{
         let temp = fronttext
@@ -55,13 +63,13 @@ function WebRoute(props) {
 
     
 
-    let addFrount = () => {
-        setFront(front.concat(<InputFront index = {front.length} onChange={updatefront} className={` w-fit min-w-0 ${(front.length===0)?"rounded-l-xl":""}`} />))
+    let addFrount = (text="") => {
+        setFront(front.concat(<InputFront text={text} index = {front.length} onChange={updatefront} className={` w-fit min-w-0 ${(front.length===0)?"rounded-l-xl":""}`} />))
         setFronttext(fronttext.concat(""));
     };
 
-    let addBack = () => {
-        setBack(back.concat(<InputBack index = {back.length} onChange={updateback} className={` w-fit min-w-0`} />))
+    let addBack = (text="") => {
+        setBack(back.concat(<InputBack text={text} index = {back.length} onChange={updateback} className={` w-fit min-w-0`} />))
         setBacktext(backtext.concat(""));
     };
     return (
