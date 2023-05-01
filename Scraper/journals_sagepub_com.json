@@ -1,0 +1,9 @@
+{
+    "domine_name": "journals.sagepub.com",
+    "mode":"web",
+    "search":{
+        "url":"https://journals.sagepub.com/action/doSearch?AllField=//<<Query>>//&SeriesKey=lala",
+        "route":[".issue-item__title","//<<for>>//","a","h3","//<<text>>//"],
+        "method":"GET"
+    }
+}
