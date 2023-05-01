@@ -108,6 +108,7 @@ class Scraper_web:
                         req = req.select(i)
                         continue
                 req = req.select_one(i)
+                print(req)
                 
         if infor:
             res = []

@@ -1,6 +1,7 @@
 {
     "domine_name": "paperswithcode.com",
     "mode":"web",
+    "icon": "https://production-media.paperswithcode.com/tasks/default.gif",
     "search":{
         "url":"https://paperswithcode.com/search?q_meta=&q_type=&q=//<<Query>>//",
         "route":[".col-lg-9.item-content","//<<for>>//","h1","a","//<<text>>//"],

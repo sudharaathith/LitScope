@@ -10,9 +10,26 @@ def save_domine(data):
     name =  data['domine_name'].replace('.','_')+".json"
     with open(os.path.join(script_dir,name), 'w') as file:
         file.write(value)
-    if not Scrapers().isValid(os.path.join(script_dir,name)):
-       raise f"invalid json file"
+    return Scrapers().isValid(os.path.join(script_dir,name))
+
+def get_domine_info():
+    s = Scrapers()
+    res = []
+    for i in s.websides:
+        temp_ditc = {}
+        temp = s.get(i)
+        temp_ditc['id'] = i
+        temp_ditc['name'] =  temp.config['domine_name']
+        print(temp.config['domine_name'])
+        temp_ditc['icon'] = temp.config['icon']
+        res.append(temp_ditc)
+    return res   
+
+def get_domine_config(name):
+    s = Scrapers()
+    return s.get(name+'.json').config
     
+
 if __name__ == '__main__':
     save_domine("""
 {

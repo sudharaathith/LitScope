@@ -1,6 +1,7 @@
 {
     "domine_name": "researchgate.net",
     "mode":"web",
+    "icon":"https://c5.rgstatic.net/m/419438641133902/images/icons/svgicons/new-index-logo.svg",
     "search":{
         "url":"https://www.researchgate.net/search/publication?q=//<<Query>>//",
         "route":[".nova-legacy-v-publication-item__stack-item","//<<for>>//","a","//<<text>>//"],
