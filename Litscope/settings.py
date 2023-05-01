@@ -27,13 +27,14 @@ DEBUG = True
 
 
 
-
+CSRF_COOKIE_SECURE = True
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
 ]
 ALLOWED_HOSTS = [
     'localhost',
+    '127.0.0.1'
 ]
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',

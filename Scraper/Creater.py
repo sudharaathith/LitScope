@@ -10,8 +10,7 @@ def save_domine(data):
     name =  data['domine_name'].replace('.','_')+".json"
     with open(os.path.join(script_dir,name), 'w') as file:
         file.write(value)
-    if not Scrapers().isValid(os.path.join(script_dir,name)):
-       raise f"invalid json file"
+    return Scrapers().isValid(os.path.join(script_dir,name))
     
 if __name__ == '__main__':
     save_domine("""
