@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from Scraper.Creater import save_domine, get_domine_info
+from Scraper.Creater import save_domine, get_domine_info, get_domine_config
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -22,4 +22,9 @@ def Save_domine(request):
 @api_view(['GET'])
 def get_domain(request):
     return Response(get_domine_info())
+
+
+@api_view(['GET'])
+def edit(request,name):
+    return Response(get_domine_config())
 

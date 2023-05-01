@@ -24,7 +24,12 @@ def get_domine_info():
         temp_ditc['icon'] = temp.config['icon']
         res.append(temp_ditc)
     return res   
- 
+
+def get_domine_config(name):
+    s = Scrapers()
+    return s.get(name+'.json').config
+    
+
 if __name__ == '__main__':
     save_domine("""
 {
