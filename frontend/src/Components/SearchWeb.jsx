@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { Input} from "@material-tailwind/react";
 import { useState } from 'react';
 import validator from 'validator'
-import Route from './Route';
+import WebRoute from './WebRoute';
 import Method from './Method';
 
-function SearchApi(props) {
+function SearchWeb(props) {
     let [url , setUrl] = useState("");
     let [methode, setMethode] = useState("");
     let [route, setRoute] = useState([]);
@@ -48,7 +48,7 @@ function SearchApi(props) {
             
         </div>
             <div className=" absolute mt-5 left-10 " >
-           <Route onChange={(val) =>{
+           <WebRoute onChange={(val) =>{
             setRoute(val);
            }}/>
         </div>
@@ -62,4 +62,4 @@ function SearchApi(props) {
     );
 }
 
-export default SearchApi;
+export default SearchWeb;

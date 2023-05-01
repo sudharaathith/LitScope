@@ -2,17 +2,18 @@ import React, { useEffect, useState } from "react";
 import InputBox from "./InputBox";
 import { IonIcon, } from "@ionic/react";
 import { thumbsUpSharp, bug } from 'ionicons/icons';
+import { useNavigate } from "react-router-dom";
 import {
   Select,
   Option,
   Button,
   Dialog,
-  DialogHeader,
   DialogBody,
 } from "@material-tailwind/react";
 import SearchApi from "./SearchApi";
 import axios from "axios";
 import ReactLoading from "react-loading";
+import SearchWeb from "./SearchWeb";
 
 function CreateForm(props) {
   let [domainName, setDomainName] = useState("");
@@ -20,6 +21,12 @@ function CreateForm(props) {
   let [search, setSearch] = useState({});
   let [dialogOpen, setDialogOpen] = useState(false);
   let [dialogMode, setDialogMode] = useState(0);
+
+  useEffect(()=>{
+    console.log(search)
+  },[search])
+
+  let navigate = useNavigate();
 
   return (
     <div className="flex flex-col justify-center mt-3">
@@ -50,18 +57,39 @@ function CreateForm(props) {
         </div>
       </div>
       <div className=" mt-9">
+
         {mode === "api" ? (
+            
           <SearchApi
             onChange={(val) => {
               setSearch(val);
             }}
           />
-        ) : null}
+        ) : (mode === "web")?(<SearchWeb
+            onChange={(val) => {
+              setSearch(val);
+            }}/>):null
+          }
       </div>
       <div className="ml-8 mt-10">
         {!(mode === "") ? (
           <Button
             onClick={() => {
+                setDialogOpen(true);
+                setDialogMode(0);
+            try{if(search['method']==="POST"){
+                    let temp = search;
+                    temp['data'] = JSON.parse(temp['data']);
+                    setSearch(temp);
+                    }}
+            catch{
+                setDialogMode(2);
+                setTimeout(() => {
+                    setDialogOpen(false);
+                  }, 1000);
+                  return;
+            }
+                
               let data = {
                 domine_name: domainName,
                 mode: mode,
@@ -72,8 +100,6 @@ function CreateForm(props) {
                 "Content-Type":
                   "application/x-www-form-urlencoded;charset=UTF-8",
               };
-
-              setDialogOpen(true);
               axios
                 .post("http://127.0.0.1:8000/api/domain/create/", data, headers)
                 .then((res) => {
@@ -81,14 +107,17 @@ function CreateForm(props) {
                   setDialogMode(1);
                   setTimeout(() => {
                     setDialogOpen(false);
+                    return navigate('/domain');
                   }, 1000);
                 })
                 .catch(() => {
-                  setDialogMode(2);
+                  setDialogMode(3);
                   setTimeout(() => {
                     setDialogOpen(false);
+                    return navigate('/domain');
                   }, 1000);
                 });
+                
             }}
           >
             Save
@@ -103,13 +132,17 @@ function CreateForm(props) {
           </DialogBody>
         ) : dialogMode === 1 ? (
           <DialogBody className="flex flex-col items-center  text-green-600">
-          <IonIcon icon={thumbsUpSharp} />
+          <IonIcon icon={thumbsUpSharp} className=" text-3xl"/>
             Saved successfully
           </DialogBody>
-        ) : (
-          <DialogBody className="flex flex-col items-center">
-          <IonIcon icon={bug} />
-          Error</DialogBody>
+        ) : dialogMode === 2 ? (
+          <DialogBody className="flex flex-col items-center  text-red-600">
+          <IonIcon icon={bug} className=" text-3xl" />
+          Invalid JSON</DialogBody>
+        ): (
+          <DialogBody className="flex flex-col items-center text-red-600">
+          <IonIcon icon={bug} className=" text-3xl" />
+          Some thing Went Wrong</DialogBody>
         )}
       </Dialog>
     </div>

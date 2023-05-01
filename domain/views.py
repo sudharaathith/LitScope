@@ -13,8 +13,7 @@ def Save_domine(request):
     print(request.headers)
     data = request.data
     print(data)
-    # if save_domine(data):
-    #     return Response(data, status=200)
-    # else:
-    #     return Response(data, status=500)
-    return Response(data, status=500)
+    if save_domine(data):
+        return Response(data, status=200)
+    else:
+        return Response(data, status=500)
