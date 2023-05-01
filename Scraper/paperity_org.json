@@ -1,6 +1,7 @@
 {
     "domine_name": "paperity.org",
     "mode":"web",
+    "icon":"https://paperity.org/static/img/logo/logo.png",
     "search":{
         "url":"https://paperity.org/search/?q=///<<Query>>//",
         "route":[".col.col-sm-12.col-md-9","//<<for>>//","h4","a","//<<text>>//"],

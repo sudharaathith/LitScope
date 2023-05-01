@@ -1,6 +1,7 @@
 {
     "domine_name": "semanticscholar.org",
     "mode":"api",
+    "icon": "https://th.bing.com/th/id/OIP.rDCsEIDX87pwEN0nRKkV9AAAAA?pid=ImgDet&dpr=2",
     "search":{
         "url":"https://www.semanticscholar.org/api/1/search",
         "route":["results", "//<<for>>//", "title", "text"],

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from Scraper.Creater import save_domine
+from Scraper.Creater import save_domine, get_domine_info
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -17,3 +17,9 @@ def Save_domine(request):
         return Response(data, status=200)
     else:
         return Response(data, status=500)
+    
+
+@api_view(['GET'])
+def get_domain(request):
+    return Response(get_domine_info())
+
