@@ -18,6 +18,7 @@ def get_domine_info():
     for i in s.websides:
         temp_ditc = {}
         temp = s.get(i)
+        temp_ditc['id'] = i
         temp_ditc['name'] =  temp.config['domine_name']
         print(temp.config['domine_name'])
         temp_ditc['icon'] = temp.config['icon']

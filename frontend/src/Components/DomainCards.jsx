@@ -10,7 +10,7 @@ import {
 
 function DomainCards(props) {
   return (
-    <Card className=" w-52 z-[-1]">
+    <Card className={` w-52 z-[-1] ${props.className}`}>
       <CardHeader floated={false} className=" flex h-40">
         <img
           className=" w-full p-3"

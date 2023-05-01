@@ -8,6 +8,7 @@ function DomainRoute() {
       <Routes>
         <Route path="/" element={<Domain/>}/>
         <Route path="/create" element={<Create/>}/>
+        <Route path="/edit/:domain" exact element={<Create/>}/>
       </Routes>
 
   );
