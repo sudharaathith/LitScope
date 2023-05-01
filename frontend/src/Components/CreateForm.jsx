@@ -114,7 +114,7 @@ function CreateForm(props) {
                   setDialogMode(3);
                   setTimeout(() => {
                     setDialogOpen(false);
-                    return navigate('/domain');
+                    return navigate('/domain/create');
                   }, 1000);
                 });
                 

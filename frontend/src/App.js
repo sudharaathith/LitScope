@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './Pages/Home';
-import Domain from './Pages/Domain/Domain';
+import DomainRoute from "./Pages/Domain/DomainRoute";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="domain/*" element={<Domain/>}/>
+        <Route path="domain/*" element={<DomainRoute/>}/>
       </Routes>
     </Router>
   );
