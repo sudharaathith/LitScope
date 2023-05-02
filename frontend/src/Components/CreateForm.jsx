@@ -24,12 +24,15 @@ function CreateForm(props) {
   let [dialogOpen, setDialogOpen] = useState(false);
   let [dialogMode, setDialogMode] = useState(0);
 
-  useEffect(()=>{if(props.startData!==null && domainName==''){
-    console.log(props.startData)
-    setDomainName(props.startData['domine_name']);
-    setMode(props.startData['mode'])
-    setIcon(props.startData['icon'])
-  }})
+//   useEffect(()=>{
+//     try
+//     {if(props.startData!==null && domainName==''){
+//     console.log(props.startData)
+//     setDomainName(props.startData['domine_name']);
+//     // setMode(props.startData['mode'])
+//     setIcon(props.startData['icon'])}
+//   }
+// catch{}})
 
   let navigate = useNavigate();
 
@@ -87,13 +90,13 @@ function CreateForm(props) {
             onChange={(val) => {
               setSearch(val);
             }}
-            startData={props.startData['search']}
+            // startData={props.startData['search']}
           />
         ) : (mode === "web")?(<SearchWeb
             onChange={(val) => {
               setSearch(val);
             }} 
-            startData={props.startData['search']}
+            // startData={props.startData['search']}
             />):null
           }
       </div>
