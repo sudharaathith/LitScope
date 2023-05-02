@@ -7,7 +7,7 @@ function InputFront(props){
     
     return (
         <div  className={`' flex w-fit resize-none flex-grow  border-r ${(props.index===0)?"rounded-l-xl":""}'`}>
-            <input value={text} type="text" style={{width:`${text.length*8}px`}} onChange={(e) => {
+            <input type="text" style={{width:`${text.length*8}px`}} onChange={(e) => {
                 setText(e.target.value);
                 props.onChange(e.target.value,props.index)
             }} className={` min-w-[30px] text-center rounded-none ${(props.index===0)?"rounded-l-xl":""}`} ></input>
@@ -19,7 +19,7 @@ function InputBack(props){
     let [text, setText] = useState(props.text);
     return (
         <div  className={` flex w-fit resize-none flex-grow  `}>
-            <input type="text" value={text} style={{width:`${text.length*8}px`}} onChange={(e) => {
+            <input type="text"  style={{width:`${text.length*8}px`}} onChange={(e) => {
                 setText(e.target.value);
                 props.onChange(e.target.value,props.index)
             }} className={` min-w-[30px] text-center border-r rounded-none `} ></input>
@@ -71,20 +71,20 @@ function WebRoute(props) {
         setBacktext(backtext.concat(""));
     };
 
-    if((props.startData[-1] === '//<text>>//' || props.startData[-1] === '//<<href>>//')){
-        setIsgone(false);
-        let isfrount = true;
-       setIntext( props.startData.pop())
-        props.startData.map((data)=>{
-            if(data==="//<<for>>//"){
-                isfrount = false
-            }else if(isfrount){
-                addFrount(data);
-            }else{
-                addBack(data);
-            }
-        })
-    }
+    // if((props.startData[-1] === '//<text>>//' || props.startData[-1] === '//<<href>>//')){
+    //     setIsgone(false);
+    //     let isfrount = true;
+    //    setIntext( props.startData.pop())
+    //     props.startData.map((data)=>{
+    //         if(data==="//<<for>>//"){
+    //             isfrount = false
+    //         }else if(isfrount){
+    //             addFrount(data);
+    //         }else{
+    //             addBack(data);
+    //         }
+    //     })
+    // }
     return (
         <div className=' rounded-xl flex flex-row border '>
             {front}

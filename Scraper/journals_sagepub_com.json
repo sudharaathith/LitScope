@@ -1,6 +1,7 @@
 {
     "domine_name": "journals.sagepub.com",
     "mode":"web",
+    "icon":"https://journals.sagepub.com/pb-assets/UX3/Images/logo-old-1681214890183.svg",
     "search":{
         "url":"https://journals.sagepub.com/action/doSearch?AllField=//<<Query>>//&SeriesKey=lala",
         "route":[".issue-item__title","//<<for>>//","a","h3","//<<text>>//"],
