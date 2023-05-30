@@ -76,7 +76,7 @@ class Scraper_api:
                 for j in self.config['search']['route'][index+1:]:
                     i = i[j]
                 res.append(i)
-            return res
+            return res[1]
         
 
 class Scraper_web:
@@ -127,4 +127,6 @@ class Scraper_web:
 
 if __name__ == "__main__":
     t = Scrapers()
-    print(t['paperswithcode_com.json'].search("Blockchain"))
+    a = t['paperswithcode_com.json'].search("Blockchain")
+    print(a)
+    
