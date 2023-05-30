@@ -8,7 +8,7 @@ function Searchresult(props) {
         {props.keywords&&props.keywords.map((val)=>(<Chip className=' m-1' color={colors[val.length%9] } value={val} />))}
         </div>
         <div className='  shadow-inner rounded-xl flex flex-col overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100 my-3'>
-          {props.res&&props.res.map((i)=>(<Option value={i[0]} />))}
+          {props.res&&props.res.map((i)=>(<Option value={i[0]} href={i[1]} />))}
         </div>
 
      </div>
