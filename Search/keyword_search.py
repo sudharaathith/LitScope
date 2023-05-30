@@ -2,6 +2,10 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import pandas as pd
+import os
+module_dir = os.path.dirname(__file__)
+
+# nltk.download('averaged_perceptron_tagger')
 
 def extract_keywords(text):
     # Tokenize the text into individual words
@@ -17,18 +21,10 @@ def extract_keywords(text):
     # Extract keywords based on the part-of-speech tags
     keywords = [word for word, tag in tagged_tokens if tag.startswith('NN') or tag.startswith('JJ')]
     tech_key=[]
-    a = pd.read_csv("tech.csv")
+    a = pd.read_csv(os.path.join(module_dir, "tech.csv"))
     for i in keywords:
-        b = a[a["name"].str.lower().str.match(i)]["name"].to_list()
+        b = a[a["name"].str.lower().str.match(i.lower())]["name"].to_list()
         if b!= []:
             tech_key.append(b[0])  
+    print(tech_key)
     return tech_key
-
-
-# Example usage
-user_input = input("Enter a sentence: ")
-print(extract_keywords(user_input))
-
-# a = pd.read_csv("tech.csv")
-# for i in keywords:
-#     print(a[a["name"].str.lower().str.match(i)]["name"].to_list())    
