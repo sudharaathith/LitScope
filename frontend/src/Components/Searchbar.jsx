@@ -6,7 +6,7 @@ import { IonIcon } from '@ionic/react';
 export default function Searchbar() {
     
   return (
-    <div className=" w-3/4 flex flex-row items-center mx-auto">
+    <div className=" w-1/2 flex flex-row items-center mx-auto">
 
       <Input  label="Search" icon={<IonIcon icon={search}></IonIcon>} />
     </div>

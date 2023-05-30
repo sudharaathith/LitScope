@@ -1,10 +1,10 @@
 import React from 'react'
-
+import { Typography } from "@material-tailwind/react";
 function Searchresult() {
   return (
     <div className='m-10'>
-        Text
-    </div>
+     <Typography variant="h3">SEARCH</Typography>
+     </div>
   )
 }
 
