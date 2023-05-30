@@ -181,7 +181,7 @@ class Scraper_web:
 
 def summaHandler(val):
     s = Scrapers()
-    return s['paperswithcode_com.json'].search('blockchain')
+    return s['paperswithcode_com.json'].search(val)
 
 if __name__ == "__main__":
     print(s['paperswithcode_com.json'].search('blockchain'))

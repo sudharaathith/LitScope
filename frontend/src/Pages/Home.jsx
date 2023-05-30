@@ -7,8 +7,7 @@ import {Typography} from "@material-tailwind/react";
 import axios from "axios";
 
 function Home(props) {
-    let a = "slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsav slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa "
-    const [summrize, setSummrize] = useState(a+a+a+a+a+a);
+    const [summrize, setSummrize] = useState(null);
     const [search, setSearch] = useState("");
     const [keywords, setKeywords] = useState([]);
     const [res, setRes] = useState(null);
