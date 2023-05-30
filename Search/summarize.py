@@ -45,11 +45,11 @@ def extract_abstract_from_pdf(pdf_url):
                 break
 
     # Remove any trailing newlines or whitespace
-    abstract = abstract.strip()
-    abstract = abstract.split('NTRODUCTION')[0]
+    abstract = abstract.strip().lower()
+    abstract = abstract.split('ntroduction')[0][:-4]
     return abstract
 
-print(main_summarize("https://cs.paperswithcode.com/paper/blockbench-a-framework-for-analyzing-private"))
+print(main_summarize("https://cs.paperswithcode.com/paper/formal-specification-and-verification-of"))
 # # Provide the URL of the PDF file
 # pdf_url = 'https://arxiv.org/pdf/2009.06756v2.pdf'
 
