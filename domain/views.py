@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from Scraper.Creater import save_domine, get_domine_info, get_domine_config
+from Search.keyword_search import extract_keywords
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -27,4 +28,13 @@ def get_domain(request):
 @api_view(['GET'])
 def edit(request,name):
     return Response(get_domine_config(name))
+
+@csrf_exempt
+@api_view(['POST'])
+def getToken(request):
+    data = request.data
+    token = data['value']
+    res = extract_keywords(token)
+    return Response(res, status=200)
+    
 

@@ -150,12 +150,9 @@ class Scraper_web:
             return res
 
 
+def summaHandler(val):
+    return s['paperswithcode_com.json'].search('blockchain')
+
 if __name__ == "__main__":
-    h = Handle()
-    def error(web, val):
-        with open('log.txt', 'a') as f:
-            f.write(web+" : \n"+str(val)+"\n")
-    def p(web,val):
-        with open('log.txt', 'a') as f:
-            f.write(web+" : \n"+str(val)+"\n")
-    h.search('fcnn',p, error)
+    s = Scrapers()
+    print(s['paperswithcode_com.json'].search('blockchain'))
