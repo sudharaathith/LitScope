@@ -104,7 +104,7 @@ class Scraper_api:
                 for j in self.config['search']['route'][index+1:]:
                     i = i[j]
                 res.append(i)
-            return res
+            return res[1]
         
 
 class Scraper_web:

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavBar from '../Components/NavBar';
+import Searchbar from '../Components/Searchbar';
 
 function Home(props) {
     return (
@@ -9,8 +10,7 @@ function Home(props) {
          <br/>
          <br/>
          <br/>
-         <br/>
-         home 
+         <div><Searchbar /></div>
         </div>
     );
 }
