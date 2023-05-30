@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import NavBar from "../Components/NavBar";
 import Searchbar from "../Components/Searchbar";
 import Searchresult from "../Components/Searchresult";
@@ -10,7 +10,30 @@ function Home(props) {
     let a = "slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsav slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa "
     const [summrize, setSummrize] = useState(a+a+a+a+a+a);
     const [search, setSearch] = useState("");
-    const [keywords, setKeywords] = useState("");
+    const [keywords, setKeywords] = useState([]);
+    const [res, setRes] = useState(null);
+
+    useEffect(()=>{
+      let r = keywords;
+      let a = "";
+      r.map((i)=>{
+        a += i + ' '
+      })
+      r = [...r, a, search]
+      let data = {
+        "value": r ,
+      };
+
+      const headers = {
+        "Content-Type":
+          "application/x-www-form-urlencoded;charset=UTF-8",
+      };
+      axios
+        .post("http://127.0.0.1:8000/api/domain/search/", data, headers)
+        .then((data)=>{
+          setRes(data.data)
+        })
+    }, [keywords])
   return (
     <div className="h-screen overflow-hidden">
       <NavBar />
@@ -19,7 +42,7 @@ function Home(props) {
       <br />
       <br />
       <div>
-        <Searchbar setSearch={setSearch} handleSearchClick={(val)=>{
+        <Searchbar res={res} setSearch={setSearch} handleSearchClick={(val)=>{
            let data = {
             "value": val,
           };
