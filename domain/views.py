@@ -43,7 +43,10 @@ def getToken(request):
 def search(request):
     data = request.data
     token = data['value']
+    print(token)
     res = []
+    if token[0] == '':
+        return Response(res, status=200)
     for i in token:
         res += summaHandler(i)
     return Response(res, status=200)
