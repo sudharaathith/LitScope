@@ -2,10 +2,36 @@ from bs4 import BeautifulSoup
 import json
 import os
 import requests
+from threading import Thread
 
 
 script_dir = os.path.dirname(__file__)
 
+class Handle:
+    def __init__(self):
+        self.scraper = Scrapers()
+        self.update= None
+        self.thread = []
+        self.running = 0
+        
+    def __search(self, web, val, callback, error):
+        try:
+            callback(web, self.scraper[web].search(val))
+            self.runned()
+        except Exception as e:
+            error(web,e)
+        
+    def   search(self, val, callback, error):
+        for i in self.scraper.websides:
+            self.running += 1
+            Thread(target=self.__search, args=(i, val, callback, error)).start()
+            
+    
+    def runned(self):
+        self.running -= 1
+            
+            
+        
 # Scapers class help with getting scaper and finding the valid scaper in the directory.
 class Scrapers:
     def __init__(self):
@@ -52,6 +78,7 @@ class Scraper_api:
         self.config = config
 
     def search(self, query):
+        print(self.config['search']['url'])
         if(self.config['search'])['method'] == 'GET':
             req = requests.request(method=self.config['search']['method'], url=(
                 self.config['search']['url'].replace('//<<Query>>//', query)))
@@ -60,6 +87,7 @@ class Scraper_api:
                 self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
+        print(req.text)
         req = json.loads(req.text)
         infor = False
         index = -1
@@ -91,9 +119,8 @@ class Scraper_web:
             req = requests.post(url=(
                 self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
-            print(json.dumps(self.config['search']['data']).replace('//<<Query>>//', query))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
-        req = BeautifulSoup(req.text)
+        req = BeautifulSoup(req.text, "html.parser" )
         infor = False
         index = -1
         for n, i in enumerate(self.config['search']['route']):
@@ -108,7 +135,6 @@ class Scraper_web:
                         req = req.select(i)
                         continue
                 req = req.select_one(i)
-                print(req)
                 
         if infor:
             res = []
@@ -121,10 +147,15 @@ class Scraper_web:
                     else:
                         i = i.select_one(j)
                 res.append(i)
-                print(req)
             return res
 
 
 if __name__ == "__main__":
-    t = Scrapers()
-    print(t['journals_sagepub_com.json'].search("Research"))
+    h = Handle()
+    def error(web, val):
+        with open('log.txt', 'a') as f:
+            f.write(web+" : \n"+str(val)+"\n")
+    def p(web,val):
+        with open('log.txt', 'a') as f:
+            f.write(web+" : \n"+str(val)+"\n")
+    h.search('fcnn',p, error)

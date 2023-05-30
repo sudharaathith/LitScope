@@ -3,8 +3,9 @@
     "mode":"api",
     "icon":"https://typeset.io/scispace-logo.svg",
     "search":{
-        "url":"https://typeset.io/_next/data/l-9Zik5eBkX7q9AMbAEvH/search.json?q=//<<Query>>//",
+        "url":"https://typeset.io/_next/data/BjTizAZa0HZY0KIytpQY_/search.json?q=//<<Query>>//",
         "route":["pageProps","data", "//<<for>>//", "title"],
-        "method":"GET"
+        "method":"POST",
+        "data" :{"search_term":"summ"}
     }
 }
