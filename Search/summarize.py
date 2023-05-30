@@ -1,7 +1,15 @@
 import PyPDF2
+from bs4 import BeautifulSoup
 import requests
 from io import BytesIO
 import re
+
+def main_summarize(url):
+    response = requests.get(url)
+    req = BeautifulSoup(response.text, "html.parser")
+    elements = req.find_all("a", {"class": "badge badge-light badge-cs"})
+    return extract_abstract_from_pdf(elements[0]['href'])
+    
 
 def extract_abstract_from_pdf(pdf_url):
     # Download the PDF from the web
@@ -41,6 +49,7 @@ def extract_abstract_from_pdf(pdf_url):
     abstract = abstract.split('NTRODUCTION')[0]
     return abstract
 
+print(main_summarize("https://cs.paperswithcode.com/paper/blockbench-a-framework-for-analyzing-private"))
 # # Provide the URL of the PDF file
 # pdf_url = 'https://arxiv.org/pdf/2009.06756v2.pdf'
 
