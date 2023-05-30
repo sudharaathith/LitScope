@@ -1,0 +1,197 @@
+,name
+0,blockchain
+1,smart contract
+2,cryptocurrency
+3,decentralized
+4,distributed ledger
+5,consensus
+6,tokenization
+7,immutable
+8,hash function
+9,digital signature
+10,permissioned blockchain
+11,permissionless blockchain
+12,solidity
+13,ethereum
+14,hyperledger
+15,bitcoin
+16,mining
+17,proof of work
+18,proof of stake
+19,crypto wallet
+20,privacy
+21,public key
+22,private key
+23,hashing
+24,hash rate
+25,machine learning
+26,artificial intelligence
+27,neural network
+28,deep learning
+29,supervised learning
+30,unsupervised learning
+31,reinforcement learning
+32,natural language processing
+33,computer vision
+34,data mining
+35,big data
+36,feature extraction
+37,classification
+38,regression
+39,clustering
+40,dimensionality reduction
+41,model training
+42,model evaluation
+43,overfitting
+44,underfitting
+45,bias
+46,variance
+47,ensemble learning
+48,decision tree
+49,random forest
+50,support vector machine
+51,gradient descent
+52,backpropagation
+53,data preprocessing
+54,Internet of Things
+55,sensors
+56,connectivity
+57,smart devices
+58,data analytics
+59,real-time monitoring
+60,cloud computing
+61,edge computing
+62,smart home
+63,industrial automation
+64,smart cities
+65,wearable devices
+66,smart grid
+67,IoT platform
+68,data security
+69,data privacy
+70,IoT protocols
+71,predictive maintenance
+72,energy efficiency
+73,smart agriculture
+74,smart transportation
+75,smart healthcare
+76,smart retail
+77,autonomous vehicles
+78,ambient intelligence
+79,edge analytics
+80,fog computing
+81,data streaming
+82,real-time insights
+83,IoT ecosystem
+84,cyber security
+85,data breach
+86,network security
+87,encryption
+88,firewall
+89,intrusion detection system
+90,vulnerability assessment
+91,penetration testing
+92,malware
+93,phishing
+94,ransomware
+95,security audit
+96,security policies
+97,access control
+98,authentication
+99,authorization
+100,identity management
+101,security incident response
+102,security awareness
+103,zero-day
+104,front-end development
+105,HTML
+106,CSS
+107,JavaScript
+108,React
+109,Vue.js
+110,Angular
+111,UI design
+112,responsive web design
+113,web accessibility
+114,cross-browser compatibility
+115,front-end frameworks
+116,single-page applications
+117,web components
+118,CSS preprocessors
+119,AJAX
+120,progressive web apps
+121,web performance optimization
+122,browser dev tools
+123,version control
+124,web development
+125,backend development
+126,full-stack development
+127,server
+128,database
+129,API
+130,RESTful
+131,MVC
+132,ORM
+133,CRUD
+134,scalability
+135,web security
+136,session management
+137,caching
+138,web hosting
+139,CMS
+140,e-commerce
+141,SEO
+142,web scraping
+143,mobile app development
+144,iOS
+145,Android
+146,Swift
+147,data visualization
+148,edge devices
+149,edge intelligence
+150,stream processing
+151,IoT applications
+152,cybersecurity
+153,vulnerability
+154,threat detection
+155,identity theft
+156,cyber attack
+157,cyber defense
+158,responsive design
+159,user interface
+160,user experience
+161,framework
+162,Bootstrap
+163,SQL
+164,NoSQL
+165,client-server
+166,HTTP
+167,web server
+168,Kotlin
+169,React Native
+170,Flutter
+171,Xcode
+172,Android Studio
+173,data extraction
+174,web crawler
+175,scraping tools
+176,beautifulsoup
+177,scrapy
+178,Hadoop
+179,Apache Spark
+180,detection
+181,cnn
+182,literature survey
+183,rnn
+184,ann
+185,fnn
+186,fcnn
+187,tamil computing
+188,steganography
+189,phising
+190,sign language
+191,prediction
+192,evaluation
+193,evalution
+194,lung cancer
+195,breast cancer
