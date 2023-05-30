@@ -8,22 +8,7 @@ function Searchresult(props) {
         {props.keywords&&props.keywords.map((val)=>(<Chip className=' m-1' color={colors[val.length%9] } value={val} />))}
         </div>
         <div className='  shadow-inner rounded-xl flex flex-col overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100 my-3'>
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
-          <Option />
+          {props.res&&props.res.map((i)=>(<Option value={i[0]} />))}
         </div>
 
      </div>
@@ -32,9 +17,9 @@ function Searchresult(props) {
 }
 
 
- function Option() {
+ function Option(props) {
   return (
-    <div className=' w-full h-fit text-center p-3 shadow-sm cursor-pointer hover:animate-pulse  rounded-2xl'>flskjdfl sdlfjlka sdlkfjl asfkj;las fslkjfl; saldjf;l sldfjl safl;j jlskdfjl lskjflk saldfkj saldfj;l salfkjl;a sdljjl;</div>
+    <div className=' w-full h-fit text-center p-3 shadow-sm cursor-pointer hover:animate-pulse  rounded-2xl'>{props.value}</div>
   )
 }
 

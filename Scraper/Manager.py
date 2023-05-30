@@ -173,15 +173,15 @@ class Scraper_web:
                         i = i['href']
                     else:
                         i = i.select_one(j)
-                res1.append(i)
+                res1.append("https://cs.paperswithcode.com"+i)
 
 
             return list(zip(res,res1))
 
 
 def summaHandler(val):
+    s = Scrapers()
     return s['paperswithcode_com.json'].search('blockchain')
 
 if __name__ == "__main__":
-    s = Scrapers()
     print(s['paperswithcode_com.json'].search('blockchain'))
