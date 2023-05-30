@@ -7,8 +7,8 @@ export default function Searchbar() {
     
   return (
     <div className="w-72 flex flex-row items-center mx-auto">
-      <IonIcon icon={search}></IonIcon>
-      <Input label="Search" />
+      <div className="m-5"><IonIcon icon={search}></IonIcon></div>
+      <Input size='' label="Search" />
     </div>
   )
 }
