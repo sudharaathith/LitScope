@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import Save_domine, get_domain, edit, getToken, search
+from .views import Save_domine, get_domain, edit, getToken, search, summarize
 
 urlpatterns = [
     path('create/', Save_domine),
@@ -8,4 +8,5 @@ urlpatterns = [
     path('edit/<str:name>', edit),
     path('keywords/', getToken),
     path('search/', search),
+    path('summarize/', summarize),
 ]

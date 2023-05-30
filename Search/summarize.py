@@ -49,7 +49,6 @@ def extract_abstract_from_pdf(pdf_url):
     abstract = abstract.split('ntroduction')[0][:-4]
     return abstract
 
-print(main_summarize("https://cs.paperswithcode.com/paper/formal-specification-and-verification-of"))
 # # Provide the URL of the PDF file
 # pdf_url = 'https://arxiv.org/pdf/2009.06756v2.pdf'
 

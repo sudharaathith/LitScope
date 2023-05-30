@@ -2,6 +2,7 @@ from django.shortcuts import render
 from Scraper.Creater import save_domine, get_domine_info, get_domine_config
 from Search.keyword_search import extract_keywords
 from Scraper.Manager import summaHandler
+from Search.summarize import main_summarize
 
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -49,6 +50,14 @@ def search(request):
         return Response(res, status=200)
     for i in token:
         res += summaHandler(i)
+    return Response(list(set(res)), status=200)
+
+@csrf_exempt
+@api_view(['POST'])
+def summarize(request):
+    data = request.data
+    token = data['url']
+    res = main_summarize(token)
     return Response(res, status=200)
     
 

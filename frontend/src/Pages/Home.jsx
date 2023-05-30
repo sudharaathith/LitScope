@@ -14,12 +14,12 @@ function Home(props) {
 
     useEffect(()=>{
       
-      let r = keywords;
+
       let a = "";
-      r.map((i)=>{
+      keywords.map((i)=>{
         a += i + ' '
       })
-      r = [...r, a, search]
+      let r = [search,a, ...keywords]
       let data = {
         "value": r ,
       };
