@@ -7,7 +7,7 @@ import {Typography} from "@material-tailwind/react";
 
 function Home(props) {
     let a = "slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsav slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa slkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsaslkjdf skjfdlk sdfjok sdlkfj;la sldjkfo;a as;dklfj sajd; aslkjdf; aslkfj aslfkj as;ljksa sdf sdfkljsalk;;as fd afn;kjasdfkljsa "
-    const [summrize, setSummrize] = useState(a+a+a+a+a+a);
+    const [summrize, setSummrize] = useState(null);
   return (
     <div className="h-screen overflow-hidden">
       <NavBar />
