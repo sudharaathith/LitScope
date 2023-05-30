@@ -87,7 +87,6 @@ class Scraper_api:
                 self.config['search']['url'].replace('//<<Query>>//', query)), data=json.loads(
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
-        print(req.text)
         req = json.loads(req.text)
         infor = False
         index = -1
@@ -121,6 +120,7 @@ class Scraper_web:
                 json.dumps(self.config['search']['data']).replace('//<<Query>>//', query)))
         # req = open('Scrapers\\typeset_io_data.json','r').read()
         req = BeautifulSoup(req.text, "html.parser" )
+        req1 = req
         infor = False
         index = -1
         for n, i in enumerate(self.config['search']['route']):
@@ -147,7 +147,36 @@ class Scraper_web:
                     else:
                         i = i.select_one(j)
                 res.append(i)
-            return res
+
+        infor = False
+        index = -1
+        for n, i in enumerate(self.config['pdf']['route']):
+            if i == '//<<for>>//':
+                infor = True
+                index = n
+                break
+
+            else:
+                if(n+1<len(self.config['pdf']['route'])):
+                    if(self.config['pdf']['route'][n+1]=='//<<for>>//'):
+                        req1 = req1.select(i)
+                        continue
+                req1 = req1.select_one(i)
+                
+        if infor:
+            res1 = []
+            for i in req1:
+                for j in self.config['pdf']['route'][index+1:]:
+                    if(j == '//<<text>>//'):
+                        i = i.get_text()
+                    elif(j == '//<<href>>//'):
+                        i = i['href']
+                    else:
+                        i = i.select_one(j)
+                res1.append(i)
+
+
+            return list(zip(res,res1))
 
 
 def summaHandler(val):

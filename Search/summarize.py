@@ -41,11 +41,11 @@ def extract_abstract_from_pdf(pdf_url):
     abstract = abstract.split('NTRODUCTION')[0]
     return abstract
 
-# Provide the URL of the PDF file
-pdf_url = 'https://arxiv.org/pdf/2009.06756v2.pdf'
+# # Provide the URL of the PDF file
+# pdf_url = 'https://arxiv.org/pdf/2009.06756v2.pdf'
 
-# Call the function to extract the abstract from the PDF
-abstract = extract_abstract_from_pdf(pdf_url)
+# # Call the function to extract the abstract from the PDF
+# abstract = extract_abstract_from_pdf(pdf_url)
 
-# Print the abstract
-print(abstract)
+# # Print the abstract
+# print(abstract)

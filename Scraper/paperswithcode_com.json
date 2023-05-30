@@ -6,5 +6,10 @@
         "url":"https://paperswithcode.com/search?q_meta=&q_type=&q=//<<Query>>//",
         "route":[".col-lg-9.item-content","//<<for>>//","h1","a","//<<text>>//"],
         "method":"GET"
+    },
+    "pdf":{
+        "url":"https://paperswithcode.com/search?q_meta=&q_type=&q=//<<Query>>//",
+        "route":[".col-lg-9.item-content","//<<for>>//","h1","a","//<<href>>//"],
+        "method":"GET"
     }
 }
