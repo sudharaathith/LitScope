@@ -19,7 +19,8 @@ function Searchresult(props) {
 
  function Option(props) {
   return (
-    <div className=' w-full h-fit text-center p-3 shadow-sm cursor-pointer hover:animate-pulse  rounded-2xl' onClick={(e)=>{props.setCurrurl(props.href)}}>{props.value}</div>
+    <div className=' w-full h-fit text-center p-3 shadow-sm cursor-pointer hover:animate-pulse  rounded-2xl' onClick={(e)=>{props.setCurrurl(props.href)
+      }}>{props.value}</div>
   )
 }
 
