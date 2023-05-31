@@ -57,6 +57,7 @@ def search(request):
 def summarize(request):
     data = request.data
     token = data['url']
+    print(type(token))
     res = main_summarize(token)
     return Response(res, status=200)
     

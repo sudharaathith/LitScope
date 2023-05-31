@@ -11,6 +11,7 @@ function Home(props) {
     const [search, setSearch] = useState("");
     const [keywords, setKeywords] = useState([]);
     const [res, setRes] = useState(null);
+    const [currurl, setCurrurl] = useState(null);
 
     useEffect(()=>{
       
@@ -34,6 +35,22 @@ function Home(props) {
           setRes(data.data)
         })
     }, [keywords])
+
+    useEffect(()=>{
+      let data = {
+        "url": currurl ,
+      };
+
+      const headers = {
+        "Content-Type":
+          "application/x-www-form-urlencoded;charset=UTF-8",
+      };
+      currurl&&axios
+        .post("http://127.0.0.1:8000/api/domain/summarize/", data, headers)
+        .then((data)=>{
+          setSummrize(data.data)
+        })
+    },[currurl]);
   return (
     <div className="h-screen overflow-hidden">
       <NavBar />
@@ -61,7 +78,7 @@ function Home(props) {
       <br />
       <div className="flex flex-row h-full">
         <div className=" xl:w-[40%] w-1/2">
-        <Searchresult res={res} keywords={keywords} />
+        <Searchresult setCurrurl={setCurrurl} res={res} keywords={keywords} />
         </div>
         <div className="xl:w-[60%] bg-gray-50 m-5 h-[75vh] w-1/2 shadow-inner rounded-xl p-9 overflow-y-scroll">
         {(summrize)?<Typography>{summrize}</Typography>:<img className=" h-full " src={ReactLogo} alt="React Logo" />}

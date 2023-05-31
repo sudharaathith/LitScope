@@ -5,9 +5,10 @@ from io import BytesIO
 import re
 
 def main_summarize(url):
-    response = requests.get(url)
+    print(url)
+    response = requests.get(url)    
     req = BeautifulSoup(response.text, "html.parser")
-    elements = req.find_all("a", {"class": "badge badge-light badge-cs"})
+    elements = req.find_all("a", {"class": "badge"})
     return extract_abstract_from_pdf(elements[0]['href'])
     
 
@@ -57,3 +58,6 @@ def extract_abstract_from_pdf(pdf_url):
 
 # # Print the abstract
 # print(abstract)
+
+if __name__ == '__main__':
+    print(main_summarize('https://cs.paperswithcode.com/paper/on-the-road-to-percent-accuracy-iv-react'))
